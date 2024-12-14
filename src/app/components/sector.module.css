@@ -1,0 +1,44 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* body{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: center;
+} */
+
+.wrapper{
+	width: 600px;
+	height: 600px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	transition : 1s all;
+}
+.wrapper:hover{
+    transform-origin: 50% 50%;
+    transform : scale(25%)
+}
+
+
+.sector{
+	position: absolute;
+	transform-origin: 100% 100%;
+	background: #eee;
+	width: 400px;
+	height: 400px;
+	left: 50%;
+	top: 50%;
+	border: 1px solid #999;
+	margin-top: -400px;
+	margin-left: -400px;
+	transition : 1s transform;
+	opacity : 1;
+	
+}
+.hoverOpacity{
+	opacity: 0.2;
+}
