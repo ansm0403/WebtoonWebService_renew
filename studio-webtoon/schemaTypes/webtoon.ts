@@ -25,7 +25,10 @@ export const webtoonType = defineType({
         defineField({
             title : "Genre",
             name : "genre",
-            type : "string",
+            type : "array",
+            of : [{
+                type : "string"
+            }]
         }),
         defineField({
             title : "LikeCount",
@@ -45,7 +48,7 @@ export const webtoonType = defineType({
         defineField({
             title : "FirstDate",
             name : "firstDate",
-            type : "string",
+            type : "date",
         }),
         defineField({
             title : "DayOfWeek",
