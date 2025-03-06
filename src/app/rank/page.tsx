@@ -9,8 +9,7 @@ import { SERVER_URL } from '../models/globalVar';
 export default function RankPage() {
   const [webtoonList, setWebtoonList] = useState<WebtoonListPage>();
 
-  const searchParams = useSearchParams()
-  const search = searchParams.get('page');
+  const [ page, setPage ] = useSearchParams();
 
   useEffect(()=>{
     if(search === null){

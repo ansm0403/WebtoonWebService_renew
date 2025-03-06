@@ -1,3 +1,5 @@
+import { webtoon } from "../models/webtoon";
+
 export const webtoons = [
     {
         id : 27,
@@ -6,7 +8,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/747269/thumbnail/thumbnail_IMAG21_aabd9952-ff45-47a2-a543-33f19a5c6708.jpg",
         genre : ["판타지"],
         likeCount : 12284,
-        overallLikeCount: null,
+        
         likeProportion: 0.00900422,
         firstDate : "2020-05-26",
         dayOfWeek : "수",
@@ -20,7 +22,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/703844/thumbnail/thumbnail_IMAG21_5ddcb40e-1f6a-40f3-b2c4-6cd9a7eee843.jpg",
         genre : ["스포츠"],
         likeCount : 11549,
-        overallLikeCount: null,
+        
         likeProportion: 0.00846546,
         firstDate : "2019-03-02",
         dayOfWeek : "일",
@@ -34,7 +36,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/650305/thumbnail/thumbnail_IMAG21_3631086797392995425.jpg",
         genre : ["판타지"],
         likeCount : 11043,
-        overallLikeCount: null,
+        
         likeProportion: 0.00809456,
         firstDate : "2015-03-20",
         dayOfWeek : "토",
@@ -48,7 +50,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/735661/thumbnail/thumbnail_IMAG21_4b3c44a0-f286-4878-bac3-84c3ec9dc0a1.jpg",
         genre : ["로맨스"],
         likeCount : 10868,
-        overallLikeCount: null,
+        
         likeProportion: 0.00796629,
         firstDate : "2019-10-24",
         dayOfWeek : "금",
@@ -62,7 +64,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/712362/thumbnail/thumbnail_IMAG21_537a5e13-3bff-439e-896c-bc054602ee36.jpg",
         genre : [],
         likeCount : 10561,
-        overallLikeCount: null,
+        
         likeProportion: 0.00774126,
         firstDate : "2018-06-07",
         dayOfWeek : "금",
@@ -76,7 +78,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807178/thumbnail/thumbnail_IMAG21_28fcfb22-aae7-41b4-8767-05f6dd176b03.jpg",
         genre : ["액션"],
         likeCount : 10450,
-        overallLikeCount: null,
+        
         likeProportion: 0.00765989,
         firstDate : "2023-03-07",
         dayOfWeek : "수",
@@ -90,7 +92,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/654774/thumbnail/thumbnail_IMAG21_4048794550434817075.jpg",
         genre : ["로맨스"],
         likeCount : 10333,
-        overallLikeCount: null,
+        
         likeProportion: 0.00757413,
         firstDate : "2015-05-17",
         dayOfWeek : "월",
@@ -104,7 +106,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/777767/thumbnail/thumbnail_IMAG21_cc85f891-272b-450a-b642-cffe1568ab71.jpg",
         genre : ["판타지"],
         likeCount : 10299,
-        overallLikeCount: null,
+        
         likeProportion: 0.00754921,
         firstDate : "2021-08-05",
         dayOfWeek : "금",
@@ -118,7 +120,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/478261/thumbnail/thumbnail_IMAG21_7fbd8610-0a97-40e3-9c63-101ea07fc4b4.jpg",
         genre : [],
         likeCount : 10116,
-        overallLikeCount: null,
+        
         likeProportion: 0.00741507,
         firstDate : "2012-06-13",
         dayOfWeek : "목",
@@ -132,7 +134,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/798664/thumbnail/thumbnail_IMAG21_38708e4d-5ed5-4301-b4a6-b9e794b173c4.jpeg",
         genre : ["로맨스"],
         likeCount : 9886,
-        overallLikeCount: null,
+        
         likeProportion: 0.00724648,
         firstDate : "2022-08-27",
         dayOfWeek : "일",
@@ -146,7 +148,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/730694/thumbnail/thumbnail_IMAG21_e6fc219d-e5ea-4d93-b7d6-45b595c2a3cb.jpeg",
         genre : ["액션"],
         likeCount : 9821,
-        overallLikeCount: null,
+        
         likeProportion: 0.00719883,
         firstDate : "2019-07-12",
         dayOfWeek : "토",
@@ -160,7 +162,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/801475/thumbnail/thumbnail_IMAG21_63818a49-407c-4d1d-8f9a-e541285abdd9.jpg",
         genre : ["로맨스"],
         likeCount : 9709,
-        overallLikeCount: null,
+        
         likeProportion: 0.00711674,
         firstDate : "2022-10-21",
         dayOfWeek : "토",
@@ -174,7 +176,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/797731/thumbnail/thumbnail_IMAG21_88164681-e112-492f-829b-1e0bd75b8655.jpg",
         genre : ["로맨스"],
         likeCount : 9510,
-        overallLikeCount: null,
+        
         likeProportion: 0.00697087,
         firstDate : "2022-07-20",
         dayOfWeek : "목",
@@ -188,7 +190,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/721433/thumbnail/thumbnail_IMAG21_e14d8057-378c-4208-8531-e82e1dce8dd6.jpg",
         genre : [],
         likeCount : 9099,
-        overallLikeCount: null,
+        
         likeProportion: 0.0066696,
         firstDate : "2018-12-31",
         dayOfWeek : "화",
@@ -202,7 +204,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814826/thumbnail/thumbnail_IMAG21_1de7535f-9088-4f21-8b16-413cb1e66307.jpg",
         genre : ["로맨스"],
         likeCount : 9097,
-        overallLikeCount: null,
+        
         likeProportion: 0.00666814,
         firstDate : "2023-09-12",
         dayOfWeek : "수",
@@ -216,7 +218,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/784248/thumbnail/thumbnail_IMAG21_20a8aca7-23d3-4bc0-9916-a31ebc884ca8.jpg",
         genre : ["판타지"],
         likeCount : 8647,
-        overallLikeCount: null,
+        
         likeProportion: 0.00633829,
         firstDate : "2021-11-15",
         dayOfWeek : "화",
@@ -230,7 +232,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/747271/thumbnail/thumbnail_IMAG21_75c6a3cc-c4d1-4b51-a945-029aff772a63.jpg",
         genre : "무협판타지",
         likeCount : 8568,
-        overallLikeCount: null,
+        
         likeProportion: 0.00628038,
         firstDate : "2020-06-10",
         dayOfWeek : "목",
@@ -244,7 +246,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/758150/thumbnail/thumbnail_IMAG21_4135492154714961716.jpg",
         genre : ["액션"],
         likeCount : 8535,
-        overallLikeCount: null,
+        
         likeProportion: 0.00625619,
         firstDate : "2020-11-07",
         dayOfWeek : "일",
@@ -258,7 +260,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/776601/thumbnail/thumbnail_IMAG21_7365135131254864183.jpg",
         genre : ["무협"],
         likeCount : 8519,
-        overallLikeCount: null,
+        
         likeProportion: 0.00624446,
         firstDate : "2021-07-22",
         dayOfWeek : "금",
@@ -272,7 +274,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812629/thumbnail/thumbnail_IMAG21_692752ea-20d9-4972-972b-66338ab3a8dd.jpg",
         genre : ["로맨스"],
         likeCount : 8318,
-        overallLikeCount: null,
+        
         likeProportion: 0.00609713,
         firstDate : "2023-06-28",
         dayOfWeek : "목",
@@ -286,7 +288,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/724815/thumbnail/thumbnail_IMAG21_4bdd52f2-bbc9-4524-b44b-adc1e7208f93.jpg",
         genre : ["로맨스"],
         likeCount : 8209,
-        overallLikeCount: null,
+        
         likeProportion: 0.00601723,
         firstDate : "2019-03-01",
         dayOfWeek : "토",
@@ -300,7 +302,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808198/thumbnail/thumbnail_IMAG21_2aabb538-5b1a-4d74-81ed-b41bb8a155ff.jpg",
         genre : ["액션"],
         likeCount : 8182,
-        overallLikeCount: null,
+        
         likeProportion: 0.00599744,
         firstDate : "2023-04-05",
         dayOfWeek : "목",
@@ -314,7 +316,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/773797/thumbnail/thumbnail_IMAG21_4dda13fe-417f-45b9-9696-880f2487d41d.jpg",
         genre : ["판타지"],
         likeCount : 8156,
-        overallLikeCount: null,
+        
         likeProportion: 0.00597838,
         firstDate : "2021-07-29",
         dayOfWeek : "금",
@@ -328,7 +330,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814512/thumbnail/thumbnail_IMAG21_822d18b7-4c27-4cb0-9966-2b156aceaac0.jpg",
         genre : ["로맨스"],
         likeCount : 8114,
-        overallLikeCount: null,
+        
         likeProportion: 0.00594759,
         firstDate : "2023-08-23",
         dayOfWeek : "목",
@@ -342,7 +344,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/762279/thumbnail/thumbnail_IMAG21_715e8b9b-f6e7-48fc-af26-88fdf50ff7c5.jpg",
         genre : ["액션"],
         likeCount : 7922,
-        overallLikeCount: null,
+        
         likeProportion: 0.00580686,
         firstDate : "2020-12-30",
         dayOfWeek : "목",
@@ -356,7 +358,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/774044/thumbnail/thumbnail_IMAG21_81504afb-1a05-41b0-9650-0c9aa1d741d9.jpg",
         genre : ["액션"],
         likeCount : 7871,
-        overallLikeCount: null,
+        
         likeProportion: 0.00576947,
         firstDate : "2021-06-26",
         dayOfWeek : "일",
@@ -370,7 +372,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/798917/thumbnail/thumbnail_IMAG21_35c1a390-7598-418e-9902-dc9a84f22d8b.jpg",
         genre : ["로맨스"],
         likeCount : 7839,
-        overallLikeCount: null,
+        
         likeProportion: 0.00574602,
         firstDate : "2022-08-11",
         dayOfWeek : "금",
@@ -384,7 +386,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/801505/thumbnail/thumbnail_IMAG21_893e0926-523f-4bc1-b7a6-e30af1ec3c6e.jpg",
         genre : ["로맨스"],
         likeCount : 7806,
-        overallLikeCount: null,
+        
         likeProportion: 0.00572183,
         firstDate : "2022-10-19",
         dayOfWeek : "목",
@@ -398,7 +400,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/721948/thumbnail/thumbnail_IMAG21_b5efacb7-c212-422f-bc4a-15cf5dc84408.jpg",
         genre : ["액션"],
         likeCount : 7762,
-        overallLikeCount: null,
+        
         likeProportion: 0.00568958,
         firstDate : "2019-01-04",
         dayOfWeek : "토",
@@ -412,7 +414,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804832/thumbnail/thumbnail_IMAG21_6edbde13-770a-495c-98d8-5d1d46fcc045.jpeg",
         genre : ["로맨스"],
         likeCount : 7667,
-        overallLikeCount: null,
+        
         likeProportion: 0.00561994,
         firstDate : "2023-01-12",
         dayOfWeek : "금",
@@ -426,7 +428,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/783053/thumbnail/thumbnail_IMAG21_d7732f14-26da-4e35-8762-660cc87b53f1.jpg",
         genre : ["액션"],
         likeCount : 7506,
-        overallLikeCount: null,
+        
         likeProportion: 0.00550193,
         firstDate : "2021-11-01",
         dayOfWeek : "화",
@@ -440,7 +442,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/783052/thumbnail/thumbnail_IMAG21_800f4c56-26ac-419e-9ed0-baf322311dea.jpg",
         genre : ["판타지"],
         likeCount : 7430,
-        overallLikeCount: null,
+        
         likeProportion: 0.00544622,
         firstDate : "2021-10-24",
         dayOfWeek : "월",
@@ -454,7 +456,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/794155/thumbnail/thumbnail_IMAG21_788f081a-865c-44bc-aa32-bfb382cb2494.jpg",
         genre : ["로맨스"],
         likeCount : 6795,
-        overallLikeCount: null,
+        
         likeProportion: 0.00498076,
         firstDate : "2022-05-04",
         dayOfWeek : "목",
@@ -468,7 +470,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/780404/thumbnail/thumbnail_IMAG21_e9eccbd9-b1c1-49b9-81a8-5bee3291315f.jpg",
         genre : [],
         likeCount : 6568,
-        overallLikeCount: null,
+        
         likeProportion: 0.00481437,
         firstDate : "2021-12-17",
         dayOfWeek : "토",
@@ -482,7 +484,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/792651/thumbnail/thumbnail_IMAG21_218f18ef-7f68-4d6a-972c-686a3e9f6138.jpg",
         genre : ["판타지"],
         likeCount : 6321,
-        overallLikeCount: null,
+        
         likeProportion: 0.00463332,
         firstDate : "2022-03-25",
         dayOfWeek : "토",
@@ -496,7 +498,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/790713/thumbnail/thumbnail_IMAG21_3919364435331003700.jpg",
         genre : ["일상"],
         likeCount : 6321,
-        overallLikeCount: null,
+        
         likeProportion: 0.00463332,
         firstDate : "2022-02-28",
         dayOfWeek : "화,금,",
@@ -510,7 +512,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/736277/thumbnail/thumbnail_IMAG21_bbbe3f76-021e-4dbc-830a-4358c1abec0c.jpg",
         genre : ["액션"],
         likeCount : 6314,
-        overallLikeCount: null,
+        
         likeProportion: 0.00462819,
         firstDate : "2019-11-16",
         dayOfWeek : "일",
@@ -524,7 +526,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/761461/thumbnail/thumbnail_IMAG21_e3c857a7-900b-4085-969a-75d9127b5a38.jpg",
         genre : ["로맨스"],
         likeCount : 6281,
-        overallLikeCount: null,
+        
         likeProportion: 0.004604,
         firstDate : "2020-12-13",
         dayOfWeek : "월",
@@ -538,7 +540,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/648419/thumbnail/thumbnail_IMAG21_d9398229-cbfd-47dc-9208-0a6fb936f3a7.jpg",
         genre : [],
         likeCount : 6197,
-        overallLikeCount: null,
+        
         likeProportion: 0.00454243,
         firstDate : "2015-02-15",
         dayOfWeek : "월",
@@ -552,7 +554,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/733074/thumbnail/thumbnail_IMAG21_80df3e76-47af-4007-b57c-e8f2830835e5.jpg",
         genre : [],
         likeCount : 5972,
-        overallLikeCount: null,
+        
         likeProportion: 0.0043775,
         firstDate : "2019-09-01",
         dayOfWeek : "월",
@@ -566,7 +568,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/801711/thumbnail/thumbnail_IMAG21_bf581fbe-7d3d-4ff6-bfd3-a973f3c65aa1.jpg",
         genre : ["로맨스"],
         likeCount : 5947,
-        overallLikeCount: null,
+        
         likeProportion: 0.00435917,
         firstDate : "2022-10-31",
         dayOfWeek : "화",
@@ -580,7 +582,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807019/thumbnail/thumbnail_IMAG21_35128d6b-4a62-48d2-a908-222d47bcfe4e.jpg",
         genre : ["로맨스"],
         likeCount : 5869,
-        overallLikeCount: null,
+        
         likeProportion: 0.004302,
         firstDate : "2023-02-28",
         dayOfWeek : "수",
@@ -594,7 +596,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/717481/thumbnail/thumbnail_IMAG21_3545800975505057126.jpg",
         genre : ["액션"],
         likeCount : 5781,
-        overallLikeCount: null,
+        
         likeProportion: 0.0042375,
         firstDate : "2018-10-02",
         dayOfWeek : "수",
@@ -608,7 +610,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/774832/thumbnail/thumbnail_IMAG21_b90a49f3-7ef2-4898-94b3-acfa634b3ed7.jpg",
         genre : ["로맨스"],
         likeCount : 5656,
-        overallLikeCount: null,
+        
         likeProportion: 0.00414587,
         firstDate : "2021-06-25",
         dayOfWeek : "토",
@@ -622,7 +624,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/730656/thumbnail/thumbnail_IMAG21_fc6d8dbf-eed2-43d0-af45-2edb3cc4244e.jpg",
         genre : ["액션"],
         likeCount : 5635,
-        overallLikeCount: null,
+        
         likeProportion: 0.00413048,
         firstDate : "2023-12-11",
         dayOfWeek : "화",
@@ -636,7 +638,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/602910/thumbnail/thumbnail_IMAG21_e861f2cf-6157-4d33-8e02-7b4cbf0a8baf.jpg",
         genre : ["스포츠"],
         likeCount : 5559,
-        overallLikeCount: null,
+        
         likeProportion: 0.00407477,
         firstDate : "2013-12-08",
         dayOfWeek : "월",
@@ -650,7 +652,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804160/thumbnail/thumbnail_IMAG21_335a77d2-bbcd-4766-83f6-8d90120e9379.jpg",
         genre : ["로맨스"],
         likeCount : 5554,
-        overallLikeCount: null,
+        
         likeProportion: 0.0040711,
         firstDate : "2022-12-22",
         dayOfWeek : "금",
@@ -664,7 +666,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/738487/thumbnail/thumbnail_IMAG21_66eac5ec-876b-469e-ab05-81261fddde8d.jpg",
         genre : ["로맨스"],
         likeCount : 5483,
-        overallLikeCount: null,
+        
         likeProportion: 0.00401906,
         firstDate : "2020-01-06",
         dayOfWeek : "화",
@@ -678,7 +680,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/795297/thumbnail/thumbnail_IMAG21_ceeeead6-8a9c-48ec-a793-f3cc092a0b10.jpg",
         genre : ["판타지"],
         likeCount : 5411,
-        overallLikeCount: null,
+        
         likeProportion: 0.00396628,
         firstDate : "2022-06-12",
         dayOfWeek : "월",
@@ -692,7 +694,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/783888/thumbnail/thumbnail_IMAG21_316daca9-cf4f-42f8-9802-da356dd584f1.jpg",
         genre : "액션,판타지",
         likeCount : 5373,
-        overallLikeCount: null,
+        
         likeProportion: 0.00393843,
         firstDate : "2021-10-27",
         dayOfWeek : "목",
@@ -706,7 +708,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/794421/thumbnail/thumbnail_IMAG21_65e1c328-a2e5-42f6-86ef-47d7424bb44e.jpg",
         genre : ["로맨스"],
         likeCount : 5356,
-        overallLikeCount: null,
+        
         likeProportion: 0.00392597,
         firstDate : "2022-05-08",
         dayOfWeek : "월",
@@ -720,7 +722,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807859/thumbnail/thumbnail_IMAG21_f76458b0-e807-480e-b44c-3437d9888a75.jpg",
         genre : ["로맨스"],
         likeCount : 5307,
-        overallLikeCount: null,
+        
         likeProportion: 0.00389005,
         firstDate : "2023-03-28",
         dayOfWeek : "수",
@@ -734,7 +736,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802293/thumbnail/thumbnail_IMAG21_a3e4736d-dfd6-4e76-aec6-b145f4123845.jpg",
         genre : ["로맨스"],
         likeCount : 5204,
-        overallLikeCount: null,
+        
         likeProportion: 0.00381455,
         firstDate : "2022-11-16",
         dayOfWeek : "목",
@@ -748,7 +750,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804862/thumbnail/thumbnail_IMAG21_f1b2f920-5c10-4155-a547-0c25a7132d8f.jpeg",
         genre : ["액션"],
         likeCount : 4905,
-        overallLikeCount: null,
+        
         likeProportion: 0.00359538,
         firstDate : "2023-01-17",
         dayOfWeek : "수",
@@ -762,7 +764,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/757904/thumbnail/thumbnail_IMAG21_f3e09476-b052-4599-b619-4b2aba154143.jpg",
         genre : ["판타지"],
         likeCount : 4879,
-        overallLikeCount: null,
+        
         likeProportion: 0.00357633,
         firstDate : "2020-10-26",
         dayOfWeek : "화",
@@ -776,7 +778,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813335/thumbnail/thumbnail_IMAG21_aa6adfc2-a77f-47cb-bb2e-97214f27b301.jpg",
         genre : [],
         likeCount : 4877,
-        overallLikeCount: null,
+        
         likeProportion: 0.00357486,
         firstDate : "2023-07-21",
         dayOfWeek : "토",
@@ -790,7 +792,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/816798/thumbnail/thumbnail_IMAG21_c141fe1d-eeb4-4e88-a0d5-df45d23804a3.jpeg",
         genre : ["액션"],
         likeCount : 4840,
-        overallLikeCount: null,
+        
         likeProportion: 0.00354774,
         firstDate : "2023-09-15",
         dayOfWeek : "토",
@@ -804,7 +806,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/787061/thumbnail/thumbnail_IMAG21_86a8b356-006b-4ce8-be18-bf08d529254a.jpg",
         genre : [],
         likeCount : 4772,
-        overallLikeCount: null,
+        
         likeProportion: 0.0034979,
         firstDate : "2021-12-24",
         dayOfWeek : "토",
@@ -818,7 +820,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/725586/thumbnail/thumbnail_IMAG21_17f81846-d1a9-43fd-83a4-f9e966b6b977.jpg",
         genre : [],
         likeCount : 4737,
-        overallLikeCount: null,
+        
         likeProportion: 0.00347224,
         firstDate : "2019-03-14",
         dayOfWeek : "금",
@@ -832,7 +834,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/774863/thumbnail/thumbnail_IMAG21_e390eaf4-cfcd-46bf-901f-93034135a314.jpg",
         genre : [],
         likeCount : 4669,
-        overallLikeCount: null,
+        
         likeProportion: 0.0034224,
         firstDate : "2021-07-18",
         dayOfWeek : "월",
@@ -846,7 +848,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802840/thumbnail/thumbnail_IMAG21_1ae41652-be65-4c1d-be08-8df716aaa41c.jpg",
         genre : ["판타지"],
         likeCount : 4561,
-        overallLikeCount: null,
+        
         likeProportion: 0.00334323,
         firstDate : "2022-11-21",
         dayOfWeek : "화",
@@ -860,7 +862,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/768536/thumbnail/thumbnail_IMAG21_91c5c081-77e6-4516-a503-2f45aad57401.jpg",
         genre : ["판타지"],
         likeCount : 4441,
-        overallLikeCount: null,
+        
         likeProportion: 0.00325527,
         firstDate : "2021-03-21",
         dayOfWeek : "월",
@@ -874,7 +876,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/774831/thumbnail/thumbnail_IMAG21_b4644a73-ecfb-4532-a96c-575b02accfd0.jpg",
         genre : [],
         likeCount : 4430,
-        overallLikeCount: null,
+        
         likeProportion: 0.00324721,
         firstDate : "2021-07-03",
         dayOfWeek : "일",
@@ -888,7 +890,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/819217/thumbnail/thumbnail_IMAG21_2dd78d6c-ba3d-4d1d-8b98-30c13d90144d.jpg",
         genre : ["일상"],
         likeCount : 4381,
-        overallLikeCount: null,
+        
         likeProportion: 0.00321129,
         firstDate : "2023-12-10",
         dayOfWeek : "월,화,수,목,금,",
@@ -902,7 +904,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808389/thumbnail/thumbnail_IMAG21_4a5ab33b-e6fe-4fbe-95b7-bd7fa6a9c156.jpg",
         genre : ["판타지"],
         likeCount : 4377,
-        overallLikeCount: null,
+        
         likeProportion: 0.00320836,
         firstDate : "2023-04-20",
         dayOfWeek : "금",
@@ -916,7 +918,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/183559/thumbnail/thumbnail_IMAG21_5f3fec31-5c95-4afe-a73f-3046288edb47.jpg",
         genre : ["판타지"],
         likeCount : 4365,
-        overallLikeCount: null,
+        
         likeProportion: 0.00319956,
         firstDate : "2010-06-30",
         dayOfWeek : "월",
@@ -930,7 +932,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807029/thumbnail/thumbnail_IMAG21_4f5f473d-60ff-4ee5-86e9-052e5efd2aeb.jpg",
         genre : ["판타지"],
         likeCount : 4356,
-        overallLikeCount: null,
+        
         likeProportion: 0.00319297,
         firstDate : "2023-03-03",
         dayOfWeek : "토",
@@ -944,7 +946,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/811721/thumbnail/thumbnail_IMAG21_9a2a959a-666b-4156-8e4f-db64dfe319c6.jpg",
         genre : [],
         likeCount : 4238,
-        overallLikeCount: null,
+        
         likeProportion: 0.00310647,
         firstDate : "2023-06-06",
         dayOfWeek : "수,일,",
@@ -958,7 +960,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/796867/thumbnail/thumbnail_IMAG21_77aa5064-b42b-4838-912e-2c6266c53a74.jpg",
         genre : ["로맨스"],
         likeCount : 4199,
-        overallLikeCount: null,
+        
         likeProportion: 0.00307788,
         firstDate : "2022-07-03",
         dayOfWeek : "월",
@@ -972,7 +974,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817032/thumbnail/thumbnail_IMAG21_75d7192e-5de2-46ae-bd94-749477fbabe6.jpg",
         genre : ["액션"],
         likeCount : 4168,
-        overallLikeCount: null,
+        
         likeProportion: 0.00305516,
         firstDate : "2023-09-21",
         dayOfWeek : "금",
@@ -986,7 +988,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/753478/thumbnail/thumbnail_IMAG21_4049077133597095219.jpg",
         genre : ["판타지"],
         likeCount : 4167,
-        overallLikeCount: null,
+        
         likeProportion: 0.00305443,
         firstDate : "2020-09-10",
         dayOfWeek : "금",
@@ -1000,7 +1002,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/801736/thumbnail/thumbnail_IMAG21_4cef0649-b3cf-4a27-8eda-afb93d6f6bf4.jpg",
         genre : ["로맨스"],
         likeCount : 4130,
-        overallLikeCount: null,
+        
         likeProportion: 0.00302731,
         firstDate : "2022-10-27",
         dayOfWeek : "금",
@@ -1014,7 +1016,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/789979/thumbnail/thumbnail_IMAG21_792cd36e-d722-4970-933b-3da7c37ee812.jpg",
         genre : ["판타지"],
         likeCount : 4073,
-        overallLikeCount: null,
+        
         likeProportion: 0.00298553,
         firstDate : "2022-02-07",
         dayOfWeek : "화",
@@ -1028,7 +1030,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/743139/thumbnail/thumbnail_IMAG21_6012f944-ea1f-4328-ba22-bca09be494ee.jpg",
         genre : ["액션"],
         likeCount : 4073,
-        overallLikeCount: null,
+        
         likeProportion: 0.00298553,
         firstDate : "2020-05-25",
         dayOfWeek : "화",
@@ -1042,7 +1044,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/798331/thumbnail/thumbnail_IMAG21_846e6d29-da15-40cb-9d4f-1c7f5b1a6faa.jpg",
         genre : ["판타지"],
         likeCount : 4015,
-        overallLikeCount: null,
+        
         likeProportion: 0.00294301,
         firstDate : "2022-08-03",
         dayOfWeek : "목",
@@ -1056,7 +1058,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/816614/thumbnail/thumbnail_IMAG21_2ddc9f0a-a0e2-45d0-91a3-a98f43da9e4f.jpg",
         genre : ["로맨스"],
         likeCount : 4007,
-        overallLikeCount: null,
+        
         likeProportion: 0.00293715,
         firstDate : "2023-09-29",
         dayOfWeek : "토",
@@ -1070,7 +1072,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/783527/thumbnail/thumbnail_IMAG21_e43d251c-2624-4f7d-871f-3c829ba25efa.jpg",
         genre : ["로맨스"],
         likeCount : 3952,
-        overallLikeCount: null,
+        
         likeProportion: 0.00289683,
         firstDate : "2022-01-13",
         dayOfWeek : "금",
@@ -1084,7 +1086,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817859/thumbnail/thumbnail_IMAG21_4fadf2ae-3467-4a9d-a6be-4b0313b963e0.jpg",
         genre : ["로맨스"],
         likeCount : 3934,
-        overallLikeCount: null,
+        
         likeProportion: 0.00288364,
         firstDate : "2023-11-05",
         dayOfWeek : "월",
@@ -1098,7 +1100,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/800770/thumbnail/thumbnail_IMAG21_d2e1e7ee-fc83-4030-a1e7-200378bc088f.jpg",
         genre : [],
         likeCount : 3922,
-        overallLikeCount: null,
+        
         likeProportion: 0.00287484,
         firstDate : "2022-09-28",
         dayOfWeek : "목",
@@ -1112,7 +1114,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804653/thumbnail/thumbnail_IMAG21_245d93e8-07c6-4229-9e51-bb813a307610.jpg",
         genre : ["로맨스"],
         likeCount : 3829,
-        overallLikeCount: null,
+        
         likeProportion: 0.00280667,
         firstDate : "2023-01-09",
         dayOfWeek : "화",
@@ -1126,7 +1128,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/811219/thumbnail/thumbnail_IMAG21_a9aab693-d74c-4c52-a5a5-b99029082416.jpg",
         genre : ["로맨스", "판타지"],
         likeCount : 3785,
-        overallLikeCount: null,
+        
         likeProportion: 0.00277442,
         firstDate : "2023-05-27",
         dayOfWeek : "일",
@@ -1140,7 +1142,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/701535/thumbnail/thumbnail_IMAG21_2abe5b1a-9104-417f-9995-0db15c6db7be.jpg",
         genre : ["스포츠"],
         likeCount : 3784,
-        overallLikeCount: null,
+        
         likeProportion: 0.00277369,
         firstDate : "2017-10-17",
         dayOfWeek : "수",
@@ -1154,7 +1156,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/750826/thumbnail/thumbnail_IMAG21_8bf7d36d-d865-4df0-b76f-f72f288bb2cd.jpg",
         genre : ["스포츠"],
         likeCount : 3768,
-        overallLikeCount: null,
+        
         likeProportion: 0.00276196,
         firstDate : "2020-07-28",
         dayOfWeek : "수",
@@ -1168,7 +1170,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/751168/thumbnail/thumbnail_IMAG21_529c6125-cf14-435f-94ed-db1a2d499d84.jpg",
         genre : [],
         likeCount : 3744,
-        overallLikeCount: null,
+        
         likeProportion: 0.00274437,
         firstDate : "2020-07-30",
         dayOfWeek : "금",
@@ -1182,7 +1184,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807393/thumbnail/thumbnail_IMAG21_aff8a206-014c-471f-9e91-c569940ad8e5.jpg",
         genre : ["판타지"],
         likeCount : 3716,
-        overallLikeCount: null,
+        
         likeProportion: 0.00272384,
         firstDate : "2023-03-17",
         dayOfWeek : "토",
@@ -1196,7 +1198,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808018/thumbnail/thumbnail_IMAG21_731f2947-7401-4a11-8561-04e0beef8771.jpg",
         genre : ["로맨스"],
         likeCount : 3709,
-        overallLikeCount: null,
+        
         likeProportion: 0.00271871,
         firstDate : "2023-04-04",
         dayOfWeek : "수",
@@ -1210,7 +1212,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/772853/thumbnail/thumbnail_IMAG21_b39e6531-f358-4add-91b3-24f0017ec5d8.jpg",
         genre : ["판타지"],
         likeCount : 3655,
-        overallLikeCount: null,
+        
         likeProportion: 0.00267913,
         firstDate : "2021-05-21",
         dayOfWeek : "토",
@@ -1224,7 +1226,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/772764/thumbnail/thumbnail_IMAG21_be1cd9e7-17da-449a-bc04-1294015fdbd5.jpg",
         genre : ["액션"],
         likeCount : 3642,
-        overallLikeCount: null,
+        
         likeProportion: 0.0026696,
         firstDate : "2021-05-20",
         dayOfWeek : "금",
@@ -1238,7 +1240,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/789652/thumbnail/thumbnail_IMAG21_e3631348-fffb-41c5-880f-d2d64cc3c0c0.jpg",
         genre : ["로맨스"],
         likeCount : 3610,
-        overallLikeCount: null,
+        
         likeProportion: 0.00264614,
         firstDate : "2022-02-08",
         dayOfWeek : "수",
@@ -1252,7 +1254,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/784580/thumbnail/thumbnail_IMAG21_d99dd56e-a987-4fa9-9a08-895ba09c874f.jpg",
         genre : ["로맨스", "판타지"],
         likeCount : 3599,
-        overallLikeCount: null,
+        
         likeProportion: 0.00263808,
         firstDate : "2021-11-19",
         dayOfWeek : "토",
@@ -1266,7 +1268,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/806189/thumbnail/thumbnail_IMAG21_292de414-bd9a-418d-a4e9-d97060398223.jpg",
         genre : [],
         likeCount : 3583,
-        overallLikeCount: null,
+        
         likeProportion: 0.00262635,
         firstDate : "2023-02-12",
         dayOfWeek : "월",
@@ -1280,7 +1282,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812962/thumbnail/thumbnail_IMAG21_64afec58-886c-4db3-83a8-e6a54a5f0fdc.jpg",
         genre : [],
         likeCount : 3582,
-        overallLikeCount: null,
+        
         likeProportion: 0.00262562,
         firstDate : "2023-07-19",
         dayOfWeek : "목",
@@ -1294,7 +1296,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/746857/thumbnail/thumbnail_IMAG21_fb7d7fcd-19f1-49eb-9cc8-aae9622cdd04.jpg",
         genre : ["무협"],
         likeCount : 3551,
-        overallLikeCount: null,
+        
         likeProportion: 0.0026029,
         firstDate : "2020-06-03",
         dayOfWeek : "목",
@@ -1308,7 +1310,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817945/thumbnail/thumbnail_IMAG21_120ad315-8518-4430-bb30-739654b49635.jpg",
         genre : ["일상"],
         likeCount : 3501,
-        overallLikeCount: null,
+        
         likeProportion: 0.00256625,
         firstDate : "2023-10-22",
         dayOfWeek : "월,수,",
@@ -1322,7 +1324,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817927/thumbnail/thumbnail_IMAG21_a2783aa9-2b4f-4cc4-86c9-140039e796be.jpg",
         genre : ["액션"],
         likeCount : 3471,
-        overallLikeCount: null,
+        
         likeProportion: 0.00254426,
         firstDate : "2023-10-19",
         dayOfWeek : "금",
@@ -1336,7 +1338,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/776255/thumbnail/thumbnail_IMAG21_02fb1475-2e82-4bcd-ae93-c22d6b7158ae.jpg",
         genre : "무협판타지",
         likeCount : 3441,
-        overallLikeCount: null,
+        
         likeProportion: 0.00252227,
         firstDate : "2021-10-06",
         dayOfWeek : "목",
@@ -1350,7 +1352,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/733280/thumbnail/thumbnail_IMAG21_cf0ca5a3-b4be-4f10-a3b3-ed0274de8d8e.jpg",
         genre : [],
         likeCount : 3401,
-        overallLikeCount: null,
+        
         likeProportion: 0.00249295,
         firstDate : "2019-09-06",
         dayOfWeek : "토",
@@ -1364,7 +1366,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/795529/thumbnail/thumbnail_IMAG21_60e29e1a-a910-4d27-bca4-30fb5df9e21e.jpg",
         genre : ["판타지"],
         likeCount : 3394,
-        overallLikeCount: null,
+        
         likeProportion: 0.00248782,
         firstDate : "2022-06-04",
         dayOfWeek : "일",
@@ -1378,7 +1380,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817960/thumbnail/thumbnail_IMAG21_0b8c9f0d-3717-4972-b499-d174767c127d.jpg",
         genre : ["로맨스"],
         likeCount : 3379,
-        overallLikeCount: null,
+        
         likeProportion: 0.00247682,
         firstDate : "2023-10-26",
         dayOfWeek : "금",
@@ -1392,7 +1394,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/779632/thumbnail/thumbnail_IMAG21_4048795649913205816.jpg",
         genre : ["무협"],
         likeCount : 3372,
-        overallLikeCount: null,
+        
         likeProportion: 0.00247169,
         firstDate : "2021-10-23",
         dayOfWeek : "일",
@@ -1406,7 +1408,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/773916/thumbnail/thumbnail_IMAG21_7a5dbee0-0997-41f9-99b3-bb062e18fb64.jpg",
         genre : ["판타지"],
         likeCount : 3370,
-        overallLikeCount: null,
+        
         likeProportion: 0.00247022,
         firstDate : "2021-06-24",
         dayOfWeek : "금",
@@ -1420,7 +1422,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/798182/thumbnail/thumbnail_IMAG21_49696a84-cfc4-4ab5-a721-a0bb15115fc5.jpg",
         genre : ["판타지"],
         likeCount : 3356,
-        overallLikeCount: null,
+        
         likeProportion: 0.00245996,
         firstDate : "2022-08-05",
         dayOfWeek : "토",
@@ -1434,7 +1436,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/766563/thumbnail/thumbnail_IMAG21_b71167a5-4409-411e-96e8-f2dad9ddbe00.jpg",
         genre : ["액션"],
         likeCount : 3316,
-        overallLikeCount: null,
+        
         likeProportion: 0.00243064,
         firstDate : "2021-02-25",
         dayOfWeek : "금",
@@ -1448,7 +1450,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808738/thumbnail/thumbnail_IMAG21_5c0738e4-13bc-4e17-a06e-a2cef9b9f030.jpg",
         genre : ["로맨스"],
         likeCount : 3310,
-        overallLikeCount: null,
+        
         likeProportion: 0.00242624,
         firstDate : "2023-04-25",
         dayOfWeek : "수",
@@ -1462,7 +1464,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/797410/thumbnail/thumbnail_IMAG21_9852442e-217e-4ec7-92a7-21c0ada85dc7.jpg",
         genre : ["로맨스"],
         likeCount : 3310,
-        overallLikeCount: null,
+        
         likeProportion: 0.00242624,
         firstDate : "2022-07-13",
         dayOfWeek : "목",
@@ -1476,7 +1478,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/739115/thumbnail/thumbnail_IMAG21_7077747896626722102.jpg",
         genre : ["판타지"],
         likeCount : 3297,
-        overallLikeCount: null,
+        
         likeProportion: 0.00241671,
         firstDate : "2020-02-02",
         dayOfWeek : "월",
@@ -1490,7 +1492,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/796827/thumbnail/thumbnail_IMAG21_f08bc78b-4135-4851-9b73-7def9b9656b6.jpg",
         genre : ["판타지"],
         likeCount : 3292,
-        overallLikeCount: null,
+        
         likeProportion: 0.00241305,
         firstDate : "2022-06-29",
         dayOfWeek : "목",
@@ -1504,7 +1506,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/773459/thumbnail/thumbnail_IMAG21_1614bb60-3d29-4e90-81b6-dc68d935bbce.jpg",
         genre : "액션,판타지",
         likeCount : 3287,
-        overallLikeCount: null,
+        
         likeProportion: 0.00240938,
         firstDate : "2021-06-07",
         dayOfWeek : "화",
@@ -1518,7 +1520,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808286/thumbnail/thumbnail_IMAG21_88006dbe-f2eb-4d28-bc1b-b609c1edb318.jpg",
         genre : ["로맨스"],
         likeCount : 3278,
-        overallLikeCount: null,
+        
         likeProportion: 0.00240279,
         firstDate : "2023-04-12",
         dayOfWeek : "목",
@@ -1532,7 +1534,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814310/thumbnail/thumbnail_IMAG21_fcc13386-dc54-4e27-a91b-c64bf0616003.jpg",
         genre : ["로맨스"],
         likeCount : 3274,
-        overallLikeCount: null,
+        
         likeProportion: 0.00239986,
         firstDate : "2023-08-17",
         dayOfWeek : "금",
@@ -1546,7 +1548,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/774864/thumbnail/thumbnail_IMAG21_7366025529484523875.jpg",
         genre : ["로맨스"],
         likeCount : 3261,
-        overallLikeCount: null,
+        
         likeProportion: 0.00239033,
         firstDate : "2021-09-17",
         dayOfWeek : "토",
@@ -1560,7 +1562,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/784140/thumbnail/thumbnail_IMAG21_a110320c-9741-482a-bfef-a265ac9734e1.jpg",
         genre : ["로맨스", "판타지"],
         likeCount : 3249,
-        overallLikeCount: null,
+        
         likeProportion: 0.00238153,
         firstDate : "2021-10-30",
         dayOfWeek : "일",
@@ -1574,7 +1576,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/695796/thumbnail/thumbnail_IMAG21_332bb25b-c77d-477f-9979-5a8607ebd7a5.jpg",
         genre : [],
         likeCount : 3239,
-        overallLikeCount: null,
+        
         likeProportion: 0.0023742,
         firstDate : "2017-05-20",
         dayOfWeek : "일",
@@ -1588,7 +1590,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813454/thumbnail/thumbnail_IMAG21_5bb6458f-1629-4e91-bbbd-c8c3bca738b8.jpg",
         genre : ["로맨스"],
         likeCount : 3219,
-        overallLikeCount: null,
+        
         likeProportion: 0.00235954,
         firstDate : "2023-07-24",
         dayOfWeek : "화",
@@ -1602,7 +1604,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/730174/thumbnail/thumbnail_IMAG21_5bfd08ed-6ca8-4a27-9fab-d9fb15588d3a.jpg",
         genre : [],
         likeCount : 3181,
-        overallLikeCount: null,
+        
         likeProportion: 0.00233169,
         firstDate : "2019-06-30",
         dayOfWeek : "월",
@@ -1616,7 +1618,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/776668/thumbnail/thumbnail_IMAG21_fe12d91f-1a7c-4665-8b15-f2bc9fb0b328.jpg",
         genre : ["판타지"],
         likeCount : 3179,
-        overallLikeCount: null,
+        
         likeProportion: 0.00233022,
         firstDate : "2021-07-21",
         dayOfWeek : "목",
@@ -1630,7 +1632,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808439/thumbnail/thumbnail_IMAG21_19387806-c0b0-4669-8fac-90607bbe12d6.jpg",
         genre : ["액션"],
         likeCount : 3002,
-        overallLikeCount: null,
+        
         likeProportion: 0.00220048,
         firstDate : "2023-04-14",
         dayOfWeek : "토",
@@ -1644,7 +1646,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807550/thumbnail/thumbnail_IMAG21_ceb5dd8c-f8b0-4af2-aadc-14da357b6104.jpg",
         genre : [],
         likeCount : 2998,
-        overallLikeCount: null,
+        
         likeProportion: 0.00219755,
         firstDate : "2023-03-18",
         dayOfWeek : "일",
@@ -1658,7 +1660,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809054/thumbnail/thumbnail_IMAG21_99e2bc60-6038-44e7-8689-44cf20fbc6f5.jpg",
         genre : [],
         likeCount : 2952,
-        overallLikeCount: null,
+        
         likeProportion: 0.00216383,
         firstDate : "2023-05-03",
         dayOfWeek : "목",
@@ -1672,7 +1674,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/730657/thumbnail/thumbnail_IMAG21_4d928a6e-b354-4b8c-ad73-382845df1857.jpg",
         genre : ["로맨스"],
         likeCount : 2933,
-        overallLikeCount: null,
+        
         likeProportion: 0.0021499,
         firstDate : "2019-07-06",
         dayOfWeek : "일",
@@ -1686,7 +1688,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/774864/thumbnail/thumbnail_IMAG21_7366025529484523875.jpg",
         genre : ["로맨스"],
         likeCount : 3261,
-        overallLikeCount: null,
+        
         likeProportion: 0.00239033,
         firstDate : "2021-09-17",
         dayOfWeek : "토",
@@ -1700,7 +1702,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/784140/thumbnail/thumbnail_IMAG21_a110320c-9741-482a-bfef-a265ac9734e1.jpg",
         genre : ["로맨스", "판타지"],
         likeCount : 3249,
-        overallLikeCount: null,
+        
         likeProportion: 0.00238153,
         firstDate : "2021-10-30",
         dayOfWeek : "일",
@@ -1714,7 +1716,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/695796/thumbnail/thumbnail_IMAG21_332bb25b-c77d-477f-9979-5a8607ebd7a5.jpg",
         genre : [],
         likeCount : 3239,
-        overallLikeCount: null,
+        
         likeProportion: 0.0023742,
         firstDate : "2017-05-20",
         dayOfWeek : "일",
@@ -1728,7 +1730,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813454/thumbnail/thumbnail_IMAG21_5bb6458f-1629-4e91-bbbd-c8c3bca738b8.jpg",
         genre : ["로맨스"],
         likeCount : 3219,
-        overallLikeCount: null,
+        
         likeProportion: 0.00235954,
         firstDate : "2023-07-24",
         dayOfWeek : "화",
@@ -1742,7 +1744,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/730174/thumbnail/thumbnail_IMAG21_5bfd08ed-6ca8-4a27-9fab-d9fb15588d3a.jpg",
         genre : [],
         likeCount : 3181,
-        overallLikeCount: null,
+        
         likeProportion: 0.00233169,
         firstDate : "2019-06-30",
         dayOfWeek : "월",
@@ -1756,7 +1758,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/776668/thumbnail/thumbnail_IMAG21_fe12d91f-1a7c-4665-8b15-f2bc9fb0b328.jpg",
         genre : ["판타지"],
         likeCount : 3179,
-        overallLikeCount: null,
+        
         likeProportion: 0.00233022,
         firstDate : "2021-07-21",
         dayOfWeek : "목",
@@ -1770,7 +1772,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808439/thumbnail/thumbnail_IMAG21_19387806-c0b0-4669-8fac-90607bbe12d6.jpg",
         genre : ["액션"],
         likeCount : 3002,
-        overallLikeCount: null,
+        
         likeProportion: 0.00220048,
         firstDate : "2023-04-14",
         dayOfWeek : "토",
@@ -1784,7 +1786,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807550/thumbnail/thumbnail_IMAG21_ceb5dd8c-f8b0-4af2-aadc-14da357b6104.jpg",
         genre : [],
         likeCount : 2998,
-        overallLikeCount: null,
+        
         likeProportion: 0.00219755,
         firstDate : "2023-03-18",
         dayOfWeek : "일",
@@ -1798,7 +1800,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809054/thumbnail/thumbnail_IMAG21_99e2bc60-6038-44e7-8689-44cf20fbc6f5.jpg",
         genre : [],
         likeCount : 2952,
-        overallLikeCount: null,
+        
         likeProportion: 0.00216383,
         firstDate : "2023-05-03",
         dayOfWeek : "목",
@@ -1812,7 +1814,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/730657/thumbnail/thumbnail_IMAG21_4d928a6e-b354-4b8c-ad73-382845df1857.jpg",
         genre : ["로맨스"],
         likeCount : 2933,
-        overallLikeCount: null,
+        
         likeProportion: 0.0021499,
         firstDate : "2019-07-06",
         dayOfWeek : "일",
@@ -1826,7 +1828,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814594/thumbnail/thumbnail_IMAG21_8746b12b-566e-4375-b0ab-1eaf48e17a1d.jpg",
         genre : [],
         likeCount : 2734,
-        overallLikeCount: null,
+        
         likeProportion: 0.00200403,
         firstDate : "2023-08-27",
         dayOfWeek : "월",
@@ -1840,7 +1842,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/799837/thumbnail/thumbnail_IMAG21_361ed944-3c87-481f-a3d9-0e02c12b027d.jpg",
         genre : ["무협"],
         likeCount : 2724,
-        overallLikeCount: null,
+        
         likeProportion: 0.0019967,
         firstDate : "2022-09-01",
         dayOfWeek : "금",
@@ -1854,7 +1856,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/778967/thumbnail/thumbnail_IMAG21_b0341594-06f3-4b2e-9a3d-da333cae2880.jpg",
         genre : [],
         likeCount : 2650,
-        overallLikeCount: null,
+        
         likeProportion: 0.00194246,
         firstDate : "2021-09-11",
         dayOfWeek : "일",
@@ -1868,7 +1870,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/800046/thumbnail/thumbnail_IMAG21_1b3a9842-439f-43a3-8b2f-90fc1b1ee356.jpg",
         genre : ["로맨스"],
         likeCount : 2644,
-        overallLikeCount: null,
+        
         likeProportion: 0.00193806,
         firstDate : "2022-09-08",
         dayOfWeek : "금",
@@ -1882,7 +1884,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/742105/thumbnail/thumbnail_IMAG21_a3860cc1-f927-4031-92fd-8d89b9801127.jpg",
         genre : ["스릴러"],
         likeCount : 2643,
-        overallLikeCount: null,
+        
         likeProportion: 0.00193733,
         firstDate : "2020-03-03",
         dayOfWeek : "수",
@@ -1896,7 +1898,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/758675/thumbnail/thumbnail_IMAG21_b5ba4df8-fff7-47a0-86f0-2960a054e03e.jpg",
         genre : ["판타지", "로맨스"],
         likeCount : 2630,
-        overallLikeCount: null,
+        
         likeProportion: 0.0019278,
         firstDate : "2021-03-11",
         dayOfWeek : "금",
@@ -1910,7 +1912,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/799805/thumbnail/thumbnail_IMAG21_aff53990-84b6-4b97-973d-fa3a8add5da5.jpg",
         genre : ["판타지"],
         likeCount : 2627,
-        overallLikeCount: null,
+        
         likeProportion: 0.0019256,
         firstDate : "2022-09-03",
         dayOfWeek : "일",
@@ -1924,7 +1926,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/728750/thumbnail/thumbnail_IMAG21_47c21251-b213-4882-bacc-15adce1acfc8.jpg",
         genre : ["무협"],
         likeCount : 2604,
-        overallLikeCount: null,
+        
         likeProportion: 0.00190874,
         firstDate : "2019-05-19",
         dayOfWeek : "월",
@@ -1938,7 +1940,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804329/thumbnail/thumbnail_IMAG21_d09239e1-4e22-46a7-83df-b7094eceb403.jpg",
         genre : ["로맨스"],
         likeCount : 2572,
-        overallLikeCount: null,
+        
         likeProportion: 0.00188529,
         firstDate : "2022-12-29",
         dayOfWeek : "금",
@@ -1952,7 +1954,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808482/thumbnail/thumbnail_IMAG21_8d99e7c4-0d9c-4b75-9947-5b32ca178482.jpg",
         genre : ["판타지"],
         likeCount : 2545,
-        overallLikeCount: null,
+        
         likeProportion: 0.0018655,
         firstDate : "2023-04-19",
         dayOfWeek : "목",
@@ -1966,7 +1968,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/796075/thumbnail/thumbnail_IMAG21_31f75c4c-81c9-454a-8d92-9e23b577e1a5.jpg",
         genre : ["무협"],
         likeCount : 2529,
-        overallLikeCount: null,
+        
         likeProportion: 0.00185377,
         firstDate : "2022-06-19",
         dayOfWeek : "월",
@@ -1980,7 +1982,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818368/thumbnail/thumbnail_IMAG21_dbbb63bc-66fe-4934-a4fa-1a704b0a7ee6.jpg",
         genre : ["로맨스"],
         likeCount : 2514,
-        overallLikeCount: null,
+        
         likeProportion: 0.00184277,
         firstDate : "2023-11-04",
         dayOfWeek : "일",
@@ -1994,7 +1996,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817365/thumbnail/thumbnail_IMAG21_fa059a74-ca14-4a89-b0d7-841a0c85139a.jpg",
         genre : ["로맨스"],
         likeCount : 2513,
-        overallLikeCount: null,
+        
         likeProportion: 0.00184204,
         firstDate : "2023-10-08",
         dayOfWeek : "월",
@@ -2008,7 +2010,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/750184/thumbnail/thumbnail_IMAG21_adfbd65f-18fa-4268-81db-ec88ae4aa8b1.jpg",
         genre : ["액션"],
         likeCount : 2508,
-        overallLikeCount: null,
+        
         likeProportion: 0.00183837,
         firstDate : "2020-08-04",
         dayOfWeek : "수",
@@ -2022,7 +2024,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/790239/thumbnail/thumbnail_IMAG21_75cb9f71-9af3-48ca-a143-cd59540328b1.jpg",
         genre : ["로맨스"],
         likeCount : 2494,
-        overallLikeCount: null,
+        
         likeProportion: 0.00182811,
         firstDate : "2022-02-09",
         dayOfWeek : "목",
@@ -2036,7 +2038,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/803934/thumbnail/thumbnail_IMAG21_4fabee83-c9ef-4a00-96f3-0ed4a45b90b5.jpg",
         genre : ["로맨스"],
         likeCount : 2482,
-        overallLikeCount: null,
+        
         likeProportion: 0.00181932,
         firstDate : "2022-12-16",
         dayOfWeek : "토",
@@ -2050,7 +2052,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/745876/thumbnail/thumbnail_IMAG21_ad75ad2a-a372-4f6c-873c-41ddd2e11f79.jpg",
         genre : "액션,판타지",
         likeCount : 2460,
-        overallLikeCount: null,
+        
         likeProportion: 0.00180319,
         firstDate : "2020-05-07",
         dayOfWeek : "금",
@@ -2064,7 +2066,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/748535/thumbnail/thumbnail_IMAG21_fbaf72e0-c829-44ad-b56c-5c60a9fd5705.jpg",
         genre : ["로맨스"],
         likeCount : 2444,
-        overallLikeCount: null,
+        
         likeProportion: 0.00179146,
         firstDate : "2020-09-15",
         dayOfWeek : "수",
@@ -2078,7 +2080,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/797184/thumbnail/thumbnail_IMAG21_6d3da570-7cfb-4799-b621-f6c62d426311.jpg",
         genre : ["로맨스"],
         likeCount : 2433,
-        overallLikeCount: null,
+        
         likeProportion: 0.0017834,
         firstDate : "2022-07-08",
         dayOfWeek : "토",
@@ -2092,7 +2094,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/796062/thumbnail/thumbnail_IMAG21_dc14b7fc-c61e-4fdf-9e6c-0108db4a26db.jpg",
         genre : ["액션"],
         likeCount : 2405,
-        overallLikeCount: null,
+        
         likeProportion: 0.00176287,
         firstDate : "2022-06-14",
         dayOfWeek : "수",
@@ -2106,7 +2108,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807777/thumbnail/thumbnail_IMAG21_e47489ea-bf97-4726-a8e7-6403092a303a.jpg",
         genre : ["무협"],
         likeCount : 2404,
-        overallLikeCount: null,
+        
         likeProportion: 0.00176214,
         firstDate : "2023-03-24",
         dayOfWeek : "토",
@@ -2120,7 +2122,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/795330/thumbnail/thumbnail_IMAG21_710d26ef-2943-4b14-87e2-9ef6b79530eb.jpg",
         genre : ["로맨스"],
         likeCount : 2400,
-        overallLikeCount: null,
+        
         likeProportion: 0.00175921,
         firstDate : "2022-05-31",
         dayOfWeek : "수",
@@ -2134,7 +2136,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805743/thumbnail/thumbnail_IMAG21_07ec1df5-1d1b-41e9-8507-d8bed34fc5c7.jpg",
         genre : ["로맨스"],
         likeCount : 2398,
-        overallLikeCount: null,
+        
         likeProportion: 0.00175774,
         firstDate : "2023-01-30",
         dayOfWeek : "화",
@@ -2148,7 +2150,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813843/thumbnail/thumbnail_IMAG21_7bbc3b88-f67b-4eae-ad76-2531151984a7.jpg",
         genre : ["스릴러"],
         likeCount : 2370,
-        overallLikeCount: null,
+        
         likeProportion: 0.00173722,
         firstDate : "2023-08-30",
         dayOfWeek : "목",
@@ -2162,7 +2164,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814356/thumbnail/thumbnail_IMAG21_8ab854ac-f59a-4065-9287-cdfc336eb438.jpg",
         genre : [],
         likeCount : 2362,
-        overallLikeCount: null,
+        
         likeProportion: 0.00173136,
         firstDate : "2023-08-21",
         dayOfWeek : "화",
@@ -2176,7 +2178,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/776542/thumbnail/thumbnail_IMAG21_ca2e314b-448b-4383-980a-b6c50b1c6ca4.jpg",
         genre : ["로맨스"],
         likeCount : 2341,
-        overallLikeCount: null,
+        
         likeProportion: 0.00171596,
         firstDate : "2021-07-28",
         dayOfWeek : "목",
@@ -2190,7 +2192,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808473/thumbnail/thumbnail_IMAG21_f3216ccd-e4c2-45f5-8d01-397d3c191d28.jpg",
         genre : ["스릴러"],
         likeCount : 2329,
-        overallLikeCount: null,
+        
         likeProportion: 0.00170717,
         firstDate : "2023-04-14",
         dayOfWeek : "토",
@@ -2204,7 +2206,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/797443/thumbnail/thumbnail_IMAG21_cea05bf8-ab6b-4f19-8cd9-dd8c31ed1677.jpg",
         genre : ["판타지"],
         likeCount : 2270,
-        overallLikeCount: null,
+        
         likeProportion: 0.00166392,
         firstDate : "2022-07-12",
         dayOfWeek : "수",
@@ -2218,7 +2220,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814538/thumbnail/thumbnail_IMAG21_37b888c5-d7d7-4722-95b2-2be5687efdda.jpg",
         genre : ["로맨스"],
         likeCount : 2242,
-        overallLikeCount: null,
+        
         likeProportion: 0.0016434,
         firstDate : "2023-08-23",
         dayOfWeek : "목",
@@ -2232,7 +2234,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802833/thumbnail/thumbnail_IMAG21_99b5f54a-dfbe-4ed6-90b5-44a966d2a00f.jpg",
         genre : ["액션"],
         likeCount : 2198,
-        overallLikeCount: null,
+        
         likeProportion: 0.00161114,
         firstDate : "2022-11-23",
         dayOfWeek : "목",
@@ -2246,7 +2248,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/787500/thumbnail/thumbnail_IMAG21_7090184484697487202.jpg",
         genre : ["판타지"],
         likeCount : 2192,
-        overallLikeCount: null,
+        
         likeProportion: 0.00160674,
         firstDate : "2021-12-31",
         dayOfWeek : "토",
@@ -2260,7 +2262,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/797937/thumbnail/thumbnail_IMAG21_437f40c3-9af5-4c79-88fd-b0c16217e266.jpg",
         genre : ["로맨스"],
         likeCount : 2192,
-        overallLikeCount: null,
+        
         likeProportion: 0.00160674,
         firstDate : "2022-08-03",
         dayOfWeek : "목",
@@ -2274,7 +2276,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/769663/thumbnail/thumbnail_IMAG21_935bf47d-9219-4f45-8a58-d5a7af13ce51.jpg",
         genre : "액션판타지스포츠,",
         likeCount : 2191,
-        overallLikeCount: null,
+        
         likeProportion: 0.00160601,
         firstDate : "2021-08-15",
         dayOfWeek : "월",
@@ -2288,7 +2290,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805193/thumbnail/thumbnail_IMAG21_47d9dfe3-8e58-43ba-b9c1-ad18673068cb.jpg",
         genre : ["무협"],
         likeCount : 2126,
-        overallLikeCount: null,
+        
         likeProportion: 0.00155837,
         firstDate : "2023-01-14",
         dayOfWeek : "일",
@@ -2302,7 +2304,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809694/thumbnail/thumbnail_IMAG21_2dded0a5-e188-4ed4-8139-d273185aedb2.jpg",
         genre : ["로맨스"],
         likeCount : 2125,
-        overallLikeCount: null,
+        
         likeProportion: 0.00155763,
         firstDate : "2023-05-19",
         dayOfWeek : "토",
@@ -2316,7 +2318,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808757/thumbnail/thumbnail_IMAG21_79e60f3a-a6f1-4f25-8c14-ba4a143bbb32.jpg",
         genre : ["판타지"],
         likeCount : 2125,
-        overallLikeCount: null,
+        
         likeProportion: 0.00155763,
         firstDate : "2023-04-28",
         dayOfWeek : "토",
@@ -2330,7 +2332,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808994/thumbnail/thumbnail_IMAG21_e53c2e67-9ad0-455e-8177-c8de56374880.jpg",
         genre : ["로맨스"],
         likeCount : 2091,
-        overallLikeCount: null,
+        
         likeProportion: 0.00153271,
         firstDate : "2023-04-28",
         dayOfWeek : "토",
@@ -2344,7 +2346,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/793539/thumbnail/thumbnail_IMAG21_26ab2787-96fa-445a-859a-10f4298e09bc.jpg",
         genre : ["판타지"],
         likeCount : 2088,
-        overallLikeCount: null,
+        
         likeProportion: 0.00153051,
         firstDate : "2022-04-16",
         dayOfWeek : "일",
@@ -2358,7 +2360,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/774358/thumbnail/thumbnail_IMAG21_580067f4-3434-475f-ba51-3bbc86c6ad7d.jpg",
         genre : ["판타지"],
         likeCount : 2055,
-        overallLikeCount: null,
+        
         likeProportion: 0.00150632,
         firstDate : "2021-06-14",
         dayOfWeek : "화",
@@ -2372,7 +2374,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812645/thumbnail/thumbnail_IMAG21_4815ef88-953d-4752-997e-45004ac3ae47.jpg",
         genre : ["판타지", "로맨스"],
         likeCount : 2055,
-        overallLikeCount: null,
+        
         likeProportion: 0.00150632,
         firstDate : "2023-06-30",
         dayOfWeek : "토",
@@ -2386,7 +2388,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/811707/thumbnail/thumbnail_IMAG21_a4202254-2f7b-4933-b1e5-3308888cb7bb.jpg",
         genre : ["판타지"],
         likeCount : 2029,
-        overallLikeCount: null,
+        
         likeProportion: 0.00148727,
         firstDate : "2023-06-16",
         dayOfWeek : "토",
@@ -2400,7 +2402,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817958/thumbnail/thumbnail_IMAG21_542523dc-b304-4a0b-9078-0b780c9b05d2.jpg",
         genre : ["판타지"],
         likeCount : 1993,
-        overallLikeCount: null,
+        
         likeProportion: 0.00146088,
         firstDate : "2023-11-03",
         dayOfWeek : "토",
@@ -2414,7 +2416,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818567/thumbnail/thumbnail_IMAG21_3f8945b4-5588-4e2d-aa99-8cb6bd926f82.jpg",
         genre : ["로맨스"],
         likeCount : 1986,
-        overallLikeCount: null,
+        
         likeProportion: 0.00145575,
         firstDate : "2023-11-07",
         dayOfWeek : "수",
@@ -2428,7 +2430,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/770523/thumbnail/thumbnail_IMAG21_b0c43bf3-14b8-4b43-970f-ced56b793582.jpg",
         genre : ["로맨스"],
         likeCount : 1985,
-        overallLikeCount: null,
+        
         likeProportion: 0.00145501,
         firstDate : "2021-04-14",
         dayOfWeek : "목",
@@ -2442,7 +2444,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/738694/thumbnail/thumbnail_IMAG21_7366031057188643120.jpg",
         genre : "액션,판타지",
         likeCount : 1979,
-        overallLikeCount: null,
+        
         likeProportion: 0.00145062,
         firstDate : "2020-04-28",
         dayOfWeek : "수",
@@ -2456,7 +2458,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813410/thumbnail/thumbnail_IMAG21_9a889dbd-cd44-4cce-a01c-f7b73f42734e.jpg",
         genre : ["로맨스"],
         likeCount : 1942,
-        overallLikeCount: null,
+        
         likeProportion: 0.00142349,
         firstDate : "2023-07-22",
         dayOfWeek : "일",
@@ -2470,7 +2472,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813625/thumbnail/thumbnail_IMAG21_da7dcddf-5dfd-4509-8033-f8d92d79763d.jpg",
         genre : ["로맨스"],
         likeCount : 1931,
-        overallLikeCount: null,
+        
         likeProportion: 0.00141543,
         firstDate : "2023-08-16",
         dayOfWeek : "목",
@@ -2484,7 +2486,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/796252/thumbnail/thumbnail_IMAG21_07b3c0bc-a24e-4411-8996-b38f6a6a2721.jpg",
         genre : ["로맨스"],
         likeCount : 1917,
-        overallLikeCount: null,
+        
         likeProportion: 0.00140517,
         firstDate : "2022-06-24",
         dayOfWeek : "토",
@@ -2498,7 +2500,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/816809/thumbnail/thumbnail_IMAG21_55348686-22ee-49ed-ae07-ad9b39ec748f.jpg",
         genre : ["판타지"],
         likeCount : 1914,
-        overallLikeCount: null,
+        
         likeProportion: 0.00140297,
         firstDate : "2023-09-19",
         dayOfWeek : "수",
@@ -2512,7 +2514,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/797115/thumbnail/thumbnail_IMAG21_5dd4b1ce-478e-43b3-ac65-d42e7728a039.jpg",
         genre : ["로맨스"],
         likeCount : 1910,
-        overallLikeCount: null,
+        
         likeProportion: 0.00140004,
         firstDate : "2022-07-12",
         dayOfWeek : "수",
@@ -2526,7 +2528,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809625/thumbnail/thumbnail_IMAG21_15dd153c-6e74-4628-9429-ab469095cdae.jpg",
         genre : ["판타지"],
         likeCount : 1909,
-        overallLikeCount: null,
+        
         likeProportion: 0.0013993,
         firstDate : "2023-05-17",
         dayOfWeek : "목",
@@ -2540,7 +2542,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/801035/thumbnail/thumbnail_IMAG21_01fd148f-edb2-4ada-9571-910981ec3376.jpg",
         genre : ["스릴러"],
         likeCount : 1908,
-        overallLikeCount: null,
+        
         likeProportion: 0.00139857,
         firstDate : "2022-10-09",
         dayOfWeek : "월",
@@ -2554,7 +2556,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812660/thumbnail/thumbnail_IMAG21_6fd5cbf5-6576-4dc9-9421-2ec5d0a99359.jpg",
         genre : ["로맨스"],
         likeCount : 1905,
-        overallLikeCount: null,
+        
         likeProportion: 0.00139637,
         firstDate : "2023-07-01",
         dayOfWeek : "일",
@@ -2568,7 +2570,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/786082/thumbnail/thumbnail_IMAG21_69748953-29ef-4a38-80da-66f94654789d.jpg",
         genre : ["로맨스", "판타지"],
         likeCount : 1892,
-        overallLikeCount: null,
+        
         likeProportion: 0.00138684,
         firstDate : "2022-01-01",
         dayOfWeek : "일",
@@ -2582,7 +2584,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/798277/thumbnail/thumbnail_IMAG21_f3e49f1a-befe-435f-bf83-845d8516a82b.jpg",
         genre : ["로맨스"],
         likeCount : 1892,
-        overallLikeCount: null,
+        
         likeProportion: 0.00138684,
         firstDate : "2022-07-31",
         dayOfWeek : "월",
@@ -2596,7 +2598,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/803649/thumbnail/thumbnail_IMAG21_2dd44beb-7a5b-43f0-b9d4-af7829e69c70.jpg",
         genre : ["로맨스"],
         likeCount : 1885,
-        overallLikeCount: null,
+        
         likeProportion: 0.00138171,
         firstDate : "2022-12-17",
         dayOfWeek : "일",
@@ -2610,7 +2612,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/801515/thumbnail/thumbnail_IMAG21_2e85c821-0398-4b06-9c61-66f729974082.jpg",
         genre : ["로맨스"],
         likeCount : 1872,
-        overallLikeCount: null,
+        
         likeProportion: 0.00137218,
         firstDate : "2022-10-26",
         dayOfWeek : "목",
@@ -2624,7 +2626,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814149/thumbnail/thumbnail_IMAG21_1cf527a2-606b-410a-b74c-b17bf938491e.jpg",
         genre : [],
         likeCount : 1868,
-        overallLikeCount: null,
+        
         likeProportion: 0.00136925,
         firstDate : "2023-08-26",
         dayOfWeek : "일",
@@ -2638,7 +2640,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/670143/thumbnail/thumbnail_IMAG21_12d5d293-d54d-4022-8e00-c97c5779c701.jpg",
         genre : ["액션"],
         likeCount : 1862,
-        overallLikeCount: null,
+        
         likeProportion: 0.00136485,
         firstDate : "2016-01-12",
         dayOfWeek : "수",
@@ -2652,7 +2654,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/778322/thumbnail/thumbnail_IMAG21_3918807004477994082.jpg",
         genre : ["스릴러"],
         likeCount : 1860,
-        overallLikeCount: null,
+        
         likeProportion: 0.00136339,
         firstDate : "2021-08-24",
         dayOfWeek : "일",
@@ -2666,7 +2668,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805368/thumbnail/thumbnail_IMAG21_96351617-cd09-4eda-abdd-877a3ec12bcb.jpg",
         genre : ["로맨스"],
         likeCount : 1859,
-        overallLikeCount: null,
+        
         likeProportion: 0.00136265,
         firstDate : "2023-01-18",
         dayOfWeek : "목",
@@ -2680,7 +2682,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/723046/thumbnail/thumbnail_IMAG21_c9dc9f1e-6e34-4ae8-9ea3-e94dda2dbef5.jpg",
         genre : ["판타지"],
         likeCount : 1840,
-        overallLikeCount: null,
+        
         likeProportion: 0.00134873,
         firstDate : "2019-01-21",
         dayOfWeek : "화",
@@ -2694,7 +2696,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/794742/thumbnail/thumbnail_IMAG21_761b9cda-5024-4109-bd3d-77e07ca6010f.jpg",
         genre : ["로맨스"],
         likeCount : 1831,
-        overallLikeCount: null,
+        
         likeProportion: 0.00134213,
         firstDate : "2022-05-12",
         dayOfWeek : "금",
@@ -2708,7 +2710,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802278/thumbnail/thumbnail_IMAG21_311b8a63-cb77-4198-b015-95ef835007ac.jpg",
         genre : ["무협"],
         likeCount : 1819,
-        overallLikeCount: null,
+        
         likeProportion: 0.00133333,
         firstDate : "2022-11-10",
         dayOfWeek : "금",
@@ -2722,7 +2724,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813552/thumbnail/thumbnail_IMAG21_c81f8080-3781-4789-9411-a171d501b01a.jpg",
         genre : ["로맨스"],
         likeCount : 1809,
-        overallLikeCount: null,
+        
         likeProportion: 0.001326,
         firstDate : "2023-07-30",
         dayOfWeek : "월",
@@ -2736,7 +2738,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/791126/thumbnail/thumbnail_IMAG21_b3c5cfcc-aba4-4ba6-b010-8c740c2cbc85.jpg",
         genre : ["로맨스"],
         likeCount : 1808,
-        overallLikeCount: null,
+        
         likeProportion: 0.00132527,
         firstDate : "2022-02-28",
         dayOfWeek : "화",
@@ -2750,7 +2752,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/778578/thumbnail/thumbnail_IMAG21_9fbb5592-b48c-48f9-989c-ae2f1cf332e6.jpg",
         genre : ["스포츠"],
         likeCount : 1803,
-        overallLikeCount: null,
+        
         likeProportion: 0.00132161,
         firstDate : "2021-09-18",
         dayOfWeek : "일",
@@ -2764,7 +2766,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/739411/thumbnail/thumbnail_IMAG21_dd0ba3a4-64e6-4a6a-92c8-b667ee0b387e.jpg",
         genre : [],
         likeCount : 1796,
-        overallLikeCount: null,
+        
         likeProportion: 0.00131648,
         firstDate : "2020-02-07",
         dayOfWeek : "토",
@@ -2778,7 +2780,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814820/thumbnail/thumbnail_IMAG21_0a5722c7-129e-46ed-8104-3cc7445aa590.jpg",
         genre : ["로맨스"],
         likeCount : 1748,
-        overallLikeCount: null,
+        
         likeProportion: 0.00128129,
         firstDate : "2023-09-02",
         dayOfWeek : "일",
@@ -2792,7 +2794,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813641/thumbnail/thumbnail_IMAG21_a53a4e1b-3395-44da-b9dc-6fe08c98bee5.jpg",
         genre : ["액션"],
         likeCount : 1747,
-        overallLikeCount: null,
+        
         likeProportion: 0.00128056,
         firstDate : "2023-07-27",
         dayOfWeek : "금",
@@ -2806,7 +2808,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/64997/thumbnail/thumbnail_IMAG21_3834645974328108595.jpg",
         genre : ["판타지"],
         likeCount : 1745,
-        overallLikeCount: null,
+        
         likeProportion: 0.00127909,
         firstDate : "2009-04-21",
         dayOfWeek : "토",
@@ -2820,7 +2822,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814213/thumbnail/thumbnail_IMAG21_f5547951-b364-4daa-b4ca-c809375072fd.jpg",
         genre : ["액션"],
         likeCount : 1735,
-        overallLikeCount: null,
+        
         likeProportion: 0.00127176,
         firstDate : "2023-08-19",
         dayOfWeek : "일",
@@ -2834,7 +2836,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/803909/thumbnail/thumbnail_IMAG21_764d377c-fe45-40f9-8775-0f6ff92ad421.jpg",
         genre : ["액션"],
         likeCount : 1714,
-        overallLikeCount: null,
+        
         likeProportion: 0.00125637,
         firstDate : "2022-12-17",
         dayOfWeek : "일",
@@ -2848,7 +2850,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814048/thumbnail/thumbnail_IMAG21_234ffc80-64de-4765-b059-6888ae0a9fae.jpg",
         genre : ["일상"],
         likeCount : 1706,
-        overallLikeCount: null,
+        
         likeProportion: 0.0012505,
         firstDate : "2023-08-15",
         dayOfWeek : "수,토,",
@@ -2862,7 +2864,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/819459/thumbnail/thumbnail_IMAG21_1bf60ebf-80ad-41fd-814e-c9d00cb8f8ed.jpg",
         genre : ["로맨스"],
         likeCount : 1698,
-        overallLikeCount: null,
+        
         likeProportion: 0.00124464,
         firstDate : "2023-12-07",
         dayOfWeek : "금",
@@ -2876,7 +2878,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818575/thumbnail/thumbnail_IMAG21_d7daed1c-1fe1-44ab-a5ce-53a3113b55e0.jpg",
         genre : [],
         likeCount : 1687,
-        overallLikeCount: null,
+        
         likeProportion: 0.00123658,
         firstDate : "2023-11-07",
         dayOfWeek : "수",
@@ -2890,7 +2892,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/765156/thumbnail/thumbnail_IMAG21_adda502b-232a-4df0-9c89-16f6b3b54f51.jpg",
         genre : ["판타지"],
         likeCount : 1674,
-        overallLikeCount: null,
+        
         likeProportion: 0.00122705,
         firstDate : "2021-02-15",
         dayOfWeek : "화",
@@ -2904,7 +2906,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817346/thumbnail/thumbnail_IMAG21_bc1e8aea-9c2b-4cd5-bcf8-092757380fed.jpg",
         genre : ["로맨스"],
         likeCount : 1669,
-        overallLikeCount: null,
+        
         likeProportion: 0.00122338,
         firstDate : "2023-10-16",
         dayOfWeek : "화",
@@ -2918,7 +2920,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/746534/thumbnail/thumbnail_IMAG21_3904681570744218160.jpg",
         genre : ["무협"],
         likeCount : 1668,
-        overallLikeCount: null,
+        
         likeProportion: 0.00122265,
         firstDate : "2020-05-14",
         dayOfWeek : "금",
@@ -2932,7 +2934,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/795542/thumbnail/thumbnail_IMAG21_3703756833080816441.jpg",
         genre : ["무협"],
         likeCount : 1641,
-        overallLikeCount: null,
+        
         likeProportion: 0.00120286,
         firstDate : "2022-06-07",
         dayOfWeek : "수",
@@ -2946,7 +2948,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817246/thumbnail/thumbnail_IMAG21_6d85b575-a4f2-475e-8bfb-768175bc1857.jpg",
         genre : ["무협"],
         likeCount : 1634,
-        overallLikeCount: null,
+        
         likeProportion: 0.00119773,
         firstDate : "2023-09-27",
         dayOfWeek : "목",
@@ -2960,7 +2962,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/734574/thumbnail/thumbnail_IMAG21_8688bbf6-1067-465b-9070-4fef7c1ab1cd.jpg",
         genre : [],
         likeCount : 1627,
-        overallLikeCount: null,
+        
         likeProportion: 0.0011926,
         firstDate : "2021-08-01",
         dayOfWeek : "월",
@@ -2974,7 +2976,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/801698/thumbnail/thumbnail_IMAG21_52e81ef5-fb49-4f99-801c-0e13c5691c67.",
         genre : ["판타지"],
         likeCount : 1621,
-        overallLikeCount: null,
+        
         likeProportion: 0.0011882,
         firstDate : "2022-10-26",
         dayOfWeek : "목",
@@ -2988,7 +2990,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/800506/thumbnail/thumbnail_IMAG21_21640049-34da-44e5-82d7-bbb7aca3a3f8.jpg",
         genre : [],
         likeCount : 1620,
-        overallLikeCount: null,
+        
         likeProportion: 0.00118747,
         firstDate : "2022-09-19",
         dayOfWeek : "화,금,",
@@ -3002,7 +3004,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/741891/thumbnail/thumbnail_IMAG21_47b971e4-00b6-451b-862e-1060bae5a80d.jpg",
         genre : ["일상"],
         likeCount : 1619,
-        overallLikeCount: null,
+        
         likeProportion: 0.00118673,
         firstDate : "2020-03-08",
         dayOfWeek : "월",
@@ -3016,7 +3018,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808454/thumbnail/thumbnail_IMAG21_5bd6216a-9baa-4859-bc6e-3f224badb74a.jpg",
         genre : ["로맨스"],
         likeCount : 1597,
-        overallLikeCount: null,
+        
         likeProportion: 0.00117061,
         firstDate : "2023-04-24",
         dayOfWeek : "화",
@@ -3030,7 +3032,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818448/thumbnail/thumbnail_IMAG21_8f02d84a-1c44-412e-8a34-4c9ec09c68ac.jpg",
         genre : ["스릴러"],
         likeCount : 1584,
-        overallLikeCount: null,
+        
         likeProportion: 0.00116108,
         firstDate : "2023-11-06",
         dayOfWeek : "화,토,",
@@ -3044,7 +3046,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812164/thumbnail/thumbnail_IMAG21_89ab296b-1a3e-4b93-8a00-383f9d76a0c3.jpg",
         genre : ["판타지", "로맨스"],
         likeCount : 1573,
-        overallLikeCount: null,
+        
         likeProportion: 0.00115302,
         firstDate : "2023-07-05",
         dayOfWeek : "목",
@@ -3058,7 +3060,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/768468/thumbnail/thumbnail_IMAG21_a1a837ad-e769-47d0-a082-f4ab829362b6.jpg",
         genre : ["로맨스"],
         likeCount : 1562,
-        overallLikeCount: null,
+        
         likeProportion: 0.00114495,
         firstDate : "2021-04-21",
         dayOfWeek : "목",
@@ -3072,7 +3074,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/752414/thumbnail/thumbnail_IMAG21_b66a0f20-01c1-4b3f-ab8e-1d5ca6f089fe.jpg",
         genre : ["판타지"],
         likeCount : 1555,
-        overallLikeCount: null,
+        
         likeProportion: 0.00113982,
         firstDate : "2020-08-23",
         dayOfWeek : "월",
@@ -3086,7 +3088,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805737/thumbnail/thumbnail_IMAG21_c72b400d-fc29-4928-828f-56b3629ce352.jpg",
         genre : ["로맨스"],
         likeCount : 1551,
-        overallLikeCount: null,
+        
         likeProportion: 0.00113689,
         firstDate : "2023-01-31",
         dayOfWeek : "수",
@@ -3100,7 +3102,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/776092/thumbnail/thumbnail_IMAG21_3905524900524404791.jpg",
         genre : ["스릴러"],
         likeCount : 1546,
-        overallLikeCount: null,
+        
         likeProportion: 0.00113322,
         firstDate : "2021-07-10",
         dayOfWeek : "일",
@@ -3114,7 +3116,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/765158/thumbnail/thumbnail_IMAG21_6dd93b8b-cd0d-48c3-ae5e-aa47edf117b1.jpg",
         genre : ["판타지"],
         likeCount : 1541,
-        overallLikeCount: null,
+        
         likeProportion: 0.00112956,
         firstDate : "2021-07-13",
         dayOfWeek : "수",
@@ -3128,7 +3130,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804333/thumbnail/thumbnail_IMAG21_b39d8b31-ca85-492f-8588-c766aa2b3c27.jpg",
         genre : ["일상"],
         likeCount : 1534,
-        overallLikeCount: null,
+        
         likeProportion: 0.00112443,
         firstDate : "2022-12-29",
         dayOfWeek : "화,금,",
@@ -3142,7 +3144,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/773796/thumbnail/thumbnail_IMAG21_8ecfa6b5-8018-4640-8a4b-97e14d06a4c5.jpg",
         genre : ["무협"],
         likeCount : 1532,
-        overallLikeCount: null,
+        
         likeProportion: 0.00112296,
         firstDate : "2021-07-23",
         dayOfWeek : "토",
@@ -3156,7 +3158,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/771718/thumbnail/thumbnail_IMAG21_8d86de3e-15d5-464e-b448-cbd73b1bd71c.jpg",
         genre : ["판타지"],
         likeCount : 1529,
-        overallLikeCount: null,
+        
         likeProportion: 0.00112076,
         firstDate : "2021-05-04",
         dayOfWeek : "수",
@@ -3170,7 +3172,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/801710/thumbnail/thumbnail_IMAG21_b65d115a-9224-4d45-9773-18addbc432d3.jpg",
         genre : ["판타지"],
         likeCount : 1529,
-        overallLikeCount: null,
+        
         likeProportion: 0.00112076,
         firstDate : "2022-10-30",
         dayOfWeek : "월",
@@ -3184,7 +3186,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/773476/thumbnail/thumbnail_IMAG21_60f66caa-8332-4333-b510-147854a2e496.jpg",
         genre : ["판타지"],
         likeCount : 1523,
-        overallLikeCount: null,
+        
         likeProportion: 0.00111637,
         firstDate : "2021-06-10",
         dayOfWeek : "금",
@@ -3198,7 +3200,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/776655/thumbnail/thumbnail_IMAG21_03f3b4c0-493d-436e-bfca-5cb4c6649278.jpg",
         genre : ["판타지"],
         likeCount : 1520,
-        overallLikeCount: null,
+        
         likeProportion: 0.00111417,
         firstDate : "2021-07-21",
         dayOfWeek : "목",
@@ -3212,7 +3214,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/792694/thumbnail/thumbnail_IMAG21_5419c2b6-6def-4fcc-b54c-9a94ec2f2b75.jpg",
         genre : ["스릴러"],
         likeCount : 1512,
-        overallLikeCount: null,
+        
         likeProportion: 0.0011083,
         firstDate : "2022-03-26",
         dayOfWeek : "일",
@@ -3226,7 +3228,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818528/thumbnail/thumbnail_IMAG21_0f920e3a-0a21-4a77-a606-ab8eff26004b.jpg",
         genre : ["로맨스"],
         likeCount : 1511,
-        overallLikeCount: null,
+        
         likeProportion: 0.00110757,
         firstDate : "2023-11-19",
         dayOfWeek : "월",
@@ -3240,7 +3242,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/759940/thumbnail/thumbnail_IMAG21_3976787538998813497.jpg",
         genre : ["판타지"],
         likeCount : 1504,
-        overallLikeCount: null,
+        
         likeProportion: 0.00110244,
         firstDate : "2020-11-22",
         dayOfWeek : "월",
@@ -3254,7 +3256,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/778325/thumbnail/thumbnail_IMAG21_322b2b71-f141-499e-ab6f-d8809d549e0c.jpg",
         genre : ["로맨스"],
         likeCount : 1481,
-        overallLikeCount: null,
+        
         likeProportion: 0.00108558,
         firstDate : "2021-08-26",
         dayOfWeek : "금",
@@ -3268,7 +3270,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/759567/thumbnail/thumbnail_IMAG21_ba9e186a-5e0c-4d16-9baa-0dd8311f9694.jpg",
         genre : [],
         likeCount : 1477,
-        overallLikeCount: null,
+        
         likeProportion: 0.00108265,
         firstDate : "2020-11-28",
         dayOfWeek : "일",
@@ -3282,7 +3284,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808677/thumbnail/thumbnail_IMAG21_d95fd97f-d84b-4726-96c5-bd3b06a27cf7.jpg",
         genre : ["로맨스"],
         likeCount : 1476,
-        overallLikeCount: null,
+        
         likeProportion: 0.00108191,
         firstDate : "2023-04-22",
         dayOfWeek : "일",
@@ -3296,7 +3298,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817048/thumbnail/thumbnail_IMAG21_5a6161fc-9ede-4feb-b3f1-b621ea7e4844.jpg",
         genre : ["로맨스"],
         likeCount : 1470,
-        overallLikeCount: null,
+        
         likeProportion: 0.00107752,
         firstDate : "2023-09-21",
         dayOfWeek : "금",
@@ -3310,7 +3312,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/768474/thumbnail/thumbnail_IMAG21_7cb64c7e-2528-4057-8118-ad1df1acf2f7.jpg",
         genre : ["스릴러"],
         likeCount : 1466,
-        overallLikeCount: null,
+        
         likeProportion: 0.00107458,
         firstDate : "2022-01-29",
         dayOfWeek : "일",
@@ -3324,7 +3326,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/798326/thumbnail/thumbnail_IMAG21_b64bc0f5-24d2-4c78-8654-bd2b08860108.jpg",
         genre : "액션,판타지",
         likeCount : 1456,
-        overallLikeCount: null,
+        
         likeProportion: 0.00106725,
         firstDate : "2022-08-01",
         dayOfWeek : "화",
@@ -3338,7 +3340,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817247/thumbnail/thumbnail_IMAG21_24857d8d-df9b-42c7-a34b-4618de4ba258.jpg",
         genre : ["로맨스"],
         likeCount : 1452,
-        overallLikeCount: null,
+        
         likeProportion: 0.00106432,
         firstDate : "2023-10-02",
         dayOfWeek : "화",
@@ -3352,7 +3354,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/806888/thumbnail/thumbnail_IMAG21_6db5b5ec-f275-4b5f-8e1d-d6acfa9c487a.jpeg",
         genre : ["액션"],
         likeCount : 1439,
-        overallLikeCount: null,
+        
         likeProportion: 0.00105479,
         firstDate : "2023-02-28",
         dayOfWeek : "수",
@@ -3366,7 +3368,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802551/thumbnail/thumbnail_IMAG21_04fdcd36-c440-4feb-8b3d-573b3584a32f.jpg",
         genre : ["로맨스"],
         likeCount : 1424,
-        overallLikeCount: null,
+        
         likeProportion: 0.0010438,
         firstDate : "2022-11-20",
         dayOfWeek : "월",
@@ -3380,7 +3382,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/792280/thumbnail/thumbnail_IMAG21_ed25f3e6-0834-4b13-8d29-34d78037b8c5.jpg",
         genre : ["스릴러"],
         likeCount : 1417,
-        overallLikeCount: null,
+        
         likeProportion: 0.00103867,
         firstDate : "2022-03-16",
         dayOfWeek : "목",
@@ -3394,7 +3396,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/794423/thumbnail/thumbnail_IMAG21_78b255d2-1610-4884-8226-6d2894c6fd35.jpg",
         genre : ["로맨스"],
         likeCount : 1404,
-        overallLikeCount: null,
+        
         likeProportion: 0.00102914,
         firstDate : "2022-05-05",
         dayOfWeek : "금",
@@ -3408,7 +3410,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/819020/thumbnail/thumbnail_IMAG21_6b7f777b-51e7-4b23-8c87-efcdd483e81b.jpg",
         genre : ["로맨스"],
         likeCount : 1385,
-        overallLikeCount: null,
+        
         likeProportion: 0.00101521,
         firstDate : "2023-11-25",
         dayOfWeek : "일",
@@ -3422,7 +3424,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/801580/thumbnail/thumbnail_IMAG21_8982bf20-ea21-4425-b95f-3bbb2d81102f.jpg",
         genre : ["로맨스"],
         likeCount : 1353,
-        overallLikeCount: null,
+        
         likeProportion: 9.91754E-4,
         firstDate : "2022-10-22",
         dayOfWeek : "일",
@@ -3436,7 +3438,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812414/thumbnail/thumbnail_IMAG21_d6cbf0a2-9f22-4f8a-b3f9-411e39804dee.jpg",
         genre : ["로맨스"],
         likeCount : 1346,
-        overallLikeCount: null,
+        
         likeProportion: 9.86623E-4,
         firstDate : "2023-06-26",
         dayOfWeek : "화",
@@ -3450,7 +3452,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/794383/thumbnail/thumbnail_IMAG21_21ee5311-021a-405a-bc57-eea051c54552.jpg",
         genre : ["액션"],
         likeCount : 1342,
-        overallLikeCount: null,
+        
         likeProportion: 9.83691E-4,
         firstDate : "2022-05-05",
         dayOfWeek : "금",
@@ -3464,7 +3466,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/797253/thumbnail/thumbnail_IMAG21_3adf296f-505b-4824-98b0-61c28432fb2d.jpg",
         genre : [],
         likeCount : 1341,
-        overallLikeCount: null,
+        
         likeProportion: 9.82958E-4,
         firstDate : "2022-07-10",
         dayOfWeek : "월",
@@ -3478,7 +3480,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812161/thumbnail/thumbnail_IMAG21_076b480a-84eb-46be-b6b0-906e66902f68.jpg",
         genre : ["스릴러"],
         likeCount : 1334,
-        overallLikeCount: null,
+        
         likeProportion: 9.77827E-4,
         firstDate : "2023-06-26",
         dayOfWeek : "화",
@@ -3492,7 +3494,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/783050/thumbnail/thumbnail_IMAG21_ca9a662b-7a79-4e80-94c9-d62ebe597aad.jpg",
         genre : ["액션"],
         likeCount : 1334,
-        overallLikeCount: null,
+        
         likeProportion: 9.77827E-4,
         firstDate : "2021-10-17",
         dayOfWeek : "월",
@@ -3506,7 +3508,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812851/thumbnail/thumbnail_IMAG21_2a769f30-0067-470b-838a-18856e7e0f8f.jpg",
         genre : ["판타지"],
         likeCount : 1316,
-        overallLikeCount: null,
+        
         likeProportion: 9.64633E-4,
         firstDate : "2023-07-14",
         dayOfWeek : "수,토,",
@@ -3520,7 +3522,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818192/thumbnail/thumbnail_IMAG21_a8988c53-5efd-4506-b046-b46bccd90c56.jpg",
         genre : ["판타지"],
         likeCount : 1314,
-        overallLikeCount: null,
+        
         likeProportion: 9.63167E-4,
         firstDate : "2023-10-30",
         dayOfWeek : "화",
@@ -3534,7 +3536,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/701700/thumbnail/thumbnail_IMAG21_14be195a-a8e9-4324-8d48-226eea667453.jpg",
         genre : ["판타지"],
         likeCount : 1312,
-        overallLikeCount: null,
+        
         likeProportion: 9.61701E-4,
         firstDate : "2017-10-11",
         dayOfWeek : "목",
@@ -3548,7 +3550,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/761496/thumbnail/thumbnail_IMAG21_7306581563690476642.jpg",
         genre : [],
         likeCount : 1308,
-        overallLikeCount: null,
+        
         likeProportion: 9.58769E-4,
         firstDate : "2020-12-10",
         dayOfWeek : "금",
@@ -3562,7 +3564,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804868/thumbnail/thumbnail_IMAG21_ea78afa0-0987-46e8-901c-6f0aef44bc0c.jpg",
         genre : ["로맨스"],
         likeCount : 1303,
-        overallLikeCount: null,
+        
         likeProportion: 9.55104E-4,
         firstDate : "2023-01-16",
         dayOfWeek : "화",
@@ -3576,7 +3578,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814362/thumbnail/thumbnail_IMAG21_16247d91-5c88-43aa-80e3-f28b2daf868d.jpg",
         genre : ["로맨스"],
         likeCount : 1291,
-        overallLikeCount: null,
+        
         likeProportion: 9.46308E-4,
         firstDate : "2023-08-27",
         dayOfWeek : "월",
@@ -3590,7 +3592,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818643/thumbnail/thumbnail_IMAG21_ad0244b7-6e4c-4ed1-8374-dff3e95ddb24.jpg",
         genre : ["로맨스"],
         likeCount : 1288,
-        overallLikeCount: null,
+        
         likeProportion: 9.44109E-4,
         firstDate : "2023-11-11",
         dayOfWeek : "일",
@@ -3604,7 +3606,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814834/thumbnail/thumbnail_IMAG21_6e0ec9df-5747-4cbf-a083-7b13ce5f9741.jpg",
         genre : ["무협"],
         likeCount : 1286,
-        overallLikeCount: null,
+        
         likeProportion: 9.42643E-4,
         firstDate : "2023-09-04",
         dayOfWeek : "화",
@@ -3618,7 +3620,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802378/thumbnail/thumbnail_IMAG21_125f2441-6e6a-4cea-bfec-2969a1107fcf.jpg",
         genre : ["로맨스"],
         likeCount : 1285,
-        overallLikeCount: null,
+        
         likeProportion: 9.4191E-4,
         firstDate : "2022-11-16",
         dayOfWeek : "목",
@@ -3632,7 +3634,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/800726/thumbnail/thumbnail_IMAG21_f8d6b47c-3af0-49ef-9aa7-3b6ea28e4aa8.jpg",
         genre : ["판타지"],
         likeCount : 1277,
-        overallLikeCount: null,
+        
         likeProportion: 9.36046E-4,
         firstDate : "2023-12-11",
         dayOfWeek : "화",
@@ -3646,7 +3648,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/746833/thumbnail/thumbnail_IMAG21_5731afd1-d1fc-4755-8de0-73055fd7cfed.jpg",
         genre : [],
         likeCount : 1275,
-        overallLikeCount: null,
+        
         likeProportion: 9.3458E-4,
         firstDate : "2020-06-12",
         dayOfWeek : "토",
@@ -3660,7 +3662,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814599/thumbnail/thumbnail_IMAG21_b9dcaa4f-aa1b-400c-b574-fefe1ecf022e.jpg",
         genre : ["로맨스"],
         likeCount : 1268,
-        overallLikeCount: null,
+        
         likeProportion: 9.29449E-4,
         firstDate : "2023-08-29",
         dayOfWeek : "수",
@@ -3674,7 +3676,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/780063/thumbnail/thumbnail_IMAG21_3978478587194062641.jpg",
         genre : ["로맨스"],
         likeCount : 1267,
-        overallLikeCount: null,
+        
         likeProportion: 9.28716E-4,
         firstDate : "2021-09-23",
         dayOfWeek : "금",
@@ -3688,7 +3690,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804783/thumbnail/thumbnail_IMAG21_a80f7760-3c93-4002-84d4-eece85593f84.jpg",
         genre : ["스릴러"],
         likeCount : 1252,
-        overallLikeCount: null,
+        
         likeProportion: 9.17721E-4,
         firstDate : "2023-01-09",
         dayOfWeek : "화",
@@ -3702,7 +3704,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/799220/thumbnail/thumbnail_IMAG21_c4b3d6de-861e-46f2-983c-cb42ac787cf1.jpg",
         genre : ["로맨스"],
         likeCount : 1242,
-        overallLikeCount: null,
+        
         likeProportion: 9.10391E-4,
         firstDate : "2022-08-18",
         dayOfWeek : "금",
@@ -3716,7 +3718,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/702608/thumbnail/thumbnail_IMAG21_7005692479348499809.jpg",
         genre : [],
         likeCount : 1237,
-        overallLikeCount: null,
+        
         likeProportion: 9.06726E-4,
         firstDate : "2017-11-13",
         dayOfWeek : "화",
@@ -3730,7 +3732,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802039/thumbnail/thumbnail_IMAG21_a7a82a34-586c-4acf-b6f2-ab052be786f1.jpg",
         genre : ["일상"],
         likeCount : 1235,
-        overallLikeCount: null,
+        
         likeProportion: 9.0526E-4,
         firstDate : "2022-11-02",
         dayOfWeek : "월,목,",
@@ -3744,7 +3746,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813563/thumbnail/thumbnail_IMAG21_0cc17211-31da-4b94-a1e6-5b017fe9aadc.jpg",
         genre : ["무협"],
         likeCount : 1233,
-        overallLikeCount: null,
+        
         likeProportion: 9.03794E-4,
         firstDate : "2023-07-26",
         dayOfWeek : "목",
@@ -3758,7 +3760,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807775/thumbnail/thumbnail_IMAG21_91cb8ff9-5be3-40ba-8df9-661972577cd2.jpg",
         genre : ["스포츠"],
         likeCount : 1222,
-        overallLikeCount: null,
+        
         likeProportion: 8.95731E-4,
         firstDate : "2023-03-26",
         dayOfWeek : "월",
@@ -3772,7 +3774,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817635/thumbnail/thumbnail_IMAG21_c4da527a-594d-4bf4-9e33-4456ebde0116.jpg",
         genre : ["로맨스"],
         likeCount : 1212,
-        overallLikeCount: null,
+        
         likeProportion: 8.88401E-4,
         firstDate : "2023-10-12",
         dayOfWeek : "금",
@@ -3786,7 +3788,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812339/thumbnail/thumbnail_IMAG21_0a671218-21a8-4aa6-be1a-ee577c56f72e.jpg",
         genre : [],
         likeCount : 1197,
-        overallLikeCount: null,
+        
         likeProportion: 8.77406E-4,
         firstDate : "2023-07-07",
         dayOfWeek : "토",
@@ -3800,7 +3802,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/758439/thumbnail/thumbnail_IMAG21_9bccc3c8-13bd-47c4-b711-1865c3479037.jpg",
         genre : ["판타지"],
         likeCount : 1196,
-        overallLikeCount: null,
+        
         likeProportion: 8.76673E-4,
         firstDate : "2020-11-18",
         dayOfWeek : "목",
@@ -3814,7 +3816,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818205/thumbnail/thumbnail_IMAG21_7003bf78-c2c2-47b4-95cd-a69109f6331e.jpg",
         genre : ["로맨스"],
         likeCount : 1191,
-        overallLikeCount: null,
+        
         likeProportion: 8.73008E-4,
         firstDate : "2023-10-30",
         dayOfWeek : "화",
@@ -3828,7 +3830,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812168/thumbnail/thumbnail_IMAG21_b0c2ba00-3f16-4e96-923f-920a746aa883.jpg",
         genre : ["일상"],
         likeCount : 1190,
-        overallLikeCount: null,
+        
         likeProportion: 8.72275E-4,
         firstDate : "2023-06-24",
         dayOfWeek : "수,일,",
@@ -3842,7 +3844,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/729047/thumbnail/thumbnail_IMAG21_08bf919c-8385-4268-add9-ffdbd3360ba9.jpg",
         genre : ["판타지"],
         likeCount : 1186,
-        overallLikeCount: null,
+        
         likeProportion: 8.69343E-4,
         firstDate : "2019-07-12",
         dayOfWeek : "토",
@@ -3856,7 +3858,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/786496/thumbnail/thumbnail_IMAG21_c3f8631d-abd5-48b8-9f72-25faafd32904.jpg",
         genre : ["판타지"],
         likeCount : 1183,
-        overallLikeCount: null,
+        
         likeProportion: 8.67144E-4,
         firstDate : "2021-12-17",
         dayOfWeek : "토",
@@ -3870,7 +3872,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/790840/thumbnail/thumbnail_IMAG21_3bbb8087-0d6e-4ca6-9055-9996fd9b4859.jpg",
         genre : ["로맨스"],
         likeCount : 1182,
-        overallLikeCount: null,
+        
         likeProportion: 8.66411E-4,
         firstDate : "2022-02-23",
         dayOfWeek : "목",
@@ -3884,7 +3886,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/655746/thumbnail/thumbnail_IMAG21_3977301010156642611.jpg",
         genre : ["판타지"],
         likeCount : 1182,
-        overallLikeCount: null,
+        
         likeProportion: 8.66411E-4,
         firstDate : "2015-06-06",
         dayOfWeek : "일",
@@ -3898,7 +3900,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/796302/thumbnail/thumbnail_IMAG21_81dd7f90-eedd-4dc8-9bab-f3a18a5febb6.jpg",
         genre : ["스릴러"],
         likeCount : 1177,
-        overallLikeCount: null,
+        
         likeProportion: 8.62746E-4,
         firstDate : "2022-06-22",
         dayOfWeek : "목",
@@ -3912,7 +3914,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/800788/thumbnail/thumbnail_IMAG21_20e24a76-68af-4a5c-a4ae-2ac2b25cc1d1.jpg",
         genre : ["판타지"],
         likeCount : 1168,
-        overallLikeCount: null,
+        
         likeProportion: 8.56149E-4,
         firstDate : "2022-10-08",
         dayOfWeek : "일",
@@ -3926,7 +3928,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818401/thumbnail/thumbnail_IMAG21_cd86e2ad-b79b-45d2-9b64-92776e30bd3d.jpg",
         genre : [],
         likeCount : 1158,
-        overallLikeCount: null,
+        
         likeProportion: 8.48819E-4,
         firstDate : "2023-11-02",
         dayOfWeek : "금",
@@ -3940,7 +3942,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802835/thumbnail/thumbnail_IMAG21_72a81c26-26f6-41dc-8645-237de4484445.jpg",
         genre : ["로맨스"],
         likeCount : 1157,
-        overallLikeCount: null,
+        
         likeProportion: 8.48086E-4,
         firstDate : "2022-11-22",
         dayOfWeek : "수",
@@ -3954,7 +3956,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/816659/thumbnail/thumbnail_IMAG21_13d24e4e-58af-4517-918c-8bd7d12de130.jpg",
         genre : [],
         likeCount : 1154,
-        overallLikeCount: null,
+        
         likeProportion: 8.45887E-4,
         firstDate : "2023-09-14",
         dayOfWeek : "금",
@@ -3968,7 +3970,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808272/thumbnail/thumbnail_IMAG21_92f35240-3cfd-49c6-a75e-b2715f8b2d98.jpg",
         genre : ["액션"],
         likeCount : 1148,
-        overallLikeCount: null,
+        
         likeProportion: 8.41489E-4,
         firstDate : "2023-04-11",
         dayOfWeek : "수",
@@ -3982,7 +3984,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/741825/thumbnail/thumbnail_IMAG21_c830f1df-cd0e-4b7f-aa4e-84d59c88a892.jpg",
         genre : ["판타지"],
         likeCount : 1140,
-        overallLikeCount: null,
+        
         likeProportion: 8.35625E-4,
         firstDate : "2020-03-04",
         dayOfWeek : "목",
@@ -3996,7 +3998,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/798172/thumbnail/thumbnail_IMAG21_8bcf6118-e095-44a1-b587-778a48caab52.jpg",
         genre : ["로맨스"],
         likeCount : 1139,
-        overallLikeCount: null,
+        
         likeProportion: 8.34892E-4,
         firstDate : "2022-07-30",
         dayOfWeek : "일",
@@ -4010,7 +4012,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/789966/thumbnail/thumbnail_IMAG21_3774973501885266274.jpg",
         genre : ["액션"],
         likeCount : 1138,
-        overallLikeCount: null,
+        
         likeProportion: 8.34159E-4,
         firstDate : "2022-02-12",
         dayOfWeek : "일",
@@ -4024,7 +4026,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/729964/thumbnail/thumbnail_IMAG21_3625061d-dadd-4e0c-96cd-9fcf1fe584c9.jpg",
         genre : [],
         likeCount : 1132,
-        overallLikeCount: null,
+        
         likeProportion: 8.29761E-4,
         firstDate : "2019-07-03",
         dayOfWeek : "목",
@@ -4038,7 +4040,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802389/thumbnail/thumbnail_IMAG21_2c396e53-5710-47b4-b9ae-0b9582454479.jpg",
         genre : ["스릴러"],
         likeCount : 1120,
-        overallLikeCount: null,
+        
         likeProportion: 8.20965E-4,
         firstDate : "2022-11-14",
         dayOfWeek : "화",
@@ -4052,7 +4054,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/778991/thumbnail/thumbnail_IMAG21_3544721241449849699.jpg",
         genre : ["로맨스"],
         likeCount : 1120,
-        overallLikeCount: null,
+        
         likeProportion: 8.20965E-4,
         firstDate : "2021-08-28",
         dayOfWeek : "일",
@@ -4066,7 +4068,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814587/thumbnail/thumbnail_IMAG21_cfba24ca-f240-461e-9aa0-a5fb40bc3b0d.jpg",
         genre : ["스포츠"],
         likeCount : 1117,
-        overallLikeCount: null,
+        
         likeProportion: 8.18765E-4,
         firstDate : "2023-08-24",
         dayOfWeek : "금",
@@ -4080,7 +4082,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/711422/thumbnail/thumbnail_IMAG21_fd8cb5db-01ab-4c7b-a2a9-920d4479d5f7.jpg",
         genre : ["무협"],
         likeCount : 1117,
-        overallLikeCount: null,
+        
         likeProportion: 8.18765E-4,
         firstDate : "2018-05-10",
         dayOfWeek : "화,금,",
@@ -4094,7 +4096,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818888/thumbnail/thumbnail_IMAG21_fa6e7e68-693a-4ce9-b6bd-817b63102f14.jpg",
         genre : ["판타지"],
         likeCount : 1105,
-        overallLikeCount: null,
+        
         likeProportion: 8.09969E-4,
         firstDate : "2023-11-21",
         dayOfWeek : "수",
@@ -4108,7 +4110,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/756140/thumbnail/thumbnail_IMAG21_7c527b6e-773f-40c8-aa1a-5cbd9e7dc482.jpg",
         genre : ["판타지"],
         likeCount : 1092,
-        overallLikeCount: null,
+        
         likeProportion: 8.0044E-4,
         firstDate : "2020-12-27",
         dayOfWeek : "월",
@@ -4122,7 +4124,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/778656/thumbnail/thumbnail_IMAG21_f2b7be76-da44-4f83-b16d-0448f9020f16.jpg",
         genre : ["스릴러"],
         likeCount : 1092,
-        overallLikeCount: null,
+        
         likeProportion: 8.0044E-4,
         firstDate : "2021-10-22",
         dayOfWeek : "토",
@@ -4136,7 +4138,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/793853/thumbnail/thumbnail_IMAG21_f4d3c4d2-b594-4123-925e-e141fdebd4da.jpg",
         genre : ["로맨스"],
         likeCount : 1085,
-        overallLikeCount: null,
+        
         likeProportion: 7.95309E-4,
         firstDate : "2022-04-21",
         dayOfWeek : "금",
@@ -4150,7 +4152,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/799250/thumbnail/thumbnail_IMAG21_04fec725-d0f1-4434-990d-ada248a1e95d.jpg",
         genre : ["액션"],
         likeCount : 1080,
-        overallLikeCount: null,
+        
         likeProportion: 7.91644E-4,
         firstDate : "2022-08-22",
         dayOfWeek : "화",
@@ -4164,7 +4166,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817019/thumbnail/thumbnail_IMAG21_6845792d-40db-4cd9-ab7a-9b86995f3383.jpg",
         genre : ["로맨스"],
         likeCount : 1079,
-        overallLikeCount: null,
+        
         likeProportion: 7.90911E-4,
         firstDate : "2023-09-24",
         dayOfWeek : "월",
@@ -4178,7 +4180,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/797582/thumbnail/thumbnail_IMAG21_c1588ed1-f012-4592-ae45-ff9b177fe9f9.jpg",
         genre : ["로맨스"],
         likeCount : 1078,
-        overallLikeCount: null,
+        
         likeProportion: 7.90178E-4,
         firstDate : "2022-07-25",
         dayOfWeek : "화",
@@ -4192,7 +4194,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804145/thumbnail/thumbnail_IMAG21_4fef0e05-88f3-44a6-8851-1f1c474e0678.jpg",
         genre : ["스릴러"],
         likeCount : 1075,
-        overallLikeCount: null,
+        
         likeProportion: 7.87979E-4,
         firstDate : "2022-12-27",
         dayOfWeek : "수",
@@ -4206,7 +4208,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802940/thumbnail/thumbnail_IMAG21_27ad5bf3-0455-4ac2-b3ae-dbc40c247407.jpg",
         genre : ["스릴러"],
         likeCount : 1071,
-        overallLikeCount: null,
+        
         likeProportion: 7.85047E-4,
         firstDate : "2022-11-29",
         dayOfWeek : "수",
@@ -4220,7 +4222,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814421/thumbnail/thumbnail_IMAG21_d0bd8511-b124-41ce-84af-a6a65da3029a.jpg",
         genre : "액션,판타지",
         likeCount : 1070,
-        overallLikeCount: null,
+        
         likeProportion: 7.84314E-4,
         firstDate : "2023-08-29",
         dayOfWeek : "수",
@@ -4234,7 +4236,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812381/thumbnail/thumbnail_IMAG21_616c0474-a8e2-4caf-a986-d7528c4feb55.jpg",
         genre : ["스릴러"],
         likeCount : 1064,
-        overallLikeCount: null,
+        
         likeProportion: 7.79916E-4,
         firstDate : "2023-06-27",
         dayOfWeek : "수",
@@ -4248,7 +4250,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813443/thumbnail/thumbnail_IMAG21_a0397983-ed25-4101-babe-17b15cd8ad08.jpg",
         genre : ["무협"],
         likeCount : 1060,
-        overallLikeCount: null,
+        
         likeProportion: 7.76984E-4,
         firstDate : "2023-08-04",
         dayOfWeek : "토",
@@ -4262,7 +4264,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/816913/thumbnail/thumbnail_IMAG21_5cdd430d-02b5-4d29-b048-9c046e6ffda4.jpg",
         genre : ["판타지"],
         likeCount : 1059,
-        overallLikeCount: null,
+        
         likeProportion: 7.76251E-4,
         firstDate : "2023-09-21",
         dayOfWeek : "금",
@@ -4276,7 +4278,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/698918/thumbnail/thumbnail_IMAG21_3689346629442483042.jpg",
         genre : ["스릴러"],
         likeCount : 1056,
-        overallLikeCount: null,
+        
         likeProportion: 7.74052E-4,
         firstDate : "2017-07-24",
         dayOfWeek : "화",
@@ -4290,7 +4292,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814817/thumbnail/thumbnail_IMAG21_444e5c19-39a5-493c-aa6f-5892ccda22b1.jpg",
         genre : ["로맨스"],
         likeCount : 1053,
-        overallLikeCount: null,
+        
         likeProportion: 7.71853E-4,
         firstDate : "2023-09-18",
         dayOfWeek : "화",
@@ -4304,7 +4306,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/753842/thumbnail/thumbnail_IMAG21_be2a14af-d7bc-4985-b43c-a2a63695d3f4.jpg",
         genre : ["판타지"],
         likeCount : 1043,
-        overallLikeCount: null,
+        
         likeProportion: 7.64523E-4,
         firstDate : "2020-09-19",
         dayOfWeek : "일",
@@ -4318,7 +4320,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817366/thumbnail/thumbnail_IMAG21_078140be-9018-4af2-9e52-d439446302f6.jpg",
         genre : ["로맨스"],
         likeCount : 1040,
-        overallLikeCount: null,
+        
         likeProportion: 7.62324E-4,
         firstDate : "2023-10-09",
         dayOfWeek : "화",
@@ -4332,7 +4334,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807582/thumbnail/thumbnail_IMAG21_1c7a2387-173f-4def-8764-f3060c169275.jpg",
         genre : ["로맨스"],
         likeCount : 1035,
-        overallLikeCount: null,
+        
         likeProportion: 7.58659E-4,
         firstDate : "2023-03-27",
         dayOfWeek : "화",
@@ -4346,7 +4348,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809722/thumbnail/thumbnail_IMAG21_bc942644-b79c-45ff-a8c6-4ac29423ace3.jpg",
         genre : ["판타지"],
         likeCount : 1034,
-        overallLikeCount: null,
+        
         likeProportion: 7.57926E-4,
         firstDate : "2023-06-23",
         dayOfWeek : "토",
@@ -4360,7 +4362,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/654138/thumbnail/thumbnail_IMAG21_3559587746721839161.jpg",
         genre : [],
         likeCount : 1031,
-        overallLikeCount: null,
+        
         likeProportion: 7.55727E-4,
         firstDate : "2015-05-22",
         dayOfWeek : "화",
@@ -4374,7 +4376,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818434/thumbnail/thumbnail_IMAG21_d12a9729-97d2-459a-82c2-9861ebd3d794.jpg",
         genre : ["판타지"],
         likeCount : 1030,
-        overallLikeCount: null,
+        
         likeProportion: 7.54994E-4,
         firstDate : "2023-11-06",
         dayOfWeek : "화",
@@ -4388,7 +4390,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/798303/thumbnail/thumbnail_IMAG21_ba8821d3-95a0-4916-a95d-7ab265982ef8.jpg",
         genre : ["로맨스"],
         likeCount : 1030,
-        overallLikeCount: null,
+        
         likeProportion: 7.54994E-4,
         firstDate : "2022-07-30",
         dayOfWeek : "일",
@@ -4402,7 +4404,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/785727/thumbnail/thumbnail_IMAG21_4e91ad84-dffc-4475-af5e-a6130136edfb.jpg",
         genre : [],
         likeCount : 1018,
-        overallLikeCount: null,
+        
         likeProportion: 7.46198E-4,
         firstDate : "2021-12-29",
         dayOfWeek : "목",
@@ -4416,7 +4418,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/783877/thumbnail/thumbnail_IMAG21_0649e854-9113-4a06-a9fe-7cad72be8c9a.jpg",
         genre : ["무협"],
         likeCount : 1006,
-        overallLikeCount: null,
+        
         likeProportion: 7.37402E-4,
         firstDate : "2021-10-25",
         dayOfWeek : "화",
@@ -4430,7 +4432,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/794161/thumbnail/thumbnail_IMAG21_b83324b0-799f-4125-8950-4498053474d4.jpg",
         genre : ["로맨스"],
         likeCount : 990,
-        overallLikeCount: null,
+        
         likeProportion: 7.25674E-4,
         firstDate : "2022-05-06",
         dayOfWeek : "토",
@@ -4444,7 +4446,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818806/thumbnail/thumbnail_IMAG21_e1b66355-0263-4fae-938f-ba9f8ff1ec9f.jpg",
         genre : ["로맨스"],
         likeCount : 985,
-        overallLikeCount: null,
+        
         likeProportion: 7.22009E-4,
         firstDate : "2023-11-18",
         dayOfWeek : "일",
@@ -4458,7 +4460,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818588/thumbnail/thumbnail_IMAG21_1819294f-07f1-439c-8a25-7bd880840fef.jpg",
         genre : [],
         likeCount : 980,
-        overallLikeCount: null,
+        
         likeProportion: 7.18344E-4,
         firstDate : "2023-11-12",
         dayOfWeek : "월",
@@ -4472,7 +4474,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/729036/thumbnail/thumbnail_IMAG21_e7de7318-0952-49a2-9e24-335e0a321ce8.jpg",
         genre : ["판타지"],
         likeCount : 977,
-        overallLikeCount: null,
+        
         likeProportion: 7.16145E-4,
         firstDate : "2019-06-06",
         dayOfWeek : "금",
@@ -4486,7 +4488,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/803767/thumbnail/thumbnail_IMAG21_63c2a7a4-ca93-4ab4-8224-769b3dfa692b.jpg",
         genre : ["로맨스"],
         likeCount : 976,
-        overallLikeCount: null,
+        
         likeProportion: 7.15412E-4,
         firstDate : "2022-12-15",
         dayOfWeek : "금",
@@ -4500,7 +4502,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814595/thumbnail/thumbnail_IMAG21_dffe09d7-c1ec-4cb3-8d6d-2ac82c50ace4.jpg",
         genre : ["로맨스"],
         likeCount : 974,
-        overallLikeCount: null,
+        
         likeProportion: 7.13946E-4,
         firstDate : "2023-08-25",
         dayOfWeek : "토",
@@ -4514,7 +4516,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802033/thumbnail/thumbnail_IMAG21_ccce5530-0976-4a0d-b76c-d54c5620cdd5.jpg",
         genre : ["로맨스"],
         likeCount : 973,
-        overallLikeCount: null,
+        
         likeProportion: 7.13213E-4,
         firstDate : "2022-11-06",
         dayOfWeek : "월",
@@ -4528,7 +4530,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809622/thumbnail/thumbnail_IMAG21_4b77015a-325c-4ac1-9964-fd50ff9e7367.jpg",
         genre : ["로맨스"],
         likeCount : 958,
-        overallLikeCount: null,
+        
         likeProportion: 7.02218E-4,
         firstDate : "2023-05-20",
         dayOfWeek : "일",
@@ -4542,7 +4544,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/794105/thumbnail/thumbnail_IMAG21_bc1d4038-94fc-428c-8e78-e2cb9ab3643e.jpg",
         genre : ["로맨스"],
         likeCount : 954,
-        overallLikeCount: null,
+        
         likeProportion: 6.99286E-4,
         firstDate : "2022-05-02",
         dayOfWeek : "화",
@@ -4556,7 +4558,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/811634/thumbnail/thumbnail_IMAG21_4b8d87f9-e5f1-42ec-a2f6-9d1936901087.jpg",
         genre : ["로맨스"],
         likeCount : 944,
-        overallLikeCount: null,
+        
         likeProportion: 6.91956E-4,
         firstDate : "2023-06-02",
         dayOfWeek : "토",
@@ -4570,7 +4572,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805702/thumbnail/thumbnail_IMAG21_23e30a03-98e2-4a72-a161-49bf171d1d08.jpeg",
         genre : ["로맨스"],
         likeCount : 939,
-        overallLikeCount: null,
+        
         likeProportion: 6.88291E-4,
         firstDate : "2023-02-05",
         dayOfWeek : "월",
@@ -4584,7 +4586,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807306/thumbnail/thumbnail_IMAG21_69a712a4-11e8-48bf-9b0c-a26f28c405d8.jpg",
         genre : ["일상"],
         likeCount : 935,
-        overallLikeCount: null,
+        
         likeProportion: 6.85359E-4,
         firstDate : "2023-03-21",
         dayOfWeek : "수",
@@ -4598,7 +4600,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/730425/thumbnail/thumbnail_IMAG21_3835209134721021750.jpg",
         genre : ["판타지"],
         likeCount : 933,
-        overallLikeCount: null,
+        
         likeProportion: 6.83893E-4,
         firstDate : "2019-07-02",
         dayOfWeek : "수",
@@ -4612,7 +4614,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818403/thumbnail/thumbnail_IMAG21_86a7a866-aa7c-4c95-9af7-9969077c5b28.jpg",
         genre : ["로맨스"],
         likeCount : 932,
-        overallLikeCount: null,
+        
         likeProportion: 6.8316E-4,
         firstDate : "2023-11-05",
         dayOfWeek : "월",
@@ -4626,7 +4628,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/799509/thumbnail/thumbnail_IMAG21_1ef92df7-7d7f-48ab-9c8d-f342aad36d08.jpg",
         genre : [],
         likeCount : 926,
-        overallLikeCount: null,
+        
         likeProportion: 6.78762E-4,
         firstDate : "2022-09-10",
         dayOfWeek : "일",
@@ -4640,7 +4642,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/806505/thumbnail/thumbnail_IMAG21_bb0e3058-ae71-4e6a-a74d-9dac77febfd1.jpg",
         genre : ["판타지"],
         likeCount : 925,
-        overallLikeCount: null,
+        
         likeProportion: 6.78029E-4,
         firstDate : "2023-02-21",
         dayOfWeek : "수",
@@ -4654,7 +4656,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/783540/thumbnail/thumbnail_IMAG21_68171ccc-7365-47ed-babe-6e20dc3fc3b5.jpg",
         genre : ["로맨스"],
         likeCount : 913,
-        overallLikeCount: null,
+        
         likeProportion: 6.69233E-4,
         firstDate : "2021-10-28",
         dayOfWeek : "금",
@@ -4668,7 +4670,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/795333/thumbnail/thumbnail_IMAG21_ed9c8b02-6fe0-405f-b58c-d37be88e18d2.jpg",
         genre : ["스릴러"],
         likeCount : 905,
-        overallLikeCount: null,
+        
         likeProportion: 6.63369E-4,
         firstDate : "2022-06-07",
         dayOfWeek : "수",
@@ -4682,7 +4684,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/786269/thumbnail/thumbnail_IMAG21_b3eb90c9-7e2f-4140-9c52-06a3f26a584a.jpg",
         genre : ["판타지"],
         likeCount : 902,
-        overallLikeCount: null,
+        
         likeProportion: 6.6117E-4,
         firstDate : "2022-02-11",
         dayOfWeek : "토",
@@ -4696,7 +4698,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807164/thumbnail/thumbnail_IMAG21_2dbe37c4-e501-4ba0-84c5-e839fc6d5b0c.jpg",
         genre : [],
         likeCount : 893,
-        overallLikeCount: null,
+        
         likeProportion: 6.54573E-4,
         firstDate : "2023-03-04",
         dayOfWeek : "일",
@@ -4710,7 +4712,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818149/thumbnail/thumbnail_IMAG21_96bb2c62-e38e-407f-9bcd-36c3177d9010.jpg",
         genre : [],
         likeCount : 890,
-        overallLikeCount: null,
+        
         likeProportion: 6.52374E-4,
         firstDate : "2023-10-26",
         dayOfWeek : "금",
@@ -4724,7 +4726,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/783536/thumbnail/thumbnail_IMAG21_9e7bb6e6-7ee1-4374-9f9d-4407fe10f4ff.jpg",
         genre : ["로맨스"],
         likeCount : 890,
-        overallLikeCount: null,
+        
         likeProportion: 6.52374E-4,
         firstDate : "2021-12-22",
         dayOfWeek : "목",
@@ -4738,7 +4740,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818862/thumbnail/thumbnail_IMAG21_ce547955-3515-4844-8444-98132a5147d3.jpg",
         genre : ["판타지"],
         likeCount : 887,
-        overallLikeCount: null,
+        
         likeProportion: 6.50175E-4,
         firstDate : "2023-11-25",
         dayOfWeek : "일",
@@ -4752,7 +4754,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/794102/thumbnail/thumbnail_IMAG21_f6a66314-b084-4f48-ae7d-e5ee5771f17a.jpg",
         genre : ["액션"],
         likeCount : 885,
-        overallLikeCount: null,
+        
         likeProportion: 6.48709E-4,
         firstDate : "2022-04-28",
         dayOfWeek : "금",
@@ -4766,7 +4768,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807826/thumbnail/thumbnail_IMAG21_634e489a-2a62-4078-86e0-ca1a24f55f65.jpg",
         genre : ["판타지"],
         likeCount : 884,
-        overallLikeCount: null,
+        
         likeProportion: 0.000647976,
         firstDate : "2023-04-08",
         dayOfWeek : "일",
@@ -4780,7 +4782,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805658/thumbnail/thumbnail_IMAG21_707d140c-65e7-4164-a885-dd99ea22f266.jpeg",
         genre : ["판타지"],
         likeCount : 881,
-        overallLikeCount: null,
+        
         likeProportion: 0.000645777,
         firstDate : "2023-01-26",
         dayOfWeek : "금",
@@ -4794,7 +4796,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817177/thumbnail/thumbnail_IMAG21_f692e2df-891a-458f-bc8a-e7040ebf8c6f.jpg",
         genre : [],
         likeCount : 872,
-        overallLikeCount: null,
+        
         likeProportion: 0.000639179,
         firstDate : "2023-10-05",
         dayOfWeek : "금",
@@ -4808,7 +4810,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807829/thumbnail/thumbnail_IMAG21_7a731990-1b33-4d79-8c00-e8fe03460618.jpg",
         genre : ["판타지"],
         likeCount : 870,
-        overallLikeCount: null,
+        
         likeProportion: 0.000637713,
         firstDate : "2023-04-06",
         dayOfWeek : "금",
@@ -4822,7 +4824,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/784417/thumbnail/thumbnail_IMAG21_f997ffe9-465a-4be8-a0bb-b5d0ef5cedea.jpg",
         genre : ["무협"],
         likeCount : 867,
-        overallLikeCount: null,
+        
         likeProportion: 0.000635515,
         firstDate : "2022-09-27",
         dayOfWeek : "수",
@@ -4836,7 +4838,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808910/thumbnail/thumbnail_IMAG21_7ff45d3f-5da2-49c4-b91a-ad1396ed6793.jpg",
         genre : ["로맨스"],
         likeCount : 864,
-        overallLikeCount: null,
+        
         likeProportion: 0.000633315,
         firstDate : "2023-04-26",
         dayOfWeek : "목",
@@ -4850,7 +4852,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807634/thumbnail/thumbnail_IMAG21_1da46b85-5eb9-440e-93a8-4d45d602eb9e.jpg",
         genre : [],
         likeCount : 862,
-        overallLikeCount: null,
+        
         likeProportion: 0.000631849,
         firstDate : "2023-03-21",
         dayOfWeek : "수",
@@ -4864,7 +4866,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/797844/thumbnail/thumbnail_IMAG21_1dc23c2b-ab51-4e2c-b249-4df2b57d70cc.jpg",
         genre : ["로맨스"],
         likeCount : 861,
-        overallLikeCount: null,
+        
         likeProportion: 0.000631116,
         firstDate : "2022-07-22",
         dayOfWeek : "토",
@@ -4878,7 +4880,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/790453/thumbnail/thumbnail_IMAG21_abd8870d-071d-4a9d-83bd-9d15c6866f47.jpg",
         genre : ["판타지"],
         likeCount : 859,
-        overallLikeCount: null,
+        
         likeProportion: 0.00062965,
         firstDate : "2022-02-16",
         dayOfWeek : "목",
@@ -4892,7 +4894,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/793410/thumbnail/thumbnail_IMAG21_e2baecd4-0f45-40b2-9de9-667f86e1f7f2.jpg",
         genre : ["로맨스"],
         likeCount : 849,
-        overallLikeCount: null,
+        
         likeProportion: 0.00062232,
         firstDate : "2022-04-14",
         dayOfWeek : "금",
@@ -4906,7 +4908,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/819222/thumbnail/thumbnail_IMAG21_ee651e6a-3c80-49dd-8f95-d4cebdb839e4.jpg",
         genre : [],
         likeCount : 842,
-        overallLikeCount: null,
+        
         likeProportion: 6.17189E-4,
         firstDate : "2023-12-09",
         dayOfWeek : "금,일,",
@@ -4920,7 +4922,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/797932/thumbnail/thumbnail_IMAG21_ef5d2231-8978-4ebd-8e85-8bf73437da62.jpg",
         genre : ["로맨스"],
         likeCount : 841,
-        overallLikeCount: null,
+        
         likeProportion: 6.16456E-4,
         firstDate : "2022-07-29",
         dayOfWeek : "토",
@@ -4934,7 +4936,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/760002/thumbnail/thumbnail_IMAG21_7017793712846615395.jpg",
         genre : ["로맨스"],
         likeCount : 832,
-        overallLikeCount: null,
+        
         likeProportion: 6.09859E-4,
         firstDate : "2021-01-26",
         dayOfWeek : "수",
@@ -4948,7 +4950,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812223/thumbnail/thumbnail_IMAG21_8cd5cd96-8a33-40f2-bcad-c22179ffc5b8.jpg",
         genre : [],
         likeCount : 825,
-        overallLikeCount: null,
+        
         likeProportion: 6.04728E-4,
         firstDate : "2023-06-21",
         dayOfWeek : "목",
@@ -4962,7 +4964,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813922/thumbnail/thumbnail_IMAG21_df1e3434-59bd-454c-9e3c-ee99bf8408ea.jpg",
         genre : ["로맨스"],
         likeCount : 824,
-        overallLikeCount: null,
+        
         likeProportion: 6.03995E-4,
         firstDate : "2023-08-14",
         dayOfWeek : "화",
@@ -4976,7 +4978,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814781/thumbnail/thumbnail_IMAG21_c88e92fa-e109-47d6-8a59-912749ff3a40.jpg",
         genre : ["판타지"],
         likeCount : 813,
-        overallLikeCount: null,
+        
         likeProportion: 5.95932E-4,
         firstDate : "2023-09-10",
         dayOfWeek : "월",
@@ -4990,7 +4992,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818909/thumbnail/thumbnail_IMAG21_18d98150-a811-4992-b1e8-dcf6f76cfe49.jpg",
         genre : [],
         likeCount : 810,
-        overallLikeCount: null,
+        
         likeProportion: 5.93733E-4,
         firstDate : "2023-11-20",
         dayOfWeek : "화",
@@ -5004,7 +5006,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814753/thumbnail/thumbnail_IMAG21_2de5b4bb-0038-44af-b8fa-f34fa8ac1f97.jpg",
         genre : ["판타지"],
         likeCount : 808,
-        overallLikeCount: null,
+        
         likeProportion: 5.92267E-4,
         firstDate : "2023-08-30",
         dayOfWeek : "목",
@@ -5018,7 +5020,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/784107/thumbnail/thumbnail_IMAG21_98a19f14-de9a-491d-bc11-a3103e7e671d.jpg",
         genre : ["판타지"],
         likeCount : 806,
-        overallLikeCount: null,
+        
         likeProportion: 5.90801E-4,
         firstDate : "2021-11-07",
         dayOfWeek : "월",
@@ -5032,7 +5034,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/796466/thumbnail/thumbnail_IMAG21_70551b7d-a019-47be-8944-23507a0b1dd0.jpg",
         genre : ["판타지"],
         likeCount : 793,
-        overallLikeCount: null,
+        
         likeProportion: 5.81272E-4,
         firstDate : "2022-06-28",
         dayOfWeek : "수",
@@ -5046,7 +5048,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/783814/thumbnail/thumbnail_IMAG21_3472617502213103923.jpg",
         genre : ["판타지"],
         likeCount : 792,
-        overallLikeCount: null,
+        
         likeProportion: 5.80539E-4,
         firstDate : "2021-10-29",
         dayOfWeek : "토",
@@ -5060,7 +5062,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818360/thumbnail/thumbnail_IMAG21_f3247f6d-17dc-4c05-9f5d-7ff50b8a4b4c.jpg",
         genre : [],
         likeCount : 790,
-        overallLikeCount: null,
+        
         likeProportion: 5.79073E-4,
         firstDate : "2023-11-09",
         dayOfWeek : "금",
@@ -5074,7 +5076,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/798101/thumbnail/thumbnail_IMAG21_766e3761-228a-4c04-97b8-6f0ef13cf35b.jpg",
         genre : ["액션"],
         likeCount : 787,
-        overallLikeCount: null,
+        
         likeProportion: 5.76874E-4,
         firstDate : "2022-08-01",
         dayOfWeek : "화",
@@ -5088,7 +5090,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818438/thumbnail/thumbnail_IMAG21_962ab402-f9ca-4dae-bd94-20315aaa9441.jpg",
         genre : ["판타지"],
         likeCount : 787,
-        overallLikeCount: null,
+        
         likeProportion: 5.76874E-4,
         firstDate : "2023-11-04",
         dayOfWeek : "일",
@@ -5102,7 +5104,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802682/thumbnail/thumbnail_IMAG21_2b6bb044-08d6-443a-aa0f-672f2429066a.jpg",
         genre : ["로맨스", "판타지"],
         likeCount : 784,
-        overallLikeCount: null,
+        
         likeProportion: 5.74675E-4,
         firstDate : "2022-11-19",
         dayOfWeek : "일",
@@ -5116,7 +5118,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/676695/thumbnail/thumbnail_IMAG21_68b97d1b-2b65-4b2c-a5a0-6aa60d4602de.jpg",
         genre : ["판타지"],
         likeCount : 784,
-        overallLikeCount: null,
+        
         likeProportion: 5.74675E-4,
         firstDate : "2016-04-04",
         dayOfWeek : "화",
@@ -5130,7 +5132,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807397/thumbnail/thumbnail_IMAG21_d0a7cee2-4ded-4506-aedf-71c25675247c.jpg",
         genre : ["로맨스"],
         likeCount : 784,
-        overallLikeCount: null,
+        
         likeProportion: 5.74675E-4,
         firstDate : "2023-03-12",
         dayOfWeek : "월",
@@ -5144,7 +5146,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/769658/thumbnail/thumbnail_IMAG21_3559023722976457571.jpg",
         genre : [],
         likeCount : 782,
-        overallLikeCount: null,
+        
         likeProportion: 5.73209E-4,
         firstDate : "2021-07-31",
         dayOfWeek : "일",
@@ -5158,7 +5160,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814535/thumbnail/thumbnail_IMAG21_20cd5f4e-09d2-4ebc-be63-c3368c46354f.jpg",
         genre : ["판타지"],
         likeCount : 779,
-        overallLikeCount: null,
+        
         likeProportion: 5.7101E-4,
         firstDate : "2023-08-28",
         dayOfWeek : "화",
@@ -5172,7 +5174,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802906/thumbnail/thumbnail_IMAG21_a0759dac-4e68-4ce1-b787-a2a235d1bd37.jpg",
         genre : ["로맨스"],
         likeCount : 777,
-        overallLikeCount: null,
+        
         likeProportion: 5.69544E-4,
         firstDate : "2022-11-24",
         dayOfWeek : "금",
@@ -5186,7 +5188,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817122/thumbnail/thumbnail_IMAG21_970f78d7-4748-48e3-9490-979fef1e64a3.jpg",
         genre : ["로맨스"],
         likeCount : 772,
-        overallLikeCount: null,
+        
         likeProportion: 5.65879E-4,
         firstDate : "2023-09-30",
         dayOfWeek : "일",
@@ -5200,7 +5202,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/801998/thumbnail/thumbnail_IMAG21_6607e2c4-b8bd-4145-94f6-ed96d1ec27a2.jpg",
         genre : ["액션"],
         likeCount : 762,
-        overallLikeCount: null,
+        
         likeProportion: 5.58549E-4,
         firstDate : "2022-11-02",
         dayOfWeek : "목",
@@ -5214,7 +5216,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807406/thumbnail/thumbnail_IMAG21_6fbae7f4-b275-4c27-8ae0-23549dc8a84e.jpg",
         genre : ["로맨스"],
         likeCount : 757,
-        overallLikeCount: null,
+        
         likeProportion: 5.54884E-4,
         firstDate : "2023-03-15",
         dayOfWeek : "목",
@@ -5228,7 +5230,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818622/thumbnail/thumbnail_IMAG21_1b1fba93-a2f9-40d3-995c-3860bb6bd102.jpg",
         genre : [],
         likeCount : 753,
-        overallLikeCount: null,
+        
         likeProportion: 5.51952E-4,
         firstDate : "2023-11-11",
         dayOfWeek : "일",
@@ -5242,7 +5244,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/748536/thumbnail/thumbnail_IMAG21_f5ccf206-ed7d-42ae-9452-c11cb188474b.jpg",
         genre : ["무협"],
         likeCount : 753,
-        overallLikeCount: null,
+        
         likeProportion: 5.51952E-4,
         firstDate : "2020-11-03",
         dayOfWeek : "수",
@@ -5256,7 +5258,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818861/thumbnail/thumbnail_IMAG21_58dd073e-abb5-4ffc-ae7c-09fc4d68bdca.jpg",
         genre : ["로맨스"],
         likeCount : 751,
-        overallLikeCount: null,
+        
         likeProportion: 5.50486E-4,
         firstDate : "2023-11-24",
         dayOfWeek : "토",
@@ -5270,7 +5272,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/773793/thumbnail/thumbnail_IMAG21_06d14210-4e71-4ae1-97a7-62071c3e90bc.jpg",
         genre : ["판타지"],
         likeCount : 745,
-        overallLikeCount: null,
+        
         likeProportion: 5.46088E-4,
         firstDate : "2021-11-01",
         dayOfWeek : "화",
@@ -5284,7 +5286,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814509/thumbnail/thumbnail_IMAG21_8c1cc7a0-0fa2-4e38-8ad3-8472726185a3.jpg",
         genre : ["판타지"],
         likeCount : 741,
-        overallLikeCount: null,
+        
         likeProportion: 5.43156E-4,
         firstDate : "2023-09-08",
         dayOfWeek : "토",
@@ -5298,7 +5300,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813329/thumbnail/thumbnail_IMAG21_b5afa8e4-8e0e-43e8-b0d2-29cef0a433c1.jpg",
         genre : ["로맨스"],
         likeCount : 740,
-        overallLikeCount: null,
+        
         likeProportion: 5.42423E-4,
         firstDate : "2023-07-28",
         dayOfWeek : "토",
@@ -5312,7 +5314,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812017/thumbnail/thumbnail_IMAG21_81b7c01e-af62-44de-af3f-9010104f9843.jpg",
         genre : ["판타지"],
         likeCount : 737,
-        overallLikeCount: null,
+        
         likeProportion: 5.40224E-4,
         firstDate : "2023-06-12",
         dayOfWeek : "화",
@@ -5326,7 +5328,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805334/thumbnail/thumbnail_IMAG21_1a7f9687-e04f-4ac8-8f50-ac58275a2295.jpg",
         genre : ["로맨스"],
         likeCount : 734,
-        overallLikeCount: null,
+        
         likeProportion: 5.38025E-4,
         firstDate : "2023-01-23",
         dayOfWeek : "화",
@@ -5340,7 +5342,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817752/thumbnail/thumbnail_IMAG21_a73ace9e-f1c5-419e-8d43-b9dc48c6fc58.jpg",
         genre : ["스릴러"],
         likeCount : 726,
-        overallLikeCount: null,
+        
         likeProportion: 5.32161E-4,
         firstDate : "2023-10-19",
         dayOfWeek : "금",
@@ -5354,7 +5356,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812594/thumbnail/thumbnail_IMAG21_7dd78989-bb75-49e9-baa9-cbc5e918af00.jpg",
         genre : ["판타지"],
         likeCount : 726,
-        overallLikeCount: null,
+        
         likeProportion: 5.32161E-4,
         firstDate : "2023-07-03",
         dayOfWeek : "화",
@@ -5368,7 +5370,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/811716/thumbnail/thumbnail_IMAG21_8d276b58-be08-4023-a66d-cf8070a5913a.jpg",
         genre : [],
         likeCount : 723,
-        overallLikeCount: null,
+        
         likeProportion: 5.29962E-4,
         firstDate : "2023-06-06",
         dayOfWeek : "수",
@@ -5382,7 +5384,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808533/thumbnail/thumbnail_IMAG21_9df8c3c3-bf3b-495a-9b42-ce97369c239b.jpg",
         genre : ["액션"],
         likeCount : 721,
-        overallLikeCount: null,
+        
         likeProportion: 5.28496E-4,
         firstDate : "2023-04-21",
         dayOfWeek : "토",
@@ -5396,7 +5398,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/800006/thumbnail/thumbnail_IMAG21_027497ee-7115-4fb9-b8ae-d99f54e47e42.jpg",
         genre : ["판타지"],
         likeCount : 719,
-        overallLikeCount: null,
+        
         likeProportion: 5.2703E-4,
         firstDate : "2022-09-08",
         dayOfWeek : "금",
@@ -5410,7 +5412,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808711/thumbnail/thumbnail_IMAG21_d0fb6e8e-bae0-4561-b537-bd84a6b3cb09.jpg",
         genre : ["로맨스"],
         likeCount : 715,
-        overallLikeCount: null,
+        
         likeProportion: 5.24098E-4,
         firstDate : "2023-04-23",
         dayOfWeek : "월",
@@ -5424,7 +5426,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/772734/thumbnail/thumbnail_IMAG21_fdecfea5-8ca1-4a32-9c55-34a30f24266d.jpg",
         genre : ["판타지"],
         likeCount : 714,
-        overallLikeCount: null,
+        
         likeProportion: 5.23365E-4,
         firstDate : "2021-05-23",
         dayOfWeek : "월",
@@ -5438,7 +5440,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/816771/thumbnail/thumbnail_IMAG21_b3aff2f3-bac2-4657-9722-1220aa07e14d.jpg",
         genre : ["로맨스"],
         likeCount : 709,
-        overallLikeCount: null,
+        
         likeProportion: 5.197E-4,
         firstDate : "2023-09-13",
         dayOfWeek : "목",
@@ -5452,7 +5454,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/616239/thumbnail/thumbnail_IMAG21_7c320dd0-7f6e-4645-b82b-e46752ed7375.jpg",
         genre : ["일상"],
         likeCount : 705,
-        overallLikeCount: null,
+        
         likeProportion: 5.16768E-4,
         firstDate : "2014-03-03",
         dayOfWeek : "화,토,",
@@ -5466,7 +5468,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804157/thumbnail/thumbnail_IMAG21_9bf245bf-319b-4902-8ebd-438ca75c6e04.jpg",
         genre : ["로맨스"],
         likeCount : 703,
-        overallLikeCount: null,
+        
         likeProportion: 5.15302E-4,
         firstDate : "2022-12-24",
         dayOfWeek : "일",
@@ -5480,7 +5482,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818810/thumbnail/thumbnail_IMAG21_4dbca925-6ea4-4561-b1b2-eb0df0089eeb.jpg",
         genre : [],
         likeCount : 702,
-        overallLikeCount: null,
+        
         likeProportion: 5.14569E-4,
         firstDate : "2023-12-10",
         dayOfWeek : "월",
@@ -5494,7 +5496,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/791629/thumbnail/thumbnail_IMAG21_4122541015824753209.jpg",
         genre : ["로맨스"],
         likeCount : 700,
-        overallLikeCount: null,
+        
         likeProportion: 5.13103E-4,
         firstDate : "2022-03-06",
         dayOfWeek : "월",
@@ -5508,7 +5510,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/793553/thumbnail/thumbnail_IMAG21_1afbb206-239d-41d8-832b-cbd6be2b0c0a.jpeg",
         genre : ["판타지"],
         likeCount : 700,
-        overallLikeCount: null,
+        
         likeProportion: 5.13103E-4,
         firstDate : "2022-04-22",
         dayOfWeek : "토",
@@ -5522,7 +5524,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818409/thumbnail/thumbnail_IMAG21_4795b099-961b-452d-a0c7-d08f63370263.jpg",
         genre : ["판타지"],
         likeCount : 699,
-        overallLikeCount: null,
+        
         likeProportion: 5.1237E-4,
         firstDate : "2023-11-10",
         dayOfWeek : "토",
@@ -5536,7 +5538,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813949/thumbnail/thumbnail_IMAG21_79b59c9a-81ae-4dcb-9740-a92ce81e7bcc.jpg",
         genre : ["로맨스"],
         likeCount : 692,
-        overallLikeCount: null,
+        
         likeProportion: 5.07239E-4,
         firstDate : "2023-08-12",
         dayOfWeek : "일",
@@ -5550,7 +5552,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812124/thumbnail/thumbnail_IMAG21_7e3d71f2-4918-44db-a33b-bd16333eaa8f.jpg",
         genre : ["스릴러"],
         likeCount : 681,
-        overallLikeCount: null,
+        
         likeProportion: 4.99176E-4,
         firstDate : "2023-06-16",
         dayOfWeek : "토",
@@ -5564,7 +5566,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809006/thumbnail/thumbnail_IMAG21_5f9fb10f-61bf-45bb-82cd-834b4252975f.jpg",
         genre : [],
         likeCount : 677,
-        overallLikeCount: null,
+        
         likeProportion: 4.96244E-4,
         firstDate : "2023-05-01",
         dayOfWeek : "화",
@@ -5578,7 +5580,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/806265/thumbnail/thumbnail_IMAG21_5c7b929f-cc5f-4325-8628-a3118b4d698d.jpg",
         genre : ["로맨스"],
         likeCount : 668,
-        overallLikeCount: null,
+        
         likeProportion: 4.89647E-4,
         firstDate : "2023-02-10",
         dayOfWeek : "토",
@@ -5592,7 +5594,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802819/thumbnail/thumbnail_IMAG21_827d17bc-65c9-474d-a162-711ca38aae0a.jpg",
         genre : ["로맨스"],
         likeCount : 668,
-        overallLikeCount: null,
+        
         likeProportion: 4.89647E-4,
         firstDate : "2022-11-25",
         dayOfWeek : "토",
@@ -5606,7 +5608,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/803792/thumbnail/thumbnail_IMAG21_ceb2e7d1-abc4-4351-823d-c410ffb1d379.jpg",
         genre : [],
         likeCount : 666,
-        overallLikeCount: null,
+        
         likeProportion: 4.88181E-4,
         firstDate : "2022-12-15",
         dayOfWeek : "금",
@@ -5620,7 +5622,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817637/thumbnail/thumbnail_IMAG21_4f18d375-45a0-4df4-8e2f-283620487026.jpg",
         genre : ["판타지"],
         likeCount : 665,
-        overallLikeCount: null,
+        
         likeProportion: 4.87448E-4,
         firstDate : "2023-10-13",
         dayOfWeek : "토",
@@ -5634,7 +5636,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818969/thumbnail/thumbnail_IMAG21_2d93bb12-6fc7-4a99-b6fd-7adce3728f9e.jpg",
         genre : ["판타지"],
         likeCount : 662,
-        overallLikeCount: null,
+        
         likeProportion: 4.85249E-4,
         firstDate : "2023-12-04",
         dayOfWeek : "화",
@@ -5648,7 +5650,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814298/thumbnail/thumbnail_IMAG21_7896dd49-b0c2-4f5d-9505-aa576656a919.jpg",
         genre : [],
         likeCount : 658,
-        overallLikeCount: null,
+        
         likeProportion: 4.82317E-4,
         firstDate : "2023-08-21",
         dayOfWeek : "화",
@@ -5662,7 +5664,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814742/thumbnail/thumbnail_IMAG21_239b2422-91ff-4649-aa83-932f90582e11.jpg",
         genre : ["액션"],
         likeCount : 654,
-        overallLikeCount: null,
+        
         likeProportion: 4.79385E-4,
         firstDate : "2023-09-03",
         dayOfWeek : "월",
@@ -5676,7 +5678,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813598/thumbnail/thumbnail_IMAG21_f55c7a25-f918-43d5-a6c1-e63ab9deb378.jpg",
         genre : ["판타지"],
         likeCount : 648,
-        overallLikeCount: null,
+        
         likeProportion: 4.74987E-4,
         firstDate : "2023-07-29",
         dayOfWeek : "일",
@@ -5690,7 +5692,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805405/thumbnail/thumbnail_IMAG21_74098c45-0052-46e7-affc-91013b2e3c0a.jpg",
         genre : ["로맨스"],
         likeCount : 643,
-        overallLikeCount: null,
+        
         likeProportion: 4.71322E-4,
         firstDate : "2023-01-28",
         dayOfWeek : "일",
@@ -5704,7 +5706,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814766/thumbnail/thumbnail_IMAG21_f963539b-9954-4b1a-a4a8-7b01bb6d3247.jpg",
         genre : ["판타지"],
         likeCount : 642,
-        overallLikeCount: null,
+        
         likeProportion: 4.70589E-4,
         firstDate : "2023-09-01",
         dayOfWeek : "토",
@@ -5718,7 +5720,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809618/thumbnail/thumbnail_IMAG21_118a7124-11b6-4eed-b04a-20ee139256c1.jpg",
         genre : ["판타지"],
         likeCount : 638,
-        overallLikeCount: null,
+        
         likeProportion: 4.67657E-4,
         firstDate : "2023-05-22",
         dayOfWeek : "화",
@@ -5732,7 +5734,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818219/thumbnail/thumbnail_IMAG21_47a1749b-9ef7-4a21-a8da-ce90cff640b2.jpg",
         genre : ["로맨스"],
         likeCount : 636,
-        overallLikeCount: null,
+        
         likeProportion: 4.66191E-4,
         firstDate : "2023-10-28",
         dayOfWeek : "일",
@@ -5746,7 +5748,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/780414/thumbnail/thumbnail_IMAG21_fc2621b0-84c3-404d-a18d-5925dba6ab77.jpg",
         genre : ["로맨스"],
         likeCount : 635,
-        overallLikeCount: null,
+        
         likeProportion: 4.65458E-4,
         firstDate : "2021-09-19",
         dayOfWeek : "월",
@@ -5760,7 +5762,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814116/thumbnail/thumbnail_IMAG21_6a63ce48-bfe3-4a05-862f-4e6f1b3771c2.jpg",
         genre : [],
         likeCount : 628,
-        overallLikeCount: null,
+        
         likeProportion: 4.60327E-4,
         firstDate : "2023-08-13",
         dayOfWeek : "월",
@@ -5774,7 +5776,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/819057/thumbnail/thumbnail_IMAG21_de4b18b2-ebec-4eef-9d7d-f5c1ab847705.jpg",
         genre : ["스릴러"],
         likeCount : 627,
-        overallLikeCount: null,
+        
         likeProportion: 4.59594E-4,
         firstDate : "2023-12-01",
         dayOfWeek : "토",
@@ -5788,7 +5790,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813121/thumbnail/thumbnail_IMAG21_4d99dac0-e646-4c42-ba34-25dc3f5fa405.jpg",
         genre : ["로맨스"],
         likeCount : 626,
-        overallLikeCount: null,
+        
         likeProportion: 4.58861E-4,
         firstDate : "2023-07-17",
         dayOfWeek : "화",
@@ -5802,7 +5804,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/797442/thumbnail/thumbnail_IMAG21_cce91579-a3d8-45c0-b82e-c8e9a64faf69.jpg",
         genre : ["로맨스"],
         likeCount : 625,
-        overallLikeCount: null,
+        
         likeProportion: 4.58127E-4,
         firstDate : "2022-07-14",
         dayOfWeek : "금",
@@ -5816,7 +5818,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/745654/thumbnail/thumbnail_IMAG21_3978989878055821874.jpg",
         genre : ["판타지"],
         likeCount : 617,
-        overallLikeCount: null,
+        
         likeProportion: 4.52263E-4,
         firstDate : "2020-05-03",
         dayOfWeek : "월",
@@ -5830,7 +5832,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802849/thumbnail/thumbnail_IMAG21_4c99d9c3-76da-444d-b9be-d698741e54fe.jpg",
         genre : ["판타지"],
         likeCount : 611,
-        overallLikeCount: null,
+        
         likeProportion: 4.47865E-4,
         firstDate : "2022-11-23",
         dayOfWeek : "목",
@@ -5844,7 +5846,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/800304/thumbnail/thumbnail_IMAG21_64d41d2c-4a6d-46f1-989d-6f0c1053806b.jpg",
         genre : ["판타지", "로맨스"],
         likeCount : 610,
-        overallLikeCount: null,
+        
         likeProportion: 4.47132E-4,
         firstDate : "2022-09-14",
         dayOfWeek : "목",
@@ -5858,7 +5860,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817631/thumbnail/thumbnail_IMAG21_d9f54b38-3062-4cfb-9215-d7b79ef87e77.jpg",
         genre : ["판타지"],
         likeCount : 607,
-        overallLikeCount: null,
+        
         likeProportion: 4.44933E-4,
         firstDate : "2023-10-11",
         dayOfWeek : "목",
@@ -5872,7 +5874,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/671421/thumbnail/thumbnail_IMAG21_7643171d-08fb-40a8-9da1-813a3b7e784f.jpg",
         genre : [],
         likeCount : 601,
-        overallLikeCount: null,
+        
         likeProportion: 4.40535E-4,
         firstDate : "2016-01-19",
         dayOfWeek : "수",
@@ -5886,7 +5888,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/819202/thumbnail/thumbnail_IMAG21_a158cef6-6248-42ee-bce7-8f4f57fc0d5f.jpg",
         genre : ["판타지"],
         likeCount : 599,
-        overallLikeCount: null,
+        
         likeProportion: 4.39069E-4,
         firstDate : "2023-12-03",
         dayOfWeek : "월",
@@ -5900,7 +5902,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/800585/thumbnail/thumbnail_IMAG21_11721c44-7e70-45e2-bd2e-da1e4a51922b.jpg",
         genre : ["스릴러"],
         likeCount : 597,
-        overallLikeCount: null,
+        
         likeProportion: 4.37603E-4,
         firstDate : "2022-09-22",
         dayOfWeek : "금",
@@ -5914,7 +5916,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818645/thumbnail/thumbnail_IMAG21_f1f00d0a-7afb-49d9-af28-06c41d119425.jpg",
         genre : ["로맨스"],
         likeCount : 596,
-        overallLikeCount: null,
+        
         likeProportion: 4.3687E-4,
         firstDate : "2023-11-18",
         dayOfWeek : "일",
@@ -5928,7 +5930,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814566/thumbnail/thumbnail_IMAG21_4f97cbfb-8e3e-445d-848c-ae270c22f5b0.jpg",
         genre : ["로맨스"],
         likeCount : 591,
-        overallLikeCount: null,
+        
         likeProportion: 4.33205E-4,
         firstDate : "2023-09-03",
         dayOfWeek : "월",
@@ -5942,7 +5944,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/780253/thumbnail/thumbnail_IMAG21_c85d6008-87f8-46c8-82b7-2b744dd5723d.jpg",
         genre : ["판타지"],
         likeCount : 589,
-        overallLikeCount: null,
+        
         likeProportion: 4.31739E-4,
         firstDate : "2021-09-21",
         dayOfWeek : "수",
@@ -5956,7 +5958,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808897/thumbnail/thumbnail_IMAG21_23c55f45-c7c0-45ef-a988-5447d0123cf6.jpg",
         genre : ["로맨스"],
         likeCount : 588,
-        overallLikeCount: null,
+        
         likeProportion: 4.31006E-4,
         firstDate : "2023-04-29",
         dayOfWeek : "일",
@@ -5970,7 +5972,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/760001/thumbnail/thumbnail_IMAG21_c62cf78d-b346-49cf-b847-3062fc51500b.jpg",
         genre : ["로맨스"],
         likeCount : 586,
-        overallLikeCount: null,
+        
         likeProportion: 4.2954E-4,
         firstDate : "2020-11-24",
         dayOfWeek : "수",
@@ -5984,7 +5986,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/732036/thumbnail/thumbnail_IMAG21_a5f5b19f-5c44-4adf-b801-ec831eadc27b.jpg",
         genre : [],
         likeCount : 586,
-        overallLikeCount: null,
+        
         likeProportion: 4.2954E-4,
         firstDate : "2019-08-08",
         dayOfWeek : "금",
@@ -5998,7 +6000,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/803794/thumbnail/thumbnail_IMAG21_e5c5958c-37ba-4b0a-9178-a30f1cd10816.jpg",
         genre : ["판타지"],
         likeCount : 584,
-        overallLikeCount: null,
+        
         likeProportion: 4.28074E-4,
         firstDate : "2022-12-16",
         dayOfWeek : "토",
@@ -6012,7 +6014,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818443/thumbnail/thumbnail_IMAG21_1efa5c2b-7680-46cd-bebb-7e58f50dba3e.jpg",
         genre : ["로맨스"],
         likeCount : 583,
-        overallLikeCount: null,
+        
         likeProportion: 4.27341E-4,
         firstDate : "2023-11-03",
         dayOfWeek : "토",
@@ -6026,7 +6028,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/783535/thumbnail/thumbnail_IMAG21_4b6a83cd-a5e9-408f-bbac-244f25240394.jpg",
         genre : ["액션"],
         likeCount : 580,
-        overallLikeCount: null,
+        
         likeProportion: 4.25142E-4,
         firstDate : "2021-11-28",
         dayOfWeek : "월",
@@ -6040,7 +6042,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807308/thumbnail/thumbnail_IMAG21_bdecad71-95ad-4faf-b4e4-c131425da94f.jpg",
         genre : ["로맨스"],
         likeCount : 579,
-        overallLikeCount: null,
+        
         likeProportion: 4.24409E-4,
         firstDate : "2023-03-07",
         dayOfWeek : "수",
@@ -6054,7 +6056,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/768473/thumbnail/thumbnail_IMAG21_3977634166458311222.jpg",
         genre : [],
         likeCount : 576,
-        overallLikeCount: null,
+        
         likeProportion: 4.2221E-4,
         firstDate : "2021-07-24",
         dayOfWeek : "일",
@@ -6068,7 +6070,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/795540/thumbnail/thumbnail_IMAG21_bb5de21f-2810-450e-9d4d-874d0decc936.jpg",
         genre : ["로맨스"],
         likeCount : 573,
-        overallLikeCount: null,
+        
         likeProportion: 4.20011E-4,
         firstDate : "2022-06-09",
         dayOfWeek : "금",
@@ -6082,7 +6084,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/762035/thumbnail/thumbnail_IMAG21_4123154521771304291.jpg",
         genre : [],
         likeCount : 571,
-        overallLikeCount: null,
+        
         likeProportion: 4.18545E-4,
         firstDate : "2020-12-23",
         dayOfWeek : "목",
@@ -6096,7 +6098,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/801992/thumbnail/thumbnail_IMAG21_84951a6c-71f7-42d1-8656-2625b47a9de9.jpg",
         genre : ["로맨스"],
         likeCount : 566,
-        overallLikeCount: null,
+        
         likeProportion: 4.1488E-4,
         firstDate : "2022-11-03",
         dayOfWeek : "금",
@@ -6110,7 +6112,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/772243/thumbnail/thumbnail_IMAG21_3918807214864216674.jpg",
         genre : [],
         likeCount : 559,
-        overallLikeCount: null,
+        
         likeProportion: 4.09749E-4,
         firstDate : "2021-05-30",
         dayOfWeek : "월",
@@ -6124,7 +6126,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812344/thumbnail/thumbnail_IMAG21_a16a45b1-2eed-4da1-a880-98d078673a1a.jpg",
         genre : ["로맨스"],
         likeCount : 558,
-        overallLikeCount: null,
+        
         likeProportion: 4.09016E-4,
         firstDate : "2023-06-20",
         dayOfWeek : "수",
@@ -6138,7 +6140,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/679568/thumbnail/thumbnail_IMAG21_0e7abd73-060d-42eb-afed-65cafc457104.jpg",
         genre : ["판타지"],
         likeCount : 556,
-        overallLikeCount: null,
+        
         likeProportion: 4.0755E-4,
         firstDate : "2016-07-31",
         dayOfWeek : "월",
@@ -6152,7 +6154,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/801555/thumbnail/thumbnail_IMAG21_e90dca57-f705-4a4e-8848-752d809b4b8b.jpg",
         genre : ["스릴러"],
         likeCount : 554,
-        overallLikeCount: null,
+        
         likeProportion: 4.06084E-4,
         firstDate : "2022-10-20",
         dayOfWeek : "금",
@@ -6166,7 +6168,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/803530/thumbnail/thumbnail_IMAG21_c8d5f8f0-9883-465b-b79d-325c02d42b71.jpg",
         genre : [],
         likeCount : 550,
-        overallLikeCount: null,
+        
         likeProportion: 4.03152E-4,
         firstDate : "2022-12-09",
         dayOfWeek : "토",
@@ -6180,7 +6182,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/816818/thumbnail/thumbnail_IMAG21_438216c4-efb8-4972-88ff-8b7693f0079c.jpg",
         genre : ["로맨스"],
         likeCount : 547,
-        overallLikeCount: null,
+        
         likeProportion: 4.00953E-4,
         firstDate : "2023-09-18",
         dayOfWeek : "화",
@@ -6194,7 +6196,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813455/thumbnail/thumbnail_IMAG21_dceb1e3a-9a38-42fa-8303-fae6e5ca0e17.jpg",
         genre : ["로맨스"],
         likeCount : 546,
-        overallLikeCount: null,
+        
         likeProportion: 4.0022E-4,
         firstDate : "2023-07-25",
         dayOfWeek : "수",
@@ -6208,7 +6210,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807992/thumbnail/thumbnail_IMAG21_a977bb5f-927e-42c3-8231-99c1f8b54591.jpg",
         genre : ["로맨스"],
         likeCount : 545,
-        overallLikeCount: null,
+        
         likeProportion: 3.99487E-4,
         firstDate : "2023-04-01",
         dayOfWeek : "일",
@@ -6222,7 +6224,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805437/thumbnail/thumbnail_IMAG21_e830e751-20be-4c57-a6ff-f299588d05b6.jpg",
         genre : ["로맨스"],
         likeCount : 538,
-        overallLikeCount: null,
+        
         likeProportion: 3.94356E-4,
         firstDate : "2023-01-22",
         dayOfWeek : "월",
@@ -6236,7 +6238,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802070/thumbnail/thumbnail_IMAG21_fa7ec89a-785c-4c64-97b2-6814ca4d5970.jpg",
         genre : [],
         likeCount : 537,
-        overallLikeCount: null,
+        
         likeProportion: 3.93623E-4,
         firstDate : "2022-11-04",
         dayOfWeek : "토",
@@ -6250,7 +6252,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/777515/thumbnail/thumbnail_IMAG21_54762710-164c-4341-90ac-d9cea424eb15.jpg",
         genre : ["액션"],
         likeCount : 535,
-        overallLikeCount: null,
+        
         likeProportion: 3.92157E-4,
         firstDate : "2021-08-26",
         dayOfWeek : "금",
@@ -6264,7 +6266,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808508/thumbnail/thumbnail_IMAG21_84327107-e80b-4f50-8125-35ae8978e7ec.jpg",
         genre : ["로맨스"],
         likeCount : 535,
-        overallLikeCount: null,
+        
         likeProportion: 3.92157E-4,
         firstDate : "2023-04-18",
         dayOfWeek : "수",
@@ -6278,7 +6280,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/806449/thumbnail/thumbnail_IMAG21_cda9ea7c-3734-44b0-ba3f-2428f8d82854.jpg",
         genre : [],
         likeCount : 531,
-        overallLikeCount: null,
+        
         likeProportion: 3.89225E-4,
         firstDate : "2023-03-17",
         dayOfWeek : "토",
@@ -6292,7 +6294,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/819426/thumbnail/thumbnail_IMAG21_1a7f57a6-bb7c-43d7-aff5-47735d0fc590.jpg",
         genre : ["판타지"],
         likeCount : 530,
-        overallLikeCount: null,
+        
         likeProportion: 3.88492E-4,
         firstDate : "2023-12-09",
         dayOfWeek : "일",
@@ -6306,7 +6308,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/815326/thumbnail/thumbnail_IMAG21_15ae6e84-2468-4bfd-b2e9-524a24a69312.jpg",
         genre : ["액션"],
         likeCount : 529,
-        overallLikeCount: null,
+        
         likeProportion: 3.87759E-4,
         firstDate : "2023-09-06",
         dayOfWeek : "목",
@@ -6320,7 +6322,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/400739/thumbnail/thumbnail_IMAG21_b5046846-5af7-48a9-9b20-b0b07cf0c904.jpeg",
         genre : ["판타지"],
         likeCount : 528,
-        overallLikeCount: null,
+        
         likeProportion: 3.87026E-4,
         firstDate : "2011-11-01",
         dayOfWeek : "화",
@@ -6334,7 +6336,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814818/thumbnail/thumbnail_IMAG21_c46d901a-e550-46be-a645-c18c2e5c3191.jpg",
         genre : ["로맨스"],
         likeCount : 526,
-        overallLikeCount: null,
+        
         likeProportion: 3.8556E-4,
         firstDate : "2023-09-23",
         dayOfWeek : "일",
@@ -6348,7 +6350,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818255/thumbnail/thumbnail_IMAG21_6f088af3-9094-4dc4-9fe0-5962dea46c8d.jpg",
         genre : ["판타지"],
         likeCount : 526,
-        overallLikeCount: null,
+        
         likeProportion: 3.8556E-4,
         firstDate : "2023-11-13",
         dayOfWeek : "화",
@@ -6362,7 +6364,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/758662/thumbnail/thumbnail_IMAG21_f061545e-a32b-473c-82fa-20a04a5e6ed1.jpg",
         genre : ["액션"],
         likeCount : 524,
-        overallLikeCount: null,
+        
         likeProportion: 3.84094E-4,
         firstDate : "2021-01-19",
         dayOfWeek : "수",
@@ -6376,7 +6378,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/796251/thumbnail/thumbnail_IMAG21_eb634bbe-8a82-4918-a650-9423acf27f72.jpg",
         genre : ["로맨스"],
         likeCount : 524,
-        overallLikeCount: null,
+        
         likeProportion: 3.84094E-4,
         firstDate : "2022-06-25",
         dayOfWeek : "일",
@@ -6390,7 +6392,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/670145/thumbnail/thumbnail_IMAG21_3905854744587100517.jpg",
         genre : [],
         likeCount : 520,
-        overallLikeCount: null,
+        
         likeProportion: 3.81162E-4,
         firstDate : "2016-01-06",
         dayOfWeek : "목",
@@ -6404,7 +6406,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/799165/thumbnail/thumbnail_IMAG21_e4cf53a5-8d69-435d-95eb-a68a0128580e.jpg",
         genre : ["로맨스"],
         likeCount : 518,
-        overallLikeCount: null,
+        
         likeProportion: 3.79696E-4,
         firstDate : "2022-08-24",
         dayOfWeek : "목",
@@ -6418,7 +6420,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818965/thumbnail/thumbnail_IMAG21_08a588ea-4e47-4d7e-a475-bb472bbe92de.jpg",
         genre : ["액션"],
         likeCount : 510,
-        overallLikeCount: null,
+        
         likeProportion: 3.73832E-4,
         firstDate : "2023-11-22",
         dayOfWeek : "목",
@@ -6432,7 +6434,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/793374/thumbnail/thumbnail_IMAG21_3775484551403496548.jpg",
         genre : ["로맨스"],
         likeCount : 510,
-        overallLikeCount: null,
+        
         likeProportion: 3.73832E-4,
         firstDate : "2022-04-08",
         dayOfWeek : "토",
@@ -6446,7 +6448,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/21815/thumbnail/thumbnail_IMAG21_7292511306663934265.jpg",
         genre : ["판타지"],
         likeCount : 502,
-        overallLikeCount: null,
+        
         likeProportion: 3.67968E-4,
         firstDate : "2006-11-27",
         dayOfWeek : "월",
@@ -6460,7 +6462,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/755744/thumbnail/thumbnail_IMAG21_ea3e8a31-f6ef-40b4-936b-acb0fac4e94f.jpg",
         genre : ["판타지"],
         likeCount : 499,
-        overallLikeCount: null,
+        
         likeProportion: 3.65769E-4,
         firstDate : "2020-10-02",
         dayOfWeek : "토",
@@ -6474,7 +6476,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805746/thumbnail/thumbnail_IMAG21_16152025-2df4-4de9-98fd-954dfb4c0bd2.jpeg",
         genre : [],
         likeCount : 497,
-        overallLikeCount: null,
+        
         likeProportion: 3.64303E-4,
         firstDate : "2023-02-01",
         dayOfWeek : "목",
@@ -6488,7 +6490,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/800007/thumbnail/thumbnail_IMAG21_94598f8a-9416-450c-b729-105a30afb676.jpg",
         genre : ["스릴러"],
         likeCount : 492,
-        overallLikeCount: null,
+        
         likeProportion: 3.60638E-4,
         firstDate : "2022-09-07",
         dayOfWeek : "목",
@@ -6502,7 +6504,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808776/thumbnail/thumbnail_IMAG21_fb25d2f3-790c-48db-beaf-c2504f4ed4c0.jpg",
         genre : ["판타지"],
         likeCount : 492,
-        overallLikeCount: null,
+        
         likeProportion: 3.60638E-4,
         firstDate : "2023-04-23",
         dayOfWeek : "월",
@@ -6516,7 +6518,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807600/thumbnail/thumbnail_IMAG21_1f73e8d5-19be-4978-8a3f-d3df5bc6961d.jpg",
         genre : [],
         likeCount : 489,
-        overallLikeCount: null,
+        
         likeProportion: 3.58439E-4,
         firstDate : "2023-03-19",
         dayOfWeek : "월",
@@ -6530,7 +6532,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805745/thumbnail/thumbnail_IMAG21_3b16263c-1417-48ef-bd80-a545db7393b0.jpg",
         genre : [],
         likeCount : 486,
-        overallLikeCount: null,
+        
         likeProportion: 3.5624E-4,
         firstDate : "2023-01-31",
         dayOfWeek : "수",
@@ -6544,7 +6546,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818811/thumbnail/thumbnail_IMAG21_09e257a8-5706-4cfc-ba2e-e6c4dce19d39.jpg",
         genre : ["로맨스"],
         likeCount : 485,
-        overallLikeCount: null,
+        
         likeProportion: 3.55507E-4,
         firstDate : "2023-11-17",
         dayOfWeek : "토",
@@ -6558,7 +6560,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/799524/thumbnail/thumbnail_IMAG21_b01c5e4c-fe6f-4817-a0db-b00b80b3ec94.jpeg",
         genre : "액션,판타지",
         likeCount : 483,
-        overallLikeCount: null,
+        
         likeProportion: 3.54041E-4,
         firstDate : "2022-08-25",
         dayOfWeek : "금",
@@ -6572,7 +6574,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812156/thumbnail/thumbnail_IMAG21_a73dc539-ab0b-400a-95cb-4fd653c438f4.jpg",
         genre : ["로맨스"],
         likeCount : 482,
-        overallLikeCount: null,
+        
         likeProportion: 3.53308E-4,
         firstDate : "2023-06-16",
         dayOfWeek : "토",
@@ -6586,7 +6588,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/783117/thumbnail/thumbnail_IMAG21_7364620379494637924.jpg",
         genre : ["판타지"],
         likeCount : 477,
-        overallLikeCount: null,
+        
         likeProportion: 3.49643E-4,
         firstDate : "2021-10-13",
         dayOfWeek : "목",
@@ -6600,7 +6602,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/816817/thumbnail/thumbnail_IMAG21_a7d4a5f1-a165-45ab-b893-f76f27cd5064.jpg",
         genre : ["판타지"],
         likeCount : 473,
-        overallLikeCount: null,
+        
         likeProportion: 3.46711E-4,
         firstDate : "2023-09-22",
         dayOfWeek : "토",
@@ -6614,7 +6616,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817034/thumbnail/thumbnail_IMAG21_46eb3131-cbf8-46f1-a026-86ec6b4133f3.jpg",
         genre : [],
         likeCount : 472,
-        overallLikeCount: null,
+        
         likeProportion: 3.45978E-4,
         firstDate : "2023-09-23",
         dayOfWeek : "일",
@@ -6628,7 +6630,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809261/thumbnail/thumbnail_IMAG21_b2d4a5c0-3026-4560-b3ee-add80e181536.jpg",
         genre : [],
         likeCount : 470,
-        overallLikeCount: null,
+        
         likeProportion: 3.44512E-4,
         firstDate : "2023-05-08",
         dayOfWeek : "화",
@@ -6642,7 +6644,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/806304/thumbnail/thumbnail_IMAG21_66bb4eb2-72ef-4036-9945-27c929f5dab4.jpg",
         genre : ["로맨스", "판타지"],
         likeCount : 470,
-        overallLikeCount: null,
+        
         likeProportion: 3.44512E-4,
         firstDate : "2023-02-14",
         dayOfWeek : "수",
@@ -6656,7 +6658,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817369/thumbnail/thumbnail_IMAG21_be76f4ba-d928-4c3b-a91f-f4ab8e82af3e.jpg",
         genre : ["판타지"],
         likeCount : 469,
-        overallLikeCount: null,
+        
         likeProportion: 3.43779E-4,
         firstDate : "2023-10-04",
         dayOfWeek : "목",
@@ -6670,7 +6672,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804782/thumbnail/thumbnail_IMAG21_f09967ec-e4e8-4fb8-a8d5-a65db4c6e14e.jpg",
         genre : ["로맨스"],
         likeCount : 467,
-        overallLikeCount: null,
+        
         likeProportion: 3.42313E-4,
         firstDate : "2023-01-08",
         dayOfWeek : "월",
@@ -6684,7 +6686,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/780172/thumbnail/thumbnail_IMAG21_0dd710a5-aca3-4a92-b993-9e0a3be57fd5.jpg",
         genre : ["판타지"],
         likeCount : 465,
-        overallLikeCount: null,
+        
         likeProportion: 3.40847E-4,
         firstDate : "2021-09-28",
         dayOfWeek : "수",
@@ -6698,7 +6700,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814832/thumbnail/thumbnail_IMAG21_fcbd14e7-9175-42d7-b845-f664c8f28ec0.jpg",
         genre : [],
         likeCount : 461,
-        overallLikeCount: null,
+        
         likeProportion: 3.37915E-4,
         firstDate : "2023-09-01",
         dayOfWeek : "토",
@@ -6712,7 +6714,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/776256/thumbnail/thumbnail_IMAG21_d520a876-7403-4349-a56a-f1203882bed2.jpg",
         genre : [],
         likeCount : 461,
-        overallLikeCount: null,
+        
         likeProportion: 3.37915E-4,
         firstDate : "2021-10-24",
         dayOfWeek : "월",
@@ -6726,7 +6728,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807537/thumbnail/thumbnail_IMAG21_1e7b0ad2-11c1-48e6-b9e6-ab85d98a6c36.jpg",
         genre : ["판타지"],
         likeCount : 460,
-        overallLikeCount: null,
+        
         likeProportion: 3.37182E-4,
         firstDate : "2023-03-22",
         dayOfWeek : "목",
@@ -6740,7 +6742,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809579/thumbnail/thumbnail_IMAG21_486a2740-0979-4a97-a50c-0b385570fd65.jpg",
         genre : ["스릴러"],
         likeCount : 458,
-        overallLikeCount: null,
+        
         likeProportion: 3.35716E-4,
         firstDate : "2023-05-22",
         dayOfWeek : "화",
@@ -6754,7 +6756,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814289/thumbnail/thumbnail_IMAG21_9ea6aae5-1236-4ff9-9a36-d4bb1eb5f210.jpg",
         genre : ["로맨스"],
         likeCount : 455,
-        overallLikeCount: null,
+        
         likeProportion: 3.33517E-4,
         firstDate : "2023-08-31",
         dayOfWeek : "금",
@@ -6768,7 +6770,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/778580/thumbnail/thumbnail_IMAG21_7365744059571516773.jpg",
         genre : "액션,판타지",
         likeCount : 453,
-        overallLikeCount: null,
+        
         likeProportion: 3.32051E-4,
         firstDate : "2021-09-17",
         dayOfWeek : "토",
@@ -6782,7 +6784,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/552960/thumbnail/thumbnail_IMAG21_ce8f3dbb-3891-4e83-9782-64fa7986946e.jpg",
         genre : ["판타지"],
         likeCount : 441,
-        overallLikeCount: null,
+        
         likeProportion: 3.23255E-4,
         firstDate : "2013-09-05",
         dayOfWeek : "금",
@@ -6796,7 +6798,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812560/thumbnail/thumbnail_IMAG21_72e2af78-cf9b-4a45-9e31-e9ccf1a3ee25.jpg",
         genre : "액션,판타지",
         likeCount : 441,
-        overallLikeCount: null,
+        
         likeProportion: 3.23255E-4,
         firstDate : "2023-06-28",
         dayOfWeek : "목",
@@ -6810,7 +6812,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817179/thumbnail/thumbnail_IMAG21_81469ea7-28fc-400c-bc83-c533869cd199.jpg",
         genre : ["로맨스"],
         likeCount : 440,
-        overallLikeCount: null,
+        
         likeProportion: 3.22522E-4,
         firstDate : "2023-10-07",
         dayOfWeek : "일",
@@ -6824,7 +6826,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/798293/thumbnail/thumbnail_IMAG21_7ffec96d-3939-4039-b2ee-a011d6741bfd.jpeg",
         genre : ["로맨스"],
         likeCount : 440,
-        overallLikeCount: null,
+        
         likeProportion: 3.22522E-4,
         firstDate : "2022-07-31",
         dayOfWeek : "월",
@@ -6838,7 +6840,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/799838/thumbnail/thumbnail_IMAG21_e19883fb-74f1-4491-9b72-8731946a11fc.jpg",
         genre : ["스릴러"],
         likeCount : 438,
-        overallLikeCount: null,
+        
         likeProportion: 3.21056E-4,
         firstDate : "2022-09-01",
         dayOfWeek : "금",
@@ -6852,7 +6854,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818188/thumbnail/thumbnail_IMAG21_2508edbf-3e47-4a22-b748-8ef4d325615e.jpg",
         genre : ["로맨스"],
         likeCount : 438,
-        overallLikeCount: null,
+        
         likeProportion: 3.21056E-4,
         firstDate : "2023-10-27",
         dayOfWeek : "토",
@@ -6866,7 +6868,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/800333/thumbnail/thumbnail_IMAG21_407ea651-d14f-47af-9e06-8813e7160421.jpeg",
         genre : [],
         likeCount : 430,
-        overallLikeCount: null,
+        
         likeProportion: 3.15192E-4,
         firstDate : "2022-09-18",
         dayOfWeek : "월",
@@ -6880,7 +6882,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809056/thumbnail/thumbnail_IMAG21_ad6cc2e8-a610-4c73-9b78-953c1d4507d2.jpg",
         genre : [],
         likeCount : 427,
-        overallLikeCount: null,
+        
         likeProportion: 3.12993E-4,
         firstDate : "2023-05-05",
         dayOfWeek : "토",
@@ -6894,7 +6896,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/810682/thumbnail/thumbnail_IMAG21_09e253e0-1fdd-4758-9109-ecf605569ca6.jpg",
         genre : [],
         likeCount : 417,
-        overallLikeCount: null,
+        
         likeProportion: 3.05663E-4,
         firstDate : "2023-05-30",
         dayOfWeek : "수",
@@ -6908,7 +6910,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804469/thumbnail/thumbnail_IMAG21_2aa7b888-6149-4ba0-ae84-0158fd0e249c.jpeg",
         genre : [],
         likeCount : 417,
-        overallLikeCount: null,
+        
         likeProportion: 3.05663E-4,
         firstDate : "2023-01-01",
         dayOfWeek : "월",
@@ -6922,7 +6924,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/797155/thumbnail/thumbnail_IMAG21_19b6d316-c528-4be3-89cb-c89b1060853b.jpg",
         genre : ["액션"],
         likeCount : 414,
-        overallLikeCount: null,
+        
         likeProportion: 3.03464E-4,
         firstDate : "2022-07-23",
         dayOfWeek : "일",
@@ -6936,7 +6938,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805691/thumbnail/thumbnail_IMAG21_8b092acf-e28c-47d2-9b5f-3a02df85103f.jpg",
         genre : ["액션"],
         likeCount : 411,
-        overallLikeCount: null,
+        
         likeProportion: 3.01265E-4,
         firstDate : "2023-02-04",
         dayOfWeek : "일",
@@ -6950,7 +6952,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/687915/thumbnail/thumbnail_IMAG21_d46ad6b8-e9a8-4bc8-b501-e62adfee0eb6.jpg",
         genre : ["스릴러"],
         likeCount : 410,
-        overallLikeCount: null,
+        
         likeProportion: 3.00532E-4,
         firstDate : "2016-11-13",
         dayOfWeek : "월",
@@ -6964,7 +6966,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/803371/thumbnail/thumbnail_IMAG21_86c1543c-a30a-41cd-b010-ca749e5e7f25.jpg",
         genre : ["로맨스"],
         likeCount : 399,
-        overallLikeCount: null,
+        
         likeProportion: 2.92469E-4,
         firstDate : "2022-12-08",
         dayOfWeek : "금",
@@ -6978,7 +6980,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812576/thumbnail/thumbnail_IMAG21_91557fba-c1c9-4391-a066-2f43f44a4608.jpg",
         genre : [],
         likeCount : 397,
-        overallLikeCount: null,
+        
         likeProportion: 2.91003E-4,
         firstDate : "2023-07-03",
         dayOfWeek : "화",
@@ -6992,7 +6994,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818820/thumbnail/thumbnail_IMAG21_84ad5ffe-9290-438a-a416-c18149eca2b9.jpg",
         genre : [],
         likeCount : 390,
-        overallLikeCount: null,
+        
         likeProportion: 2.85872E-4,
         firstDate : "2023-11-21",
         dayOfWeek : "수,토,",
@@ -7006,7 +7008,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818668/thumbnail/thumbnail_IMAG21_d8573ab3-e412-4f5f-b36c-e9116e0af93c.jpg",
         genre : ["액션"],
         likeCount : 387,
-        overallLikeCount: null,
+        
         likeProportion: 2.83673E-4,
         firstDate : "2023-11-12",
         dayOfWeek : "월",
@@ -7020,7 +7022,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/794939/thumbnail/thumbnail_IMAG21_23006afc-accd-46f6-8014-c955c4aa6241.jpg",
         genre : ["로맨스"],
         likeCount : 381,
-        overallLikeCount: null,
+        
         likeProportion: 2.79275E-4,
         firstDate : "2022-05-22",
         dayOfWeek : "월",
@@ -7034,7 +7036,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804871/thumbnail/thumbnail_IMAG21_9ac1b8cc-dadb-41ef-9312-85aa9de4cfd6.jpg",
         genre : ["로맨스"],
         likeCount : 377,
-        overallLikeCount: null,
+        
         likeProportion: 2.76343E-4,
         firstDate : "2023-01-10",
         dayOfWeek : "수",
@@ -7048,7 +7050,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/790776/thumbnail/thumbnail_IMAG21_683f454e-5f7a-416b-936b-8a06cb1c3cae.jpeg",
         genre : "액션,판타지",
         likeCount : 376,
-        overallLikeCount: null,
+        
         likeProportion: 2.7561E-4,
         firstDate : "2022-03-21",
         dayOfWeek : "화",
@@ -7062,7 +7064,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/819048/thumbnail/thumbnail_IMAG21_890f831f-1a67-459e-8a27-d512233397b6.jpg",
         genre : ["판타지"],
         likeCount : 372,
-        overallLikeCount: null,
+        
         likeProportion: 2.72677E-4,
         firstDate : "2023-12-01",
         dayOfWeek : "토",
@@ -7076,7 +7078,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/570506/thumbnail/thumbnail_IMAG21_3630857206429464627.jpg",
         genre : ["액션"],
         likeCount : 372,
-        overallLikeCount: null,
+        
         likeProportion: 2.72677E-4,
         firstDate : "2013-07-10",
         dayOfWeek : "목",
@@ -7090,7 +7092,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818850/thumbnail/thumbnail_IMAG21_625e8217-4f7d-4f75-8fa3-9b17cd545acc.jpg",
         genre : ["판타지"],
         likeCount : 371,
-        overallLikeCount: null,
+        
         likeProportion: 2.71945E-4,
         firstDate : "2023-11-23",
         dayOfWeek : "금",
@@ -7104,7 +7106,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/791205/thumbnail/thumbnail_IMAG21_4c20287b-55d8-4bb5-9db4-cbb1caf5617d.jpg",
         genre : ["액션"],
         likeCount : 368,
-        overallLikeCount: null,
+        
         likeProportion: 2.69745E-4,
         firstDate : "2022-03-13",
         dayOfWeek : "월",
@@ -7118,7 +7120,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804055/thumbnail/thumbnail_IMAG21_23931297-3f69-4d46-b48e-3cd5e33ef4ec.jpg",
         genre : ["스릴러"],
         likeCount : 367,
-        overallLikeCount: null,
+        
         likeProportion: 2.69012E-4,
         firstDate : "2022-12-24",
         dayOfWeek : "일",
@@ -7132,7 +7134,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808804/thumbnail/thumbnail_IMAG21_2af53eb3-eb52-40e7-b1d9-7b4fccfba9af.jpg",
         genre : ["액션"],
         likeCount : 366,
-        overallLikeCount: null,
+        
         likeProportion: 2.68279E-4,
         firstDate : "2023-04-24",
         dayOfWeek : "화",
@@ -7146,7 +7148,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/791062/thumbnail/thumbnail_IMAG21_d358a9ab-09bc-436b-8a77-076cae2ea8d1.jpg",
         genre : ["판타지"],
         likeCount : 365,
-        overallLikeCount: null,
+        
         likeProportion: 2.67546E-4,
         firstDate : "2022-02-27",
         dayOfWeek : "월",
@@ -7160,7 +7162,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807655/thumbnail/thumbnail_IMAG21_d962d301-4188-46d7-89dc-77aa4c9373a5.jpg",
         genre : ["로맨스"],
         likeCount : 362,
-        overallLikeCount: null,
+        
         likeProportion: 2.65347E-4,
         firstDate : "2023-04-05",
         dayOfWeek : "목",
@@ -7174,7 +7176,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/779354/thumbnail/thumbnail_IMAG21_f692824a-01d2-4b8c-91a9-e35d96b473f8.jpg",
         genre : [],
         likeCount : 361,
-        overallLikeCount: null,
+        
         likeProportion: 2.64614E-4,
         firstDate : "2021-08-28",
         dayOfWeek : "일",
@@ -7188,7 +7190,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/811908/thumbnail/thumbnail_IMAG21_32171763-13bc-4f0c-af2e-b1112a8cf698.jpg",
         genre : ["스릴러"],
         likeCount : 353,
-        overallLikeCount: null,
+        
         likeProportion: 2.5875E-4,
         firstDate : "2023-06-09",
         dayOfWeek : "토",
@@ -7202,7 +7204,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/816814/thumbnail/thumbnail_IMAG21_46657eeb-dbae-485a-bd7e-27153ce8e777.jpg",
         genre : [],
         likeCount : 352,
-        overallLikeCount: null,
+        
         likeProportion: 2.58017E-4,
         firstDate : "2023-09-16",
         dayOfWeek : "일",
@@ -7216,7 +7218,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/780267/thumbnail/thumbnail_IMAG21_7234251265032676917.jpg",
         genre : [],
         likeCount : 351,
-        overallLikeCount: null,
+        
         likeProportion: 2.57284E-4,
         firstDate : "2021-09-16",
         dayOfWeek : "금",
@@ -7230,7 +7232,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/787729/thumbnail/thumbnail_IMAG21_d6ca420b-0d77-40ec-b59b-8e44f785e79d.jpg",
         genre : ["판타지"],
         likeCount : 350,
-        overallLikeCount: null,
+        
         likeProportion: 2.56551E-4,
         firstDate : "2022-01-05",
         dayOfWeek : "목",
@@ -7244,7 +7246,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/810450/thumbnail/thumbnail_IMAG21_33cdff23-00fd-4040-8373-60846d4e3ad6.jpg",
         genre : ["로맨스"],
         likeCount : 348,
-        overallLikeCount: null,
+        
         likeProportion: 2.55085E-4,
         firstDate : "2023-05-24",
         dayOfWeek : "목",
@@ -7258,7 +7260,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/819201/thumbnail/thumbnail_IMAG21_6619e46e-2e9b-43dc-9ac1-0b5ab285c5c6.jpg",
         genre : ["판타지"],
         likeCount : 347,
-        overallLikeCount: null,
+        
         likeProportion: 2.54352E-4,
         firstDate : "2023-12-02",
         dayOfWeek : "일",
@@ -7272,7 +7274,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813451/thumbnail/thumbnail_IMAG21_63771fb5-bb2b-4ecf-a9d8-1169fa9c73ab.jpeg",
         genre : ["판타지"],
         likeCount : 340,
-        overallLikeCount: null,
+        
         likeProportion: 2.49221E-4,
         firstDate : "2023-08-05",
         dayOfWeek : "일",
@@ -7286,7 +7288,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808201/thumbnail/thumbnail_IMAG21_1e67d319-2297-43cd-9888-b1e3c61d6be8.jpg",
         genre : ["로맨스"],
         likeCount : 337,
-        overallLikeCount: null,
+        
         likeProportion: 2.47022E-4,
         firstDate : "2023-04-11",
         dayOfWeek : "수",
@@ -7300,7 +7302,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/791256/thumbnail/thumbnail_IMAG21_3833187132113172581.jpg",
         genre : ["판타지"],
         likeCount : 333,
-        overallLikeCount: null,
+        
         likeProportion: 2.4409E-4,
         firstDate : "2022-02-27",
         dayOfWeek : "월",
@@ -7314,7 +7316,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802854/thumbnail/thumbnail_IMAG21_8acfafa7-d1db-42fa-9e01-3b7500650e11.jpg",
         genre : ["로맨스"],
         likeCount : 325,
-        overallLikeCount: null,
+        
         likeProportion: 2.38226E-4,
         firstDate : "2022-11-27",
         dayOfWeek : "월",
@@ -7328,7 +7330,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/753304/thumbnail/thumbnail_IMAG21_02569ecf-8e35-48b5-a9d3-5ab38900163d.jpg",
         genre : ["판타지"],
         likeCount : 320,
-        overallLikeCount: null,
+        
         likeProportion: 2.34561E-4,
         firstDate : "2020-09-04",
         dayOfWeek : "토",
@@ -7342,7 +7344,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814371/thumbnail/thumbnail_IMAG21_45b13cf0-1c9a-4582-9a03-830329440c2a.jpg",
         genre : ["판타지"],
         likeCount : 317,
-        overallLikeCount: null,
+        
         likeProportion: 2.32362E-4,
         firstDate : "2023-08-18",
         dayOfWeek : "토",
@@ -7356,7 +7358,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/791892/thumbnail/thumbnail_IMAG21_3834359001091564337.jpg",
         genre : ["판타지"],
         likeCount : 315,
-        overallLikeCount: null,
+        
         likeProportion: 2.30896E-4,
         firstDate : "2022-03-22",
         dayOfWeek : "수",
@@ -7370,7 +7372,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/774870/thumbnail/thumbnail_IMAG21_5d86f40f-49cc-4ab3-a287-50a38c8ec95c.jpg",
         genre : ["로맨스"],
         likeCount : 312,
-        overallLikeCount: null,
+        
         likeProportion: 2.28697E-4,
         firstDate : "2022-01-23",
         dayOfWeek : "월",
@@ -7384,7 +7386,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812403/thumbnail/thumbnail_IMAG21_bc35a097-4b19-43bf-849e-26f8712bd65f.jpg",
         genre : ["로맨스"],
         likeCount : 311,
-        overallLikeCount: null,
+        
         likeProportion: 2.27964E-4,
         firstDate : "2023-07-02",
         dayOfWeek : "월",
@@ -7398,7 +7400,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/797259/thumbnail/thumbnail_IMAG21_4135202076969481273.jpg",
         genre : ["로맨스"],
         likeCount : 302,
-        overallLikeCount: null,
+        
         likeProportion: 2.21367E-4,
         firstDate : "2022-07-11",
         dayOfWeek : "화",
@@ -7412,7 +7414,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812907/thumbnail/thumbnail_IMAG21_4cf453b2-af77-4519-8adf-629885f4ff76.jpg",
         genre : [],
         likeCount : 300,
-        overallLikeCount: null,
+        
         likeProportion: 2.19901E-4,
         firstDate : "2023-07-14",
         dayOfWeek : "토",
@@ -7426,7 +7428,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808265/thumbnail/thumbnail_IMAG21_9efa88c9-cd85-41c2-8c4c-8dea39c6acd9.jpg",
         genre : [],
         likeCount : 296,
-        overallLikeCount: null,
+        
         likeProportion: 2.16969E-4,
         firstDate : "2023-04-07",
         dayOfWeek : "토",
@@ -7440,7 +7442,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807206/thumbnail/thumbnail_IMAG21_9fa6b184-48c8-438c-b734-4bb9de975230.jpg",
         genre : ["판타지"],
         likeCount : 293,
-        overallLikeCount: null,
+        
         likeProportion: 2.1477E-4,
         firstDate : "2023-03-25",
         dayOfWeek : "일",
@@ -7454,7 +7456,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/800504/thumbnail/thumbnail_IMAG21_de7f2718-2ed9-4688-890d-fc73b9179c1d.jpg",
         genre : ["로맨스"],
         likeCount : 293,
-        overallLikeCount: null,
+        
         likeProportion: 2.1477E-4,
         firstDate : "2022-09-27",
         dayOfWeek : "수",
@@ -7468,7 +7470,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813412/thumbnail/thumbnail_IMAG21_3d5f4af7-cbbd-486c-ad3a-89eec9550598.jpg",
         genre : ["판타지"],
         likeCount : 290,
-        overallLikeCount: null,
+        
         likeProportion: 2.12571E-4,
         firstDate : "2023-07-22",
         dayOfWeek : "일",
@@ -7482,7 +7484,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812558/thumbnail/thumbnail_IMAG21_226e3ef8-2aab-431f-a2ac-d8c71ce7e590.jpg",
         genre : ["스릴러"],
         likeCount : 286,
-        overallLikeCount: null,
+        
         likeProportion: 2.09639E-4,
         firstDate : "2023-06-27",
         dayOfWeek : "수",
@@ -7496,7 +7498,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/794644/thumbnail/thumbnail_IMAG21_6d7a7af6-ed5d-474f-bae0-f5fc70cef0e6.jpg",
         genre : ["로맨스"],
         likeCount : 285,
-        overallLikeCount: null,
+        
         likeProportion: 2.08906E-4,
         firstDate : "2022-05-18",
         dayOfWeek : "목",
@@ -7510,7 +7512,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814885/thumbnail/thumbnail_IMAG21_d51ba02b-f270-46f5-9a92-fc5257f4665a.jpg",
         genre : ["로맨스"],
         likeCount : 282,
-        overallLikeCount: null,
+        
         likeProportion: 2.06707E-4,
         firstDate : "2023-09-04",
         dayOfWeek : "화",
@@ -7524,7 +7526,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812144/thumbnail/thumbnail_IMAG21_27cf5bd6-f4ec-4780-8c0b-0dfad969c070.jpg",
         genre : ["로맨스"],
         likeCount : 277,
-        overallLikeCount: null,
+        
         likeProportion: 2.03042E-4,
         firstDate : "2023-06-17",
         dayOfWeek : "일",
@@ -7538,7 +7540,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/819230/thumbnail/thumbnail_IMAG21_0e049c62-8732-4c2b-adcf-ae67a6bc7542.jpg",
         genre : ["무협"],
         likeCount : 276,
-        overallLikeCount: null,
+        
         likeProportion: 2.02309E-4,
         firstDate : "2023-12-11",
         dayOfWeek : "화",
@@ -7552,7 +7554,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/774302/thumbnail/thumbnail_IMAG21_4121973654889457249.jpg",
         genre : [],
         likeCount : 276,
-        overallLikeCount: null,
+        
         likeProportion: 2.02309E-4,
         firstDate : "2021-06-13",
         dayOfWeek : "월",
@@ -7566,7 +7568,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812731/thumbnail/thumbnail_IMAG21_2f3886a0-a751-454f-b873-3bca44046023.jpg",
         genre : ["로맨스"],
         likeCount : 273,
-        overallLikeCount: null,
+        
         likeProportion: 2.0011E-4,
         firstDate : "2023-07-10",
         dayOfWeek : "화",
@@ -7580,7 +7582,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809872/thumbnail/thumbnail_IMAG21_54a73ea1-f5b7-482e-81be-6e5d049b7e3e.jpg",
         genre : ["스릴러"],
         likeCount : 272,
-        overallLikeCount: null,
+        
         likeProportion: 1.99377E-4,
         firstDate : "2023-05-25",
         dayOfWeek : "금",
@@ -7594,7 +7596,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817342/thumbnail/thumbnail_IMAG21_d7bb87f5-03de-4c59-9d4d-b3d9fb229981.jpg",
         genre : ["스릴러"],
         likeCount : 269,
-        overallLikeCount: null,
+        
         likeProportion: 1.97178E-4,
         firstDate : "2023-09-29",
         dayOfWeek : "토",
@@ -7608,7 +7610,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/774451/thumbnail/thumbnail_IMAG21_dfacd585-dc48-410e-b91d-1a3131a4c54d.jpg",
         genre : [],
         likeCount : 268,
-        overallLikeCount: null,
+        
         likeProportion: 1.96445E-4,
         firstDate : "2021-06-23",
         dayOfWeek : "목",
@@ -7622,7 +7624,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808388/thumbnail/thumbnail_IMAG21_741d216d-75b8-4a81-93c5-1f6d6f697ed2.jpg",
         genre : ["무협"],
         likeCount : 267,
-        overallLikeCount: null,
+        
         likeProportion: 1.95712E-4,
         firstDate : "2023-04-17",
         dayOfWeek : "화",
@@ -7636,7 +7638,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805974/thumbnail/thumbnail_IMAG21_7794debf-da11-42fd-9126-13723f239794.jpg",
         genre : ["판타지"],
         likeCount : 267,
-        overallLikeCount: null,
+        
         likeProportion: 1.95712E-4,
         firstDate : "2023-02-06",
         dayOfWeek : "화",
@@ -7650,7 +7652,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818017/thumbnail/thumbnail_IMAG21_67599959-34f4-4a23-81a1-689685e096f4.jpg",
         genre : [],
         likeCount : 265,
-        overallLikeCount: null,
+        
         likeProportion: 1.94246E-4,
         firstDate : "2023-10-31",
         dayOfWeek : "수",
@@ -7664,7 +7666,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/816860/thumbnail/thumbnail_IMAG21_2d1c7efa-7c9c-4680-9383-88bfa02b4909.jpg",
         genre : ["로맨스", "판타지"],
         likeCount : 264,
-        overallLikeCount: null,
+        
         likeProportion: 1.93513E-4,
         firstDate : "2023-09-26",
         dayOfWeek : "수",
@@ -7678,7 +7680,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/812121/thumbnail/thumbnail_IMAG21_8d4a2ffb-4ce5-4a27-8554-462ae7055592.jpg",
         genre : ["로맨스"],
         likeCount : 263,
-        overallLikeCount: null,
+        
         likeProportion: 1.9278E-4,
         firstDate : "2023-06-19",
         dayOfWeek : "화",
@@ -7692,7 +7694,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/811841/thumbnail/thumbnail_IMAG21_af03da42-11b4-4504-93a1-30c6c957e999.jpg",
         genre : ["스릴러"],
         likeCount : 262,
-        overallLikeCount: null,
+        
         likeProportion: 1.92047E-4,
         firstDate : "2023-06-10",
         dayOfWeek : "일",
@@ -7706,7 +7708,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814039/thumbnail/thumbnail_IMAG21_59d8de35-834d-43d2-8ba4-3112f5f91439.jpg",
         genre : ["로맨스"],
         likeCount : 261,
-        overallLikeCount: null,
+        
         likeProportion: 1.91314E-4,
         firstDate : "2023-08-11",
         dayOfWeek : "토",
@@ -7720,7 +7722,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814407/thumbnail/thumbnail_IMAG21_5b80b114-7602-4d9e-93b3-ac7c38b2375f.jpg",
         genre : ["판타지"],
         likeCount : 260,
-        overallLikeCount: null,
+        
         likeProportion: 1.90581E-4,
         firstDate : "2023-08-26",
         dayOfWeek : "일",
@@ -7734,7 +7736,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/811129/thumbnail/thumbnail_IMAG21_02284133-0eb0-407a-9c4e-7381dbd7a8a4.jpg",
         genre : ["로맨스"],
         likeCount : 258,
-        overallLikeCount: null,
+        
         likeProportion: 1.89115E-4,
         firstDate : "2023-05-28",
         dayOfWeek : "월",
@@ -7748,7 +7750,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809870/thumbnail/thumbnail_IMAG21_99b34792-86f3-43a2-aa29-dad847a3daf5.jpg",
         genre : ["스릴러"],
         likeCount : 258,
-        overallLikeCount: null,
+        
         likeProportion: 1.89115E-4,
         firstDate : "2023-05-23",
         dayOfWeek : "수",
@@ -7762,7 +7764,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817987/thumbnail/thumbnail_IMAG21_22f8f0f6-ffb1-4b24-b47e-6a1d33074ead.jpg",
         genre : ["로맨스"],
         likeCount : 254,
-        overallLikeCount: null,
+        
         likeProportion: 1.86183E-4,
         firstDate : "2023-10-22",
         dayOfWeek : "월",
@@ -7776,7 +7778,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/774869/thumbnail/thumbnail_IMAG21_9167dfcb-aafa-41f9-84d7-31c08ad7dda9.jpg",
         genre : [],
         likeCount : 253,
-        overallLikeCount: null,
+        
         likeProportion: 1.8545E-4,
         firstDate : "2021-09-17",
         dayOfWeek : "토",
@@ -7790,7 +7792,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/751999/thumbnail/thumbnail_IMAG21_8797d0ef-cefd-463b-bf97-1361a5de293b.jpg",
         genre : ["판타지"],
         likeCount : 244,
-        overallLikeCount: null,
+        
         likeProportion: 1.78853E-4,
         firstDate : "2020-08-13",
         dayOfWeek : "금",
@@ -7804,7 +7806,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818780/thumbnail/thumbnail_IMAG21_ad3cf05d-0b97-47f6-8d4b-181e5906fcca.jpg",
         genre : ["판타지"],
         likeCount : 243,
-        overallLikeCount: null,
+        
         likeProportion: 1.7812E-4,
         firstDate : "2023-11-26",
         dayOfWeek : "월",
@@ -7818,7 +7820,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/778410/thumbnail/thumbnail_IMAG21_8bfbbd50-5422-4410-8a33-0b945f1970c9.jpg",
         genre : ["액션"],
         likeCount : 242,
-        overallLikeCount: null,
+        
         likeProportion: 1.77387E-4,
         firstDate : "2023-11-24",
         dayOfWeek : "토",
@@ -7832,7 +7834,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817757/thumbnail/thumbnail_IMAG21_b97ebbb9-6e92-4e8d-807a-504855e7d616.jpg",
         genre : ["로맨스"],
         likeCount : 242,
-        overallLikeCount: null,
+        
         likeProportion: 1.77387E-4,
         firstDate : "2023-11-19",
         dayOfWeek : "월",
@@ -7846,7 +7848,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802872/thumbnail/thumbnail_IMAG21_c80f6d62-0971-4806-9aa5-9cc0d9e5599e.jpg",
         genre : ["판타지"],
         likeCount : 240,
-        overallLikeCount: null,
+        
         likeProportion: 1.75921E-4,
         firstDate : "2022-12-05",
         dayOfWeek : "화",
@@ -7860,7 +7862,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813571/thumbnail/thumbnail_IMAG21_a40611fc-7bbb-4faf-a533-0216f91a7639.jpg",
         genre : [],
         likeCount : 236,
-        overallLikeCount: null,
+        
         likeProportion: 1.72989E-4,
         firstDate : "2023-08-02",
         dayOfWeek : "목",
@@ -7874,7 +7876,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/803119/thumbnail/thumbnail_IMAG21_cfc478c6-3b56-4bdf-b959-089775b2b916.jpg",
         genre : ["로맨스"],
         likeCount : 236,
-        overallLikeCount: null,
+        
         likeProportion: 1.72989E-4,
         firstDate : "2022-12-01",
         dayOfWeek : "금",
@@ -7888,7 +7890,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/783520/thumbnail/thumbnail_IMAG21_3846462416433133112.jpg",
         genre : ["스릴러"],
         likeCount : 236,
-        overallLikeCount: null,
+        
         likeProportion: 1.72989E-4,
         firstDate : "2021-11-11",
         dayOfWeek : "금",
@@ -7902,7 +7904,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805323/thumbnail/thumbnail_IMAG21_821d9ea6-ac3e-4b74-bdbc-e50cee1d21c5.jpeg",
         genre : ["액션"],
         likeCount : 233,
-        overallLikeCount: null,
+        
         likeProportion: 1.7079E-4,
         firstDate : "2023-01-17",
         dayOfWeek : "수",
@@ -7916,7 +7918,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809558/thumbnail/thumbnail_IMAG21_094f39f0-92cf-434d-9578-10b896b79ffb.jpg",
         genre : ["로맨스"],
         likeCount : 230,
-        overallLikeCount: null,
+        
         likeProportion: 1.68591E-4,
         firstDate : "2023-05-23",
         dayOfWeek : "수",
@@ -7930,7 +7932,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/772729/thumbnail/thumbnail_IMAG21_a3b95562-c1ec-4d31-a2a4-77c177731b29.jpg",
         genre : ["판타지"],
         likeCount : 230,
-        overallLikeCount: null,
+        
         likeProportion: 1.68591E-4,
         firstDate : "2021-07-06",
         dayOfWeek : "수",
@@ -7944,7 +7946,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/799016/thumbnail/thumbnail_IMAG21_719cf041-6408-4429-85dc-4b2cd2cb930d.jpg",
         genre : ["로맨스"],
         likeCount : 227,
-        overallLikeCount: null,
+        
         likeProportion: 1.66392E-4,
         firstDate : "2022-08-16",
         dayOfWeek : "수",
@@ -7958,7 +7960,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818334/thumbnail/thumbnail_IMAG21_fb7875f9-68b9-468c-b0db-02776ad56bd7.jpg",
         genre : [],
         likeCount : 226,
-        overallLikeCount: null,
+        
         likeProportion: 1.65659E-4,
         firstDate : "2023-11-02",
         dayOfWeek : "금",
@@ -7972,7 +7974,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/751993/thumbnail/thumbnail_IMAG21_7089003575688389985.jpg",
         genre : ["판타지"],
         likeCount : 218,
-        overallLikeCount: null,
+        
         likeProportion: 1.59795E-4,
         firstDate : "2020-09-23",
         dayOfWeek : "목",
@@ -7986,7 +7988,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/811255/thumbnail/thumbnail_IMAG21_96bce722-8991-4b3f-af64-5374b14796a6.jpg",
         genre : ["판타지"],
         likeCount : 217,
-        overallLikeCount: null,
+        
         likeProportion: 1.59062E-4,
         firstDate : "2023-06-02",
         dayOfWeek : "토",
@@ -8000,7 +8002,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/783599/thumbnail/thumbnail_IMAG21_629c1cd8-a02c-4ee3-80a8-2da6c5c6a57e.jpg",
         genre : ["판타지"],
         likeCount : 216,
-        overallLikeCount: null,
+        
         likeProportion: 1.58329E-4,
         firstDate : "2022-02-12",
         dayOfWeek : "일",
@@ -8014,7 +8016,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/794743/thumbnail/thumbnail_IMAG21_cda3c8aa-f076-439a-94e9-cdac4f0b5db7.jpeg",
         genre : ["스릴러"],
         likeCount : 214,
-        overallLikeCount: null,
+        
         likeProportion: 1.56863E-4,
         firstDate : "2022-05-12",
         dayOfWeek : "금",
@@ -8028,7 +8030,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/816528/thumbnail/thumbnail_IMAG21_12b8af45-dcdb-4a37-8ccf-b597e490e55c.jpg",
         genre : ["로맨스"],
         likeCount : 210,
-        overallLikeCount: null,
+        
         likeProportion: 1.53931E-4,
         firstDate : "2023-09-10",
         dayOfWeek : "월",
@@ -8042,7 +8044,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/814830/thumbnail/thumbnail_IMAG21_e208c486-abdf-44d0-b97b-ebf4dcd2cf28.jpg",
         genre : ["로맨스"],
         likeCount : 208,
-        overallLikeCount: null,
+        
         likeProportion: 1.52465E-4,
         firstDate : "2023-09-19",
         dayOfWeek : "수",
@@ -8056,7 +8058,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817371/thumbnail/thumbnail_IMAG21_3f7fea9f-b33b-4fdc-a775-901dbe2937c5.jpeg",
         genre : [],
         likeCount : 205,
-        overallLikeCount: null,
+        
         likeProportion: 1.50266E-4,
         firstDate : "2023-10-17",
         dayOfWeek : "수",
@@ -8070,7 +8072,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809445/thumbnail/thumbnail_IMAG21_f3610381-5179-4790-a278-b9d237f28e2e.jpg",
         genre : ["로맨스"],
         likeCount : 205,
-        overallLikeCount: null,
+        
         likeProportion: 1.50266E-4,
         firstDate : "2023-05-12",
         dayOfWeek : "토",
@@ -8084,7 +8086,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/819054/thumbnail/thumbnail_IMAG21_caf4a021-bdda-4d89-b4fd-ac143c3a86ad.jpg",
         genre : ["로맨스"],
         likeCount : 200,
-        overallLikeCount: null,
+        
         likeProportion: 1.46601E-4,
         firstDate : "2023-11-27",
         dayOfWeek : "화",
@@ -8098,7 +8100,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/784582/thumbnail/thumbnail_IMAG21_e433729e-1bd9-4a35-aa16-d43bee995a62.jpg",
         genre : ["판타지"],
         likeCount : 196,
-        overallLikeCount: null,
+        
         likeProportion: 1.43669E-4,
         firstDate : "2021-12-03",
         dayOfWeek : "토",
@@ -8112,7 +8114,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/784989/thumbnail/thumbnail_IMAG21_3762867861630367334.jpg",
         genre : ["일상"],
         likeCount : 196,
-        overallLikeCount: null,
+        
         likeProportion: 1.43669E-4,
         firstDate : "2021-11-24",
         dayOfWeek : "목",
@@ -8126,7 +8128,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807314/thumbnail/thumbnail_IMAG21_176143e6-3d43-495d-b60e-4dae06bc10e2.jpg",
         genre : ["스포츠"],
         likeCount : 194,
-        overallLikeCount: null,
+        
         likeProportion: 1.42203E-4,
         firstDate : "2023-03-13",
         dayOfWeek : "화",
@@ -8140,7 +8142,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/801809/thumbnail/thumbnail_IMAG21_6764cc3d-eca6-4875-9e34-7c3b50c78bf3.jpg",
         genre : ["로맨스"],
         likeCount : 189,
-        overallLikeCount: null,
+        
         likeProportion: 1.38538E-4,
         firstDate : "2022-11-01",
         dayOfWeek : "수",
@@ -8154,7 +8156,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808760/thumbnail/thumbnail_IMAG21_41bce5b2-aa2a-4186-94ea-22bf8b37488a.jpg",
         genre : ["판타지"],
         likeCount : 189,
-        overallLikeCount: null,
+        
         likeProportion: 1.38538E-4,
         firstDate : "2023-04-23",
         dayOfWeek : "월",
@@ -8168,7 +8170,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809619/thumbnail/thumbnail_IMAG21_3622cd61-4695-40e7-b2e1-be2fca76fb3e.jpg",
         genre : [],
         likeCount : 177,
-        overallLikeCount: null,
+        
         likeProportion: 1.29742E-4,
         firstDate : "2023-05-16",
         dayOfWeek : "수",
@@ -8182,7 +8184,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807159/thumbnail/thumbnail_IMAG21_e7c75b1e-7bc4-484b-874d-1245f114479e.jpg",
         genre : ["스릴러"],
         likeCount : 173,
-        overallLikeCount: null,
+        
         likeProportion: 1.2681E-4,
         firstDate : "2023-03-05",
         dayOfWeek : "월",
@@ -8196,7 +8198,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802986/thumbnail/thumbnail_IMAG21_c25b5dbd-8e7a-4184-aa1f-5d02727e874c.jpg",
         genre : ["로맨스"],
         likeCount : 166,
-        overallLikeCount: null,
+        
         likeProportion: 1.21679E-4,
         firstDate : "2022-11-26",
         dayOfWeek : "일",
@@ -8210,7 +8212,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/703847/thumbnail/thumbnail_IMAG21_75e07916-d264-42ee-8af7-2788f8b9235f.jpg",
         genre : ["로맨스"],
         likeCount : 163,
-        overallLikeCount: null,
+        
         likeProportion: 1.1948E-4,
         firstDate : "2018-04-18",
         dayOfWeek : "목",
@@ -8224,7 +8226,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/800390/thumbnail/thumbnail_IMAG21_66f9aedf-b500-40b4-984d-33b10b6a1489.jpg",
         genre : ["로맨스"],
         likeCount : 156,
-        overallLikeCount: null,
+        
         likeProportion: 1.14349E-4,
         firstDate : "2022-09-20",
         dayOfWeek : "수",
@@ -8238,7 +8240,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/791632/thumbnail/thumbnail_IMAG21_0e5ee34e-898a-4106-8652-35525f24afa9.jpg",
         genre : ["판타지"],
         likeCount : 154,
-        overallLikeCount: null,
+        
         likeProportion: 1.12883E-4,
         firstDate : "2022-03-15",
         dayOfWeek : "수",
@@ -8252,7 +8254,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/764480/thumbnail/thumbnail_IMAG21_9551ea28-1692-4478-a090-10ef47770f40.jpg",
         genre : ["판타지"],
         likeCount : 153,
-        overallLikeCount: null,
+        
         likeProportion: 1.1215E-4,
         firstDate : "2021-01-17",
         dayOfWeek : "월",
@@ -8266,7 +8268,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802913/thumbnail/thumbnail_IMAG21_1c4725c3-d63a-473a-a5fb-cb707836ada4.jpg",
         genre : ["로맨스"],
         likeCount : 150,
-        overallLikeCount: null,
+        
         likeProportion: 1.09951E-4,
         firstDate : "2022-12-06",
         dayOfWeek : "수",
@@ -8280,7 +8282,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802359/thumbnail/thumbnail_IMAG21_3fa11f89-cf2d-4258-b130-7dd84bc14c95.jpg",
         genre : ["로맨스"],
         likeCount : 149,
-        overallLikeCount: null,
+        
         likeProportion: 1.09218E-4,
         firstDate : "2022-11-10",
         dayOfWeek : "금",
@@ -8294,7 +8296,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/793067/thumbnail/thumbnail_IMAG21_3544444194497192757.jpg",
         genre : ["판타지"],
         likeCount : 148,
-        overallLikeCount: null,
+        
         likeProportion: 1.08485E-4,
         firstDate : "2022-05-15",
         dayOfWeek : "월",
@@ -8308,7 +8310,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/819206/thumbnail/thumbnail_IMAG21_e16c74ba-f012-4e8b-8a28-393bf2cdb5e8.jpg",
         genre : ["액션"],
         likeCount : 148,
-        overallLikeCount: null,
+        
         likeProportion: 1.08485E-4,
         firstDate : "2023-12-04",
         dayOfWeek : "화",
@@ -8322,7 +8324,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805671/thumbnail/thumbnail_IMAG21_8be4a557-d691-48b1-8445-199e6c0c5dbd.jpg",
         genre : ["로맨스"],
         likeCount : 145,
-        overallLikeCount: null,
+        
         likeProportion: 1.06286E-4,
         firstDate : "2023-01-30",
         dayOfWeek : "화",
@@ -8336,7 +8338,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/774039/thumbnail/thumbnail_IMAG21_baed2068-c7f0-4f57-af10-c355f2b560f8.jpg",
         genre : ["로맨스"],
         likeCount : 144,
-        overallLikeCount: null,
+        
         likeProportion: 1.05553E-4,
         firstDate : "2021-06-08",
         dayOfWeek : "수",
@@ -8350,7 +8352,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817611/thumbnail/thumbnail_IMAG21_b00a586f-5f01-4320-bad6-7c27c844761e.jpg",
         genre : ["액션"],
         likeCount : 140,
-        overallLikeCount: null,
+        
         likeProportion: 1.02621E-4,
         firstDate : "2023-10-11",
         dayOfWeek : "목",
@@ -8364,7 +8366,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/805730/thumbnail/thumbnail_IMAG21_385b1660-0880-4713-873e-1a1cd45744a0.jpg",
         genre : ["스릴러"],
         likeCount : 140,
-        overallLikeCount: null,
+        
         likeProportion: 1.02621E-4,
         firstDate : "2023-02-07",
         dayOfWeek : "수",
@@ -8378,7 +8380,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818674/thumbnail/thumbnail_IMAG21_f0c14460-e488-4371-a5e1-b69e14f7e89c.jpg",
         genre : ["로맨스"],
         likeCount : 139,
-        overallLikeCount: null,
+        
         likeProportion: 1.01888E-4,
         firstDate : "2023-11-13",
         dayOfWeek : "화",
@@ -8392,7 +8394,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/816852/thumbnail/thumbnail_IMAG21_6f5cc6f5-16d1-4449-8579-3776be1dc89b.jpg",
         genre : ["무협"],
         likeCount : 138,
-        overallLikeCount: null,
+        
         likeProportion: 1.01155E-4,
         firstDate : "2023-09-30",
         dayOfWeek : "일",
@@ -8406,7 +8408,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/754876/thumbnail/thumbnail_IMAG21_3904682673849053541.jpg",
         genre : ["판타지"],
         likeCount : 134,
-        overallLikeCount: null,
+        
         likeProportion: 9.82225E-5,
         firstDate : "2020-10-07",
         dayOfWeek : "목",
@@ -8420,7 +8422,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/799868/thumbnail/thumbnail_IMAG21_edfa4344-9f13-4a6c-8b9f-00d08cf37a1d.jpg",
         genre : ["로맨스"],
         likeCount : 133,
-        overallLikeCount: null,
+        
         likeProportion: 9.74895E-5,
         firstDate : "2022-09-11",
         dayOfWeek : "월",
@@ -8434,7 +8436,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802578/thumbnail/thumbnail_IMAG21_d687ee7c-9d25-4b56-8b89-b0acf3c0662a.jpg",
         genre : [],
         likeCount : 133,
-        overallLikeCount: null,
+        
         likeProportion: 9.74895E-5,
         firstDate : "2022-12-01",
         dayOfWeek : "금",
@@ -8448,7 +8450,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/697533/thumbnail/thumbnail_IMAG21_e9f62ca7-39be-4dd4-bfa7-4709a70aca32.jpg",
         genre : ["스릴러"],
         likeCount : 132,
-        overallLikeCount: null,
+        
         likeProportion: 9.67565E-5,
         firstDate : "2017-06-06",
         dayOfWeek : "수",
@@ -8462,7 +8464,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/735078/thumbnail/thumbnail_IMAG21_bbbfa6c0-bd41-4c59-a7fb-a44776497691.jpg",
         genre : ["판타지"],
         likeCount : 132,
-        overallLikeCount: null,
+        
         likeProportion: 9.67565E-5,
         firstDate : "2019-10-11",
         dayOfWeek : "토",
@@ -8476,7 +8478,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807745/thumbnail/thumbnail_IMAG21_48748c1b-e177-48ef-b684-3c9e29a69b7c.jpg",
         genre : ["로맨스"],
         likeCount : 130,
-        overallLikeCount: null,
+        
         likeProportion: 9.52905E-5,
         firstDate : "2023-03-21",
         dayOfWeek : "수",
@@ -8490,7 +8492,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/740132/thumbnail/thumbnail_IMAG21_d6f6e062-23d4-432a-a4be-6e1e66f63ede.jpg",
         genre : [],
         likeCount : 126,
-        overallLikeCount: null,
+        
         likeProportion: 9.23585E-5,
         firstDate : "2020-02-02",
         dayOfWeek : "월",
@@ -8504,7 +8506,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813802/thumbnail/thumbnail_IMAG21_a579f9c8-251d-4e09-a42a-9253540d0437.jpg",
         genre : ["판타지"],
         likeCount : 126,
-        overallLikeCount: null,
+        
         likeProportion: 9.23585E-5,
         firstDate : "2023-08-02",
         dayOfWeek : "목",
@@ -8518,7 +8520,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807858/thumbnail/thumbnail_IMAG21_6f8082ba-9afe-491f-98d6-8b7b7fafb991.jpg",
         genre : ["로맨스"],
         likeCount : 126,
-        overallLikeCount: null,
+        
         likeProportion: 9.23585E-5,
         firstDate : "2023-03-27",
         dayOfWeek : "화",
@@ -8532,7 +8534,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/798622/thumbnail/thumbnail_IMAG21_0fd8f2b5-635c-4d34-ad9a-ef26e4de39ac.jpg",
         genre : ["판타지"],
         likeCount : 120,
-        overallLikeCount: null,
+        
         likeProportion: 8.79605E-5,
         firstDate : "2022-08-04",
         dayOfWeek : "금",
@@ -8546,7 +8548,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/644112/thumbnail/thumbnail_IMAG21_3618981192359294768.jpg",
         genre : ["무협"],
         likeCount : 115,
-        overallLikeCount: null,
+        
         likeProportion: 8.42955E-5,
         firstDate : "2015-01-08",
         dayOfWeek : "금",
@@ -8560,7 +8562,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/817049/thumbnail/thumbnail_IMAG21_69243099-b753-46d2-9993-966f90b51ad4.jpg",
         genre : ["로맨스"],
         likeCount : 113,
-        overallLikeCount: null,
+        
         likeProportion: 8.28295E-5,
         firstDate : "2023-09-20",
         dayOfWeek : "목",
@@ -8574,7 +8576,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/808074/thumbnail/thumbnail_IMAG21_d4899238-5123-443d-826c-f70b1f3618a5.jpg",
         genre : ["로맨스"],
         likeCount : 110,
-        overallLikeCount: null,
+        
         likeProportion: 8.06304E-5,
         firstDate : "2023-04-02",
         dayOfWeek : "월",
@@ -8588,7 +8590,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/802751/thumbnail/thumbnail_IMAG21_fb1ccdf4-244c-4614-9642-c1d6051a68c3.jpg",
         genre : [],
         likeCount : 106,
-        overallLikeCount: null,
+        
         likeProportion: 7.76984E-5,
         firstDate : "2022-12-31",
         dayOfWeek : "일",
@@ -8602,7 +8604,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/819436/thumbnail/thumbnail_IMAG21_00c8653a-ee1d-4da2-b76b-f1be49596bdc.jpg",
         genre : [],
         likeCount : 103,
-        overallLikeCount: null,
+        
         likeProportion: 7.54994E-5,
         firstDate : "2023-12-11",
         dayOfWeek : "화",
@@ -8616,7 +8618,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/807356/thumbnail/thumbnail_IMAG21_7c35811d-1498-4d50-a38c-0b494502018c.jpg",
         genre : [],
         likeCount : 102,
-        overallLikeCount: null,
+        
         likeProportion: 7.47664E-5,
         firstDate : "2023-03-08",
         dayOfWeek : "목",
@@ -8630,7 +8632,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/816522/thumbnail/thumbnail_IMAG21_5cd83291-805b-414c-9e0b-5ff1c1944374.jpg",
         genre : ["판타지"],
         likeCount : 97,
-        overallLikeCount: null,
+        
         likeProportion: 7.11014E-5,
         firstDate : "2023-09-06",
         dayOfWeek : "목",
@@ -8644,7 +8646,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/810561/thumbnail/thumbnail_IMAG21_b93e29dc-335c-4c38-afa9-074c581273cc.jpg",
         genre : [],
         likeCount : 94,
-        overallLikeCount: null,
+        
         likeProportion: 6.89024E-5,
         firstDate : "2023-05-29",
         dayOfWeek : "화",
@@ -8658,7 +8660,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/818351/thumbnail/thumbnail_IMAG21_c5ccbf4b-e4ad-4dfa-b0f4-00a778c9ad47.jpg",
         genre : ["로맨스"],
         likeCount : 86,
-        overallLikeCount: null,
+        
         likeProportion: 6.30383E-5,
         firstDate : "2023-11-10",
         dayOfWeek : "토",
@@ -8672,7 +8674,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/796492/thumbnail/thumbnail_IMAG21_4122820291731022946.jpg",
         genre : ["로맨스"],
         likeCount : 80,
-        overallLikeCount: null,
+        
         likeProportion: 5.86403E-5,
         firstDate : "2022-06-29",
         dayOfWeek : "목",
@@ -8686,7 +8688,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/804989/thumbnail/thumbnail_IMAG21_b14ade30-c3c3-49ec-9700-db2c49d7794b.jpg",
         genre : ["스릴러"],
         likeCount : 79,
-        overallLikeCount: null,
+        
         likeProportion: 5.79073E-5,
         firstDate : "2023-01-10",
         dayOfWeek : "수",
@@ -8700,7 +8702,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/813334/thumbnail/thumbnail_IMAG21_4d1c2cb5-0f8e-484a-b36e-8318dcce3292.jpg",
         genre : ["로맨스"],
         likeCount : 77,
-        overallLikeCount: null,
+        
         likeProportion: 5.64413E-5,
         firstDate : "2023-07-26",
         dayOfWeek : "목",
@@ -8714,7 +8716,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809263/thumbnail/thumbnail_IMAG21_10493e4c-e4b5-4aac-b1ed-4acd07879e54.jpg",
         genre : "스릴러판타지",
         likeCount : 73,
-        overallLikeCount: null,
+        
         likeProportion: 5.35093E-5,
         firstDate : "2023-05-08",
         dayOfWeek : "화",
@@ -8728,7 +8730,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/792277/thumbnail/thumbnail_IMAG21_a0d9827b-0e2c-48ce-a1ca-ccb2d4ff65f1.jpg",
         genre : ["스릴러"],
         likeCount : 65,
-        overallLikeCount: null,
+        
         likeProportion: 4.76453E-5,
         firstDate : "2022-03-16",
         dayOfWeek : "목",
@@ -8742,7 +8744,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/794458/thumbnail/thumbnail_IMAG21_7089291664123257185.jpg",
         genre : [],
         likeCount : 24,
-        overallLikeCount: null,
+        
         likeProportion: 1.75921E-5,
         firstDate : "2022-05-13",
         dayOfWeek : "토",
@@ -8756,7 +8758,7 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/809597/thumbnail/thumbnail_IMAG21_223ee9a4-35f7-4c7d-b6a6-7374400787ac.jpg",
         genre : [],
         likeCount : 23,
-        overallLikeCount: null,
+        
         likeProportion: 1.68591E-5,
         firstDate : "2023-05-16",
         dayOfWeek : "수",
@@ -8770,11 +8772,11 @@ export const webtoons = [
         thumbnailUrl : "https://image-comic.pstatic.net/webtoon/795929/thumbnail/thumbnail_IMAG21_15a77e3d-669f-4658-991d-b73071283f6d.jpg",
         genre : ["판타지"],
         likeCount : 15,
-        overallLikeCount: null,
+        
         likeProportion: 1.09951E-5,
         firstDate : "2022-06-15",
         dayOfWeek : "목",
         comments : [],
         platform : "Naver"
     }
-]
+] as webtoon[]

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { Head } from 'next/document'
 import Navbar from './components/Navbar'
 import SWRConfigContext from '@/app/context/SWRConfigContext'
 import {useRouter} from 'next/navigation'
@@ -30,7 +29,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
         <body className={inter.className}>
-          <InitTransition/>
+          {/* <InitTransition/> */}
           {/* <Background backgroundImage={backgroundImage}></Background> */}
           <NavigationContextProvider>
             <LoginContextProvider>

@@ -6,16 +6,15 @@ export const webtoonType = defineType({
     name : 'webtoon',
     type : 'document',
     fields : [
-        defineField(
-        {
-            title : 'ID',
-            name : 'id',
-            type : 'number'
-        }),
         defineField({
             title : "Title",
             name : 'title',
             type : 'string'
+        }),
+        defineField({
+            title : "URL",
+            name : "url",
+            type : "string"
         }),
         defineField({
             title : "ThumbnailUrl",
