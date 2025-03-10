@@ -1,6 +1,7 @@
 'use client'
 
 import { webtoons } from '@/mock/webtoon';
+import { addWebtoon, deleteWebtoon } from '@/remote/webtoon';
 import React from 'react'
 
 export default function page() {

@@ -5,6 +5,7 @@ import "../../app/globals.css"
 
 import { WebtoonThum } from '@/remote/homeCircle'
 import Navigate from '@component/shared/Navigate'
+import Link from 'next/link'
 
 
 const mainCircle = [
@@ -77,7 +78,8 @@ export default function CircularSector({sectorNum, thumnails, pageUrl} : Props) 
                 {
                     thumnails.map((thumnail, i)=>{
                         return(
-                            <Navigate href = {pageUrl[i]} key = {`${thumnail}`} >
+                            // <Navigate href = {pageUrl[i]} key = {`${thumnail}`} >
+                             <Link href = {pageUrl[i]} key = {`${thumnail}`}> 
                                 <div key = {i} className = {`sector ${(sectorOpacityState[i] === true) && 'hoverOpacity'}`}
                                     style = {{
                                         transform : `
@@ -92,7 +94,8 @@ export default function CircularSector({sectorNum, thumnails, pageUrl} : Props) 
                                 >
                                     {/* <p className = "relative top-[90%] text-right align-text-bottom">{mainCircle[i]}</p> */}
                                 </div>
-                            </Navigate>
+                            </Link>
+                            // </Navigate>
                          )
                     })
                 }
