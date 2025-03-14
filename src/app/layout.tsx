@@ -10,6 +10,7 @@ import InitTransition from './components/transition/InitTransition'
 import Background from './components/BackgroundPage'
 import { getBackgroundImage } from './service/webtoonInfo'
 import LoginContextProvider from './context/LoginContextProvider'
+import QueryClientContext from './context/QueryClientContext'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -26,11 +27,13 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
   const backgroundImage = await getBackgroundImage();
+
   return (
     <html lang="en">
         <body className={inter.className}>
           {/* <InitTransition/> */}
           {/* <Background backgroundImage={backgroundImage}></Background> */}
+          <QueryClientContext>
           <NavigationContextProvider>
             <LoginContextProvider>
               <Navbar></Navbar>
@@ -44,8 +47,10 @@ export default async function RootLayout({
                 {/* </SWRConfigContext> */}
               </div>
               <div id = "modal"></div>
+
               </LoginContextProvider>
           </NavigationContextProvider>
+          </QueryClientContext>
         </body>
     </html>
   )

@@ -1,9 +1,6 @@
-import React, { Dispatch, SetStateAction } from 'react'
-import { TempWebtoon, Webtoon } from '../models/webtoonType'
-import Image from 'next/image'
-import Link from 'next/link'
-import CommentModal from './CommentModal'
+import React from 'react'
 import CloseButton from './ui/CloseButton'
+import { webtoon } from '../models/webtoon'
 
 export default function WebtoonInfoModal({
     children,
@@ -11,7 +8,7 @@ export default function WebtoonInfoModal({
     onClose
 } : {
     children : React.ReactNode,
-    webtoon : Webtoon,
+    webtoon : webtoon,
     onClose : () => void
 }) {
   return (

@@ -1,13 +1,8 @@
 'use client'
 
-import React, { MouseEventHandler, MouseEvent, useState, useEffect, useRef, RefObject, useContext } from 'react'
-import styles from "./sector.module.css"
+import React, {  MouseEvent, useState, useRef, RefObject } from 'react'
 import "../../app/globals.css"
 import { WebtoonThum } from '../service/webtoonInfo'
-import Link from 'next/link'
-import TransitionContext from '../context/TransitionContext'
-import gsap from 'gsap'
-import { LOADING_STATES, NavigationContext, useNavigationContext } from '../context/NavigationContext'
 import Navigate from './Navigate'
 
 const mainCircle = [
@@ -80,7 +75,7 @@ export default function CircularSector({sectorNum, thumnails, pageUrl} : Props) 
                 {
                     thumnails.map((thumnail, i)=>{
                         return(
-                            <Navigate href = {pageUrl[i]}>
+                            <Navigate href = {pageUrl[i]} key = {`${thumnail}`}>
                                 <div key = {i} className = {`sector ${(sectorOpacityState[i] === true) && 'hoverOpacity'}`}
                                     style = {{
                                         transform : `

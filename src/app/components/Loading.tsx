@@ -56,7 +56,7 @@ export const Loading = () => {
   return (
     <div
       ref={background}
-      className="h-[200%] w-full fixed flex flex-col gap-4 items-center justify-center bg-gray-800 z-50"
+      // className="h-[200%] w-full fixed flex flex-col gap-4 items-center justify-center bg-gray-800 z-50"
     >
       <p className="text-2xl font-medium"></p>
     </div>

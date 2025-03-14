@@ -8,15 +8,16 @@ import { TempWebtoon, Webtoon } from '../models/webtoonType'
 import InfoModalDetail from './InfoModalDetail'
 import CommentModal from './CommentModal'
 import useSWR from 'swr'
+import { webtoon } from '../models/webtoon'
 
 type Props = {
-    webtoon : Webtoon,
+    webtoon : webtoon,
     children : React.ReactNode
 }
 
 export default function Card({webtoon, children} : Props ) {
     const {title, url, thumbnailUrl, genre, likeCount, firstDate, dayOfWeek, platform} = webtoon;
-    let [modal, setModal] = useState<boolean>(false)
+    const [modal, setModal] = useState<boolean>(false)
     // const loadingRef = useRef<HTMLDivElement>(null)  
 
     return (

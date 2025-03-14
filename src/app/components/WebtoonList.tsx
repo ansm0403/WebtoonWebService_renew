@@ -1,44 +1,61 @@
 'use client'
 
-import React, { useState, useEffect, useLayoutEffect, useContext } from 'react'
-import { TempWebtoon, Webtoon, WebtoonListPage } from '../models/webtoonType'
+import React, { useEffect, useState } from 'react'
+import { WebtoonListPage } from '../models/webtoonType'
 import Card from './Card'
 import Rank from './Rank'
-import useSWR from 'swr'
-import { WebtoonListContext } from '../context/WebtoonListContext'
-import PageListNumber from './PageListNumber'
+import { usePagedRankWebtoons } from '../hook/webtoon'
+import { webtoon } from '../models/webtoon'
 
-type Props = {
-    webtoonList? : WebtoonListPage;
+interface WebtoonListProps {
+    page? : string
+    webtoons? : webtoon[];
     isRank? : boolean;
 }
 
-const fetcher = (url : string) => fetch(url).then(res=>res.json());
+// const fetcher = (url : string) => fetch(url).then(res=>res.json());
 
-const onePageCountWebtoon = 10;
-const onePageCountPage = 10;
+function WebtoonList({
+   page = '1',
+   isRank = false,
+   webtoons
+} : WebtoonListProps
+){
 
-export default function WebtoonList({ webtoonList, isRank = false} : Props) {
+  // const [webtoons, setWebtoons] = useState<webtoon[]>();
 
-  const {content, pageable : {pageNumber}} = webtoonList as WebtoonListPage;
+  // useEffect(()=>{
+  //   usePagedRankWebtoons(page).then(setWebtoons);
+  // }, [page])
+
+  // usePagedRankWebtoons().then(setWebtoons);
+
+  console.log("data뭘봐 ㅋㅋ : ", webtoons);
+
+  if(!webtoons){
+    return(
+      <div>웹툰 없음 ㅠㅠ</div>
+    )
+  }
 
   return (
     <div>
       <div className = "p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"> 
         {
-          (content).map((webtoon, index)=>{
+          (webtoons as webtoon[]).map((webtoon, index)=>{
             return(
-              <Card webtoon={webtoon}>
+              <Card webtoon={webtoon} key = {webtoon.id}>
                 {
                   isRank &&
-                  <Rank rank={(index+1)+(pageNumber*10)}/>
+                  <Rank rank={(index+1)+((parseInt(page)-1)*10)}/>
                 }
               </Card>
             )
           })
         }    
       </div>
-    <PageListNumber ListPageInfo={webtoonList as WebtoonListPage}></PageListNumber>
     </div>
   )
 }
+
+export default React.memo(WebtoonList);

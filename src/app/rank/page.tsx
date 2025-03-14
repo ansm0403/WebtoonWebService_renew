@@ -1,51 +1,22 @@
-'use client'
 
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import WebtoonList from '../components/WebtoonList';
-import { WebtoonListPage } from '../models/webtoonType';
-import { useSearchParams } from 'next/navigation';
-import { SERVER_URL } from '../models/globalVar';
+import Pagination from '../components/pagination';
+import { getTotalWebtoonCount } from '../service/webtoon';
 
-export default function RankPage() {
-  const [webtoonList, setWebtoonList] = useState<WebtoonListPage>();
+export default async function RankPage({
+  searchParams
+} : {
+  searchParams : { [key : string] : string | string[] | undefined }
+}) {
 
-  const [ page, setPage ] = useSearchParams();
-
-  useEffect(()=>{
-    if(search === null){
-    ( async()=>{
-      await fetch(`${SERVER_URL}/webtoon/list?&page=0`, 
-                  {method : "GET"}
-      )
-      .then(res=>res.json())
-      .then(res=>setWebtoonList(res))
-    })()
-    }
-  },[])
-
-  useEffect(()=>{
-    if(Number(search) > 0){
-      ( async()=>{
-        await fetch(`${SERVER_URL}/webtoon/list?&page=${search}`, 
-                    {method : "GET"}
-        )
-        .then(res=>res.json())
-        .then(res=>setWebtoonList(res))
-      })()
-    }
-  },[search])
-
-  
-  useEffect(()=>{
-    console.log('데이터는???', webtoonList);
-  },[webtoonList])
-
+  const page = searchParams.page as string
+  const totalWebtoons = await getTotalWebtoonCount();
+      
   return (
     <>
-      {
-        (webtoonList)  &&
-        <WebtoonList webtoonList={webtoonList} isRank={true}></WebtoonList>
-      }
+      <WebtoonList page = {page} isRank/>
+      <Pagination pathname = {'/rank'} totalData={totalWebtoons}/>
     </>
   )
 }

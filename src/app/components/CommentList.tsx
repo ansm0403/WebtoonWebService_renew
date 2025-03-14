@@ -56,9 +56,9 @@ export default function CommentList({webtoonId} : {webtoonId : number}) {
   return (
     <div className = 'flex flex-col text-sm'>
     {
-      comment?.map((comment)=>{
+      comment?.map((comment, index)=>{
         return (
-          <div className = 'flex flex-row justify-between py-2  border-b-[0.125rem] border-[#eee]'>
+          <div className = 'flex flex-row justify-between py-2  border-b-[0.125rem] border-[#eee]' key = {index}>
             <div className = 'flex flex-row basis-[80%]'>
               <h1 className = 'font-bold mr-1 basis-[30%] text-right'>{comment.userId}</h1>  
               <h4 className=' before:content-["ㅣ"] before:text-gray-400 before:mr-3 overflow-x-auto scroll'>{comment.comment}</h4>
