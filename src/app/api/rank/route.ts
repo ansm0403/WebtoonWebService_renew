@@ -1,6 +1,6 @@
 
-import { webtoon } from "@/app/models/webtoon";
-import { getPagedRankWebtoon } from "@/app/service/webtoon";
+import { webtoon } from "@models/webtoon";
+import { getPagedRankWebtoon } from "@service/webtoon";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET( 

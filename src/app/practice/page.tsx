@@ -1,9 +1,9 @@
 'use client'
 import React, { useRef, useState } from 'react'
-import '../globals.css'
+import '@/app/globals.css'
 import { Container, Button, Alert } from 'react-bootstrap';
 
-import TransitionContext from '../context/TransitionContext'
+import TransitionContext from '@context/TransitionContext'
 import { TransitionGroup, CSSTransition, SwitchTransition } from 'react-transition-group'
 
 export default function PracticePage() {

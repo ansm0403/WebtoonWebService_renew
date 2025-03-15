@@ -1,4 +1,4 @@
-import { getNewWebtoons } from "@/app/service/webtoon";
+import { getNewWebtoons } from "@service/webtoon";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req : NextRequest){

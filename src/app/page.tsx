@@ -1,4 +1,4 @@
-import MainCircle from './components/MainCircle'
+import MainCircle from '@component/MainCircle'
 
 export default function Home() {
 

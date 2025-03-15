@@ -1,16 +1,15 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
-import Navbar from './components/Navbar'
-import SWRConfigContext from '@/app/context/SWRConfigContext'
+import '@/app/globals.css'
+import Navbar from '@component/Navbar'
 import {useRouter} from 'next/navigation'
-import TransitionContext from './context/TransitionContext'
-import { NavigationContextProvider } from './context/NavigationContext'
-import InitTransition from './components/transition/InitTransition'
-import Background from './components/BackgroundPage'
-import { getBackgroundImage } from './service/webtoonInfo'
-import LoginContextProvider from './context/LoginContextProvider'
-import QueryClientContext from './context/QueryClientContext'
+import TransitionContext from '@context/TransitionContext'
+import { NavigationContextProvider } from '@context/NavigationContext'
+import InitTransition from '@component/transition/InitTransition'
+import Background from '@component/BackgroundPage'
+import { getBackgroundImage } from '@service/webtoonInfo'
+import LoginContextProvider from '@context/LoginContextProvider'
+import QueryClientContext from '@context/QueryClientContext'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -38,13 +37,9 @@ export default async function RootLayout({
             <LoginContextProvider>
               <Navbar></Navbar>
               <div className = 'relative'>
-                {/* <SWRConfigContext> */}
-                        <main>
-                        
-                          {children}
-                      
-                        </main>
-                {/* </SWRConfigContext> */}
+                    <main>
+                        {children}                     
+                    </main>
               </div>
               <div id = "modal"></div>
 

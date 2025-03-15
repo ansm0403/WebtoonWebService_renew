@@ -1,5 +1,5 @@
 import React from 'react'
-import GenreCircle from '../components/GenreCircle'
+import GenreCircle from '@component/GenreCircle'
 
 export default function GenrePage() {
   return (

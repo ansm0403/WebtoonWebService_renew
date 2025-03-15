@@ -1,9 +1,9 @@
 
 import React from 'react'
-import WebtoonList from '../components/WebtoonList';
+import WebtoonList from '@component/WebtoonList';
 import axios from 'axios';
-import { getTotalNewWebtoonCount, getTotalWebtoonCount } from '../service/webtoon';
-import Pagination from '../components/pagination';
+import { getTotalNewWebtoonCount, getTotalWebtoonCount } from '@service/webtoon';
+import Pagination from '@component/Pagination';
 
 export default async function NewPage({
   searchParams
@@ -13,14 +13,14 @@ export default async function NewPage({
 {
   
   const page = searchParams.page ?? '1'
-  const totalData = await getTotalNewWebtoonCount();
+  const totalCount = await getTotalNewWebtoonCount();
   const params = { page, size : 10 }
-  const { data }  = await axios.get(`http://localhost:3001/api/new`, {params});
+  const { data }  = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/new`, {params});
 
   return (
     <>
         <WebtoonList webtoons={data}/>
-        <Pagination pathname={`/new`} totalData={totalData}/>
+        <Pagination pathname={`/new`} totalCount={totalCount}/>
     </>
   )
 }
