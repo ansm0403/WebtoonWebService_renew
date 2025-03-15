@@ -1,4 +1,4 @@
-import { NextGenreResponse, webtoon } from '@/models/webtoon';
+import { NextGenreResponse } from '@/models/webtoon';
 import { getGenreWebtoon, getTotalGenreWebtoonCount } from '@/service/webtoon';
 import { NextRequest, NextResponse } from 'next/server'
 import React from 'react'
@@ -6,6 +6,7 @@ import React from 'react'
 interface Context {
     params : { genre : string }
 }
+
 
 export async function GET(
     request : NextRequest, context : Context

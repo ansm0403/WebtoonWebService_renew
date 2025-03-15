@@ -30,6 +30,7 @@ export default async function GenrePage({
   const params = { size : 10, page }
   const { data : { webtoons, totalCount } } = await axios.get<NextGenreResponse>(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/genre/${genre}`, { params })
 
+  
   return (
     <div className = 'w-full'>
       {genre}  페이지 입니다.

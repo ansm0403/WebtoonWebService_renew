@@ -11,7 +11,6 @@ const webtoonPageUrl = [
     '/genre/romance',
     '/genre/mystery',
 ]
-
 export default async function GenreCircle() {
     
     const thumnails = await getGenreCircleThumnail()

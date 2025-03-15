@@ -24,6 +24,8 @@ export async function deleteWebtoon(webtoon : webtoon){
     .delete({query : `*[title=="${webtoon.title}"]`})
 }
 
+// 전체 웹툰 랭킹 페이지지
+
 export async function getPagedRankWebtoon({
     page, size = 10, 
 } : {
@@ -54,6 +56,8 @@ export async function getTotalWebtoonCount() : Promise<number>{
     return sanityClient.fetch(`count(*[_type == "webtoon"])`)
 }
 
+// 신규 웹툰 페이지지
+
 export async function getNewWebtoons({
     page, size
 } : {
@@ -78,6 +82,8 @@ export async function getNewWebtoons({
 export async function getTotalNewWebtoonCount() : Promise<number>{
     return sanityClient.fetch(`count(*[_type == "webtoon" && firstDate > "2023-10-21" ])`)
 }
+
+// 웹툰 장르별 페이지
 
 export async function getGenreWebtoon(
     genre : string,
