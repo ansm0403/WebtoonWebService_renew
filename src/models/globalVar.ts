@@ -8,5 +8,3 @@ export const genre = [
     '스포츠',
     '기타',
 ]
-
-export const SERVER_URL = "http://localhost:9001/api/v1"

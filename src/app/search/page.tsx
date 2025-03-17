@@ -1,5 +1,5 @@
 import React from 'react'
-import Search from '@component/Search'
+import Search from '@/components/search/Search'
 
 export default function SearchPage() {
   return (

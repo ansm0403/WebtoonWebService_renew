@@ -1,15 +1,15 @@
-import React, { useRef } from 'react'
-import { TempWebtoon, Webtoon } from '@models/webtoonType'
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import CommentModal from '@component/CommentModal'
 import CommentList from '@component/CommentList'
 import CommentContextProvider from '@context/CommentContextProvider'
+import { webtoon } from '@/models/webtoon'
 
 export default function InfoModalDetail({
-    webtoon : {id : webtoonId, title, url, author, thumbnailUrl, genre, likeCount, firstDate, dayOfWeek, platform},
+    webtoon : {id : webtoonId, title, url, thumbnailUrl, genre, likeCount, firstDate, dayOfWeek, platform},
 } : {
-    webtoon : Webtoon
+    webtoon : webtoon
 }) {
   
   return (

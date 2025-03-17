@@ -1,15 +1,10 @@
 
-import Card from '@component/Card'
+
 import WebtoonList from '@component/WebtoonList'
-import React, { useContext, useEffect, useLayoutEffect, useState } from 'react'
-import Image from 'next/image'
-import WebtoonListContextProvider, { WebtoonListContext } from '@context/WebtoonListContext'
-import { WebtoonListPage } from '@models/webtoonType'
-import { useSearchParams } from 'next/navigation'
+import React from 'react'
 import axios from 'axios'
 import Pagination from '@/components/Pagination'
 import { NextGenreResponse } from '@/models/webtoon'
-import { PathParamsContext } from 'next/dist/shared/lib/hooks-client-context.shared-runtime'
 
 type ParamsProps = {
   params : {genre : string},

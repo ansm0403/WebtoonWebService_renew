@@ -103,9 +103,45 @@ export async function getGenreWebtoon(
                     ? frontIndex + 10 
                     : frontIndex + (totalCount % 10 - 1)
 
-    return sanityClient.fetch(`*[_type == "webtoon" && "${genre}" in genre] | order(likeProportion desc)[${frontIndex}...${endIndex}]`);
+    return sanityClient.fetch(`*[
+        _type == "webtoon" 
+        && "${genre}" in genre
+        ] | order(likeProportion desc)
+         [${frontIndex}...${endIndex}]`
+    );
 }
 
 export async function getTotalGenreWebtoonCount(genre : string) : Promise<number>{
     return sanityClient.fetch(`count(*[_type == "webtoon" && "${genre}" in genre])`)
+}
+
+// 웹툰 검색
+
+export async function getSearchWebtoon({
+    keyword,
+    genre,
+    day,
+    page = 0,
+    size
+} : {
+    keyword : string | undefined,
+    genre : string[]
+    day : string | undefined,
+    page? : number,
+    size : number
+}) : Promise<webtoon[]>
+{
+    console.log("장르는???? : ", genre);
+    return sanityClient.fetch(`*[ 
+        _type == "webtoon" 
+        && dayOfWeek match "${day}*" 
+        && title match "${keyword}*" 
+        && ${getGenreQuery(genre)} 
+        ][${page*size}...${page*size + size }]`
+    )
+}
+
+function getGenreQuery(genre : string[]) : string{
+    if(genre.includes("기타")) return `count(genre) == 0`
+    else return `genre match "${genre}*"`
 }
