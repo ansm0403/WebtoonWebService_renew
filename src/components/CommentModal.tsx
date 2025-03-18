@@ -3,9 +3,9 @@ import { comment } from 'postcss';
 import React, { useContext, useState } from 'react'
 import CommentWrite from '@component/CommentWrite';
 import ModalPortal from '@component/ModalPortal';
-import { LoginContext } from '@context/LoginContextProvider';
+// import { LoginContext } from '@context/LoginContextProvider';
 import LoginAlert from '@component/LoginAlert';
-import SignIn from '@component/SignIn';
+import SignIn from '@/components/auth/SignIn';
 
 type Props = {
   webtoonId : number;
@@ -14,7 +14,7 @@ type Props = {
 export default function CommentModal({webtoonId} : Props) {
   const [modal, setModal] = useState<boolean>(false);
   const [alertModal, setAlertModal] = useState<boolean>(false);
-  const {isLogin} = useContext(LoginContext);
+  // const {isLogin} = useContext(LoginContext);
 
   const modalClose = () => {
     setModal(false)

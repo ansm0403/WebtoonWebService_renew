@@ -2,14 +2,13 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '@/app/globals.css'
 import Navbar from '@component/Navbar'
-import {useRouter} from 'next/navigation'
 import TransitionContext from '@context/TransitionContext'
 import { NavigationContextProvider } from '@context/NavigationContext'
 import InitTransition from '@component/transition/InitTransition'
 import Background from '@component/BackgroundPage'
 import { getBackgroundImage } from '@service/webtoonInfo'
-import LoginContextProvider from '@context/LoginContextProvider'
 import QueryClientContext from '@context/QueryClientContext'
+import AuthContext from '@/context/AuthContext'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -32,20 +31,19 @@ export default async function RootLayout({
         <body className={inter.className}>
           {/* <InitTransition/> */}
           {/* <Background backgroundImage={backgroundImage}></Background> */}
-          <QueryClientContext>
-          <NavigationContextProvider>
-            <LoginContextProvider>
-              <Navbar></Navbar>
-              <div className = 'relative'>
-                    <main>
-                        {children}                     
-                    </main>
-              </div>
-              <div id = "modal"></div>
-
-              </LoginContextProvider>
-          </NavigationContextProvider>
-          </QueryClientContext>
+          <AuthContext>
+            <QueryClientContext>
+              <NavigationContextProvider>
+                  <Navbar></Navbar>
+                  <div className = 'relative'>
+                        <main>
+                            {children}                     
+                        </main>
+                  </div>
+                  <div id = "modal"></div>
+              </NavigationContextProvider>
+            </QueryClientContext>
+          </AuthContext>
         </body>
     </html>
   )

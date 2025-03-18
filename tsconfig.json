@@ -25,7 +25,8 @@
       "@context/*" : ["./src/context/*"],
       "@hook/*" : ["./src/hook/*"],
       "@mock/*" : ["./src/mock/*"],
-      "@models/*" : ["./src/models/*"]
+      "@models/*" : ["./src/models/*"],
+      "@auth/*" : ["./src/auth/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
