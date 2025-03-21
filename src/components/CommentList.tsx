@@ -1,19 +1,21 @@
 'use client'
 import React, { useContext, useEffect, useLayoutEffect, useState } from 'react'
-import { SERVER_URL } from '@models/globalVar'
 import { WebtoonComment } from '@models/webtoonType'
 import CloseButton from '@component/ui/CloseButton'
 import EditIcon from '@component/ui/EditIcon'
 import ModalPortal from '@component/ModalPortal'
 import CommentWrite from '@component/CommentWrite'
 import { CommentContext } from '@context/CommentContextProvider'
+import { useSession } from 'next-auth/react'
 
 
 
-export default function CommentList({webtoonId} : {webtoonId : number}) {
+export default function CommentList({webtoonId} : {webtoonId : string}) {
   const [comment, setComment] = useState<WebtoonComment[]>()
   const [commentModal, setCommentModal] = useState<boolean>(false);
   const {isChange, setIsChange} = useContext(CommentContext);
+
+  
 
   function getComment(){
     ( async()=>

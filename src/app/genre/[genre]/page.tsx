@@ -21,7 +21,6 @@ export default async function GenrePage({
 ){
 
   const page = searchParams.page ?? '1';
-  console.log("페이지는??? : ", page);
   const params = { size : 10, page }
   const { data : { webtoons, totalCount } } = await axios.get<NextGenreResponse>(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/genre/${genre}`, { params })
 

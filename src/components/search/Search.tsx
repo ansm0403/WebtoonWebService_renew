@@ -46,7 +46,7 @@ export default function Search() {
 
     useEffect(()=>{
         if(isPageEnd && data && hasNextPage) fetchNextPage();
-        console.log("페이지있냐?", hasNextPage);
+
     }, [data, isPageEnd, fetchNextPage, hasNextPage])
 
     const onSubmit = async (e:MouseEvent<HTMLButtonElement>) => {
@@ -120,9 +120,7 @@ export default function Search() {
                                 <button key = {`${genre}_${index}`}
                                     className ={`p-3 border-sky-200 border-[0.05rem] rounded-md ${genres.includes(genre) && 'bg-sky-200 border-white text-black'}`}
                                     value={genre}
-                                    onClick = {(e)=>{handleGenreSelect(e)
-                                        console.log("장르들 : ", genres);
-                                    }}    
+                                    onClick = {(e)=>{handleGenreSelect(e)}}    
                                 >{genre}</button>
                             )
                         })

@@ -65,7 +65,6 @@ export default function SignUp() {
     }
 
     async function handleIdCheck(e:FocusEvent<HTMLInputElement>){
-        console.log("포커스 아웃!!!!!!!!")
         const res = await fetch(`${SERVER_URL}/user/check-id?userId=${userInfo.userId}`)
         if(res.ok === true && format.id.test(userInfo.userId)){
             (checkId.current as HTMLDivElement).style.setProperty('opacity','0')

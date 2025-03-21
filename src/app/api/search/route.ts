@@ -11,8 +11,6 @@ export async function GET(req : NextRequest) : Promise<NextResponse<webtoon[]>>{
     const page = searchParams.get("page") ?? "0";
     const size = searchParams.get("size") ?? "5";
 
-    console.log("searchParams : ", page);
-
     const data = await getSearchWebtoon({
         keyword, 
         day, 

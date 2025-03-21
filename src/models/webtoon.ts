@@ -1,7 +1,8 @@
-import { user } from "@models/user";
+import { User } from "@models/user";
 
 export interface webtoon {
-    id : number,
+    id : string,
+    _id : string,
     title : string,
     url : string,
     thumbnailUrl : string,
@@ -11,11 +12,11 @@ export interface webtoon {
     firstDate : string,
     dayOfWeek : string,
     platform : string,
-    comments : comment[]
+    comments : Comment[]
 }
 
-export interface comment {
-    author : user,
+export interface Comment {
+    author : User,
     comment : string,
 }
 

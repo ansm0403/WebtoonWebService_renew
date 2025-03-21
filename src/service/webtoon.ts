@@ -2,6 +2,10 @@
 import { webtoon } from "@models/webtoon";
 import { sanityClient } from "@service/sanity";
 
+interface getWebtoonResponse extends webtoon {
+    totalComment : number
+}
+
 export async function addWebtoon(webtoon : webtoon){
     return sanityClient.createIfNotExists({
         _id : `${webtoon.id}`,
@@ -24,6 +28,12 @@ export async function deleteWebtoon(webtoon : webtoon){
     .delete({query : `*[title=="${webtoon.title}"]`})
 }
 
+export async function getWebtoon(id : string) : Promise<getWebtoonResponse>{
+    return sanityClient.fetch(
+        `*[_type == "webtoon" && _id == "${id}"]{..., "totalComment" : count(comments[])}`
+    ).then((data) => data[0])
+}
+
 // 전체 웹툰 랭킹 페이지지
 
 export async function getPagedRankWebtoon({
@@ -40,10 +50,12 @@ export async function getPagedRankWebtoon({
         return undefined;
     }
 
-    const frontIndex = (page-1) * size; 
-    const endIndex = page !== totalPage 
-                    ? frontIndex + 10 
-                    : frontIndex + (totalCount % 10 - 1)
+    const { frontIndex, endIndex } = getFrontAndEndIndex(
+        page, 
+        totalPage, 
+        size, 
+        totalCount
+    );
 
     const query = `
         *[_type == "webtoon"] | 
@@ -71,10 +83,12 @@ export async function getNewWebtoons({
         return undefined;
     }
 
-    const frontIndex = (page-1) * size; 
-    const endIndex = page !== totalPage 
-                    ? frontIndex + 10 
-                    : frontIndex + (totalCount % 10 - 1)
+    const { frontIndex, endIndex } = getFrontAndEndIndex(
+        page, 
+        totalPage, 
+        size, 
+        totalCount
+    );
 
     return sanityClient.fetch(`*[_type == "webtoon" && firstDate > "2023-10-21" ] | order(firstDate desc)[${frontIndex}...${endIndex}]`)
 }
@@ -98,10 +112,12 @@ export async function getGenreWebtoon(
         return undefined
     }
 
-    const frontIndex = (page-1) * size; 
-    const endIndex = page !== totalPage 
-                    ? frontIndex + 10 
-                    : frontIndex + (totalCount % 10 - 1)
+    const { frontIndex, endIndex } = getFrontAndEndIndex(
+        page, 
+        totalPage, 
+        size, 
+        totalCount
+    );
 
     return sanityClient.fetch(`*[
         _type == "webtoon" 
@@ -131,7 +147,7 @@ export async function getSearchWebtoon({
     size : number
 }) : Promise<webtoon[]>
 {
-    console.log("장르는???? : ", genre);
+
     return sanityClient.fetch(`*[ 
         _type == "webtoon" 
         && dayOfWeek match "${day}*" 
@@ -144,4 +160,18 @@ export async function getSearchWebtoon({
 function getGenreQuery(genre : string[]) : string{
     if(genre.includes("기타")) return `count(genre) == 0`
     else return `genre match "${genre}*"`
+}
+
+function getFrontAndEndIndex(
+    page : number, 
+    totalPage : number, 
+    size : number,
+    totalCount : number
+){
+    const frontIndex = (page-1) * size; 
+    const endIndex = page !== totalPage 
+                    ? frontIndex + 10 
+                    : frontIndex + (totalCount % 10)
+
+    return { frontIndex, endIndex };
 }

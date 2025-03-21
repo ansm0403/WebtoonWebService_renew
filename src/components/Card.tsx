@@ -8,6 +8,7 @@ import { TempWebtoon, Webtoon } from '@models/webtoonType'
 import InfoModalDetail from '@component/InfoModalDetail'
 import CommentModal from '@component/CommentModal'
 import { webtoon } from '@models/webtoon'
+import Link from 'next/link'
 
 type Props = {
     webtoon : webtoon,
@@ -21,7 +22,7 @@ export default function Card({webtoon, children} : Props ) {
 
     return (
         <div className = 'relative border-2 text-center rounded-md border-none overflow-hidden hover:scale-90 transition-transform'>
-            <div className = 'relative mx-auto min-w-[200px] max-w-[250px] h-[300px]'>
+            <Link href = {`${process.env.NEXT_PUBLIC_SERVER_URL}/webtoon/${webtoon._id}`} className = 'relative mx-auto min-w-[200px] max-w-[250px] h-[300px]'>
                 <img 
                     className = "border-none border-2 rounded-xl cursor-pointer" 
                     src = {`${thumbnailUrl}`} 
@@ -34,7 +35,7 @@ export default function Card({webtoon, children} : Props ) {
                     }}
                 ></img>
                 {/* <div className = 'imageLoading' ref={loadingRef}></div> */}
-            </div>
+            </Link>
             <p className = 'mt-2  text-stone-400'>{title}</p>
             {
                 modal && 

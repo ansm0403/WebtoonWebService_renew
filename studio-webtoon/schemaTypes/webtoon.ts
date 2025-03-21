@@ -65,8 +65,10 @@ export const webtoonType = defineType({
             type : 'array',
             of : [
                 {
+                    title : 'Comment',
+                    name : 'comment',
                     type : 'reference',
-                    to : [{type : 'comment'}]
+                    to : [{ type : 'comment'} ]
                 }
             ]
         })

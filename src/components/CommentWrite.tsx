@@ -1,12 +1,11 @@
 'use client'
 import React, { Dispatch, FormEvent, SetStateAction, MouseEvent, useState, useEffect, useContext } from 'react'
-import { SERVER_URL } from '@models/globalVar';
 import { CommentContext } from '@context/CommentContextProvider';
 
 interface Props {
   // setCommentModal : Dispatch<SetStateAction<boolean>>
   setCommentModal : () => void;
-  webtoonId : number;
+  webtoonId : string;
   method : {
     method : string,
     url : string,
@@ -45,6 +44,7 @@ export default function CommentWrite({setCommentModal, webtoonId, method} : Prop
                 className = 'w-full h-[200px] p-2 rounded-xl border-[#eee] border-2'
                 placeholder = '댓글을 작성해주세요.'
                 required
+                maxLength={100}
                 value={comment.comment}
                 onChange={e=>setComment({comment : e.target.value})}
               />

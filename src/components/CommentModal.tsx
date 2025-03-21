@@ -1,20 +1,23 @@
 'use client'
-import { comment } from 'postcss';
-import React, { useContext, useState } from 'react'
+
+import React, { useState } from 'react'
 import CommentWrite from '@component/CommentWrite';
 import ModalPortal from '@component/ModalPortal';
 // import { LoginContext } from '@context/LoginContextProvider';
 import LoginAlert from '@component/LoginAlert';
 import SignIn from '@/components/auth/SignIn';
+import { useSession } from 'next-auth/react';
 
 type Props = {
-  webtoonId : number;
+  webtoonId : string;
 }
 
 export default function CommentModal({webtoonId} : Props) {
   const [modal, setModal] = useState<boolean>(false);
   const [alertModal, setAlertModal] = useState<boolean>(false);
   // const {isLogin} = useContext(LoginContext);
+
+  const { data : session } = useSession();
 
   const modalClose = () => {
     setModal(false)
@@ -31,7 +34,7 @@ export default function CommentModal({webtoonId} : Props) {
       >작성하기</button>
         <ModalPortal>
           {
-            (modal && isLogin) &&
+            (modal && session) &&
             <CommentWrite setCommentModal={modalClose} webtoonId={webtoonId} method={{method : "POST", url : "create"}}></CommentWrite>
           }
           {/* {

@@ -1,10 +1,23 @@
-import { comment, webtoon } from "@models/webtoon";
+import { Comment, webtoon } from "@models/webtoon";
 
-export interface user {
-    username : string,
-    name : string,
-    email : string,
-    image : string,
+// export interface user {
+//     username : string,
+//     name : string,
+//     email : string,
+//     image : string,
+//     likeWebtoons : webtoon[],
+//     comments : comment[]
+// }
+
+export interface OAuthUser {
+    id : string;
+    email : string
+    name : string
+    username : string
+    image? : string | null;
+}
+
+export interface User extends OAuthUser {
     likeWebtoons : webtoon[],
-    comments : comment[]
+    comments : Comment[]
 }
