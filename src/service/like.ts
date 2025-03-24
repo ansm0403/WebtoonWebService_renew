@@ -1,3 +1,4 @@
+import { getFrontAndEndIndex } from "./comment";
 import { sanityClient } from "./sanity"
 
 export async function addLike({
@@ -30,7 +31,6 @@ export async function disLike({
     webtoonId : string, 
     userId : string
 }){
-    console.log("나님 실행 ㅋㅋ");
 
     return sanityClient
     .transaction()
@@ -43,8 +43,12 @@ export async function disLike({
     .commit()
 }
 
-export async function getLike(userId : string){
+export async function getLike({
+    userId, 
+} : {
+    userId : string,
+}){
     return sanityClient.fetch(`
-         *[_type == "user" && _id == "${userId}"]{ name, likeWebtoons[]->{ title, "id" : _id, thumbnailUrl }}   
+         *[_type == "user" && _id == "${userId}"]{ likeWebtoons[]->{ title, _id, thumbnailUrl, dayOfWeek, genre }, "totalCount" : count(likeWebtoons[])}   
     `)
 }

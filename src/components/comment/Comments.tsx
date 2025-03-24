@@ -18,10 +18,11 @@ interface CommentProps {
   type : "webtoon" | "author"
   limit? : number
   isForm? : boolean
+  isBlack? : boolean
 }
 
 export default function Comments({ 
-    webtoonId, type, limit = 5, isForm = false
+    webtoonId, type, limit = 5, isForm = false, isBlack = false
 }: CommentProps
 ) {
     const { data : session, status } = useSession();
@@ -41,7 +42,7 @@ export default function Comments({
         return comments
     }; 
 
-    const { data: comments, refetch : commentRefetch } = useQuery<Comment[]>({
+    const { data: comments, refetch : commentRefetch, isLoading } = useQuery<Comment[]>({
         queryKey : [`comments-${id}-${page}`],
         queryFn : fetchComments
     });
@@ -51,7 +52,7 @@ export default function Comments({
         queryFn : () => getTotalComment(id, type)
     })
     
-    if(!comments) return (
+    if(isLoading) return (
         <div className="flex justify-center items-center h-[300px] ">
             <FadeLoader />
         </div>
@@ -71,6 +72,7 @@ export default function Comments({
                 totalCount={totalComment ?? 0}
                 limit = {limit}
                 pathname={`/webtoon/${id}`}
+                isBlack = {isBlack}
             />
 
             {/* comment form */}

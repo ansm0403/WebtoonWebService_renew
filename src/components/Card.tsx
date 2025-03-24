@@ -1,4 +1,3 @@
-
 'use client'
 
 import React from 'react'
@@ -16,7 +15,7 @@ type Props = {
     children : React.ReactNode
     refetch : () => void
     index : number,
-    page : string
+    page? : string
 }
 
 export default function Card({
@@ -100,3 +99,14 @@ export default function Card({
         </div>
     )
 }
+
+function Skeleton(){
+    return(
+        <div className = 'bg-gray-200'>
+            <div></div>
+            <div></div>
+        </div>
+    )
+}
+
+Card.Skeleton = Skeleton;

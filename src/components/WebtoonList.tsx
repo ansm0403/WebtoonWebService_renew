@@ -9,27 +9,20 @@ import { useQuery } from '@tanstack/react-query'
 
 interface WebtoonListProps {
     page? : string
-    // webtoons : webtoon[];
+    webtoons : webtoon[];
     isRank? : boolean;
+    refetch : () => {}
 }
 
 function WebtoonList({
    page = '1',
    isRank = false,
-  //  webtoons
+   webtoons,
+   refetch
 } : WebtoonListProps
 ){
 
-  const fetchRankPageWebtoons = async () => {
-    const params = { page, size : 10 }
-    const { data } = await axios.get<webtoon[]>(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/rank`, { params })
-    return data
-  }
-
-  const { data : webtoons, refetch } = useQuery({
-    queryKey : ["rank", page],
-    queryFn : fetchRankPageWebtoons
-  })
+  
 
   if(!webtoons){
     return(

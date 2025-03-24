@@ -37,3 +37,16 @@ export interface NextGenreResponse {
     webtoons : webtoon[],
     totalCount : number
 }
+
+export interface LikeWebtoonsResponse {
+    likeWebtoons : LikeWebtoon[],
+    totalCount : number
+}
+
+export interface LikeWebtoon{
+    _id : string
+    title : string
+    thumbnailUrl : string,
+    dayOfWeek : string,
+    genre : string
+}

@@ -105,7 +105,7 @@ export async function getTotalComment(id : string, type : string) : Promise<numb
 }
 
 
-function getFrontAndEndIndex(
+export function getFrontAndEndIndex(
     page : number, 
     totalPage : number, 
     limit : number,
