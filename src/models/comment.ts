@@ -16,4 +16,5 @@ interface CommentUser {
 
 interface CommentWebtoon {
     id : string
+    title : string
 }

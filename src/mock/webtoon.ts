@@ -8779,4 +8779,4 @@ export const webtoons = [
         comments : [],
         platform : "Naver"
     }
-] as webtoon[]
+]

@@ -11,6 +11,7 @@ body{
 	width : 100%;
 	min-height : 100%;
 	background-color: rgb(31,41,55);
+
 }
 
 /* .background{
@@ -19,6 +20,16 @@ body{
 	margin : 0px auto;
 	position : relative;
 } */
+
+
+/* Home */
+
+@media screen and (max-width : 1600px) {
+	.home-img {
+		@apply flex
+	}
+}
+
 
 /* video{
 	width : 100%;
@@ -114,3 +125,8 @@ body{
    from {transform: rotate(0deg)}
    to {transform: rotate(360deg)}
  }
+
+.genre__mainCircle {
+	transform : origin(50% 50% 50%);
+	transform : rotateY(70deg) rotateZ(0deg)
+}

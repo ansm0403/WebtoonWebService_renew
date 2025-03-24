@@ -45,7 +45,7 @@ export default function Pagination({
   }
 
   return (
-    <div className="flex items-center justify-center  gap-x-4 mb-12 text-white">
+    <div className="flex items-center justify-center gap-x-4 pb-8 text-white">
       { nowPage > pageGroupNum && (
         <>
           <button className='text-2xl' onClick={() => handlePrevOrNext("prev")}>{"<"}</button>

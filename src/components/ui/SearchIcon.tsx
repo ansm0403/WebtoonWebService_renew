@@ -3,6 +3,8 @@ import { RiSearchLine } from 'react-icons/ri'
 
 export default function SearchIcon() {
   return (
-    <RiSearchLine className = "w-12 h-12" />
+    <div className='hidden md:inline'>
+      <RiSearchLine className = "w-12 h-12 " />
+    </div>
   )
 }

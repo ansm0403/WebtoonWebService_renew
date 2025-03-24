@@ -14,3 +14,4 @@ export async function usePagedRankWebtoons(
 
     return data as webtoon[]
 }
+

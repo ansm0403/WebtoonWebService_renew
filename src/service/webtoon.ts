@@ -1,5 +1,5 @@
 
-import { webtoon } from "@models/webtoon";
+import { RankPageWebtoon, webtoon } from "@models/webtoon";
 import { sanityClient } from "@service/sanity";
 
 interface getWebtoonResponse extends webtoon {
@@ -34,7 +34,19 @@ export async function getWebtoon(id : string) : Promise<getWebtoonResponse>{
     ).then((data) => data[0])
 }
 
-// 전체 웹툰 랭킹 페이지지
+// 전체 웹툰 랭킹 페이지
+
+const rankPageProjection = `
+    thumbnailUrl,
+    _id, 
+    likeCount, 
+    dayOfWeek, 
+    comments[], 
+    genre[], 
+    platform, 
+    url,  
+    "likeUsers" : likeWebtoons[]._ref 
+`
 
 export async function getPagedRankWebtoon({
     page, size = 10, 
@@ -59,7 +71,7 @@ export async function getPagedRankWebtoon({
 
     const query = `
         *[_type == "webtoon"] | 
-        order(likeProportion desc)[${frontIndex}...${endIndex}]
+        order(likeProportion desc)[${frontIndex}...${endIndex}]{${rankPageProjection}}
     `
     return sanityClient.fetch(query);
 }

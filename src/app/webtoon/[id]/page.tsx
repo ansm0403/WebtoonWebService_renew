@@ -16,7 +16,7 @@ export default async function WebtoonDetailPage({
     return (
         <div className='flex flex-col justify-center rounded-xl p-20 mx-auto text-white mt-6 border-white border-2 max-w-[1084px]'>
             <WebtoonDetail webtoon = {webtoon}/>
-            <Comments webtoonId={webtoon._id} />
+            <Comments webtoonId={webtoon._id} type='webtoon' />
         </div>
     )
 }

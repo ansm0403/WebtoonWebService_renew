@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
 import SearchIcon from '@component/ui/SearchIcon'
 import Navigate from '@component/Navigate'
 import NotLoginNav from '@component/NotLoginNav'
@@ -15,9 +15,9 @@ export default function Navbar() {
 
 
   return (
-    <div className = "flex flex-row p-3 justify-between items-center">
+    <div className = "bg-[rgb(31,41,55)] fixed top-0 right-0 left-0 flex flex-row p-3 justify-between items-center z-[99] w-full">
             <Navigate href= "/">
-              <h1 className = "text-3xl font-bold text-white ml-4"> WEBTOON </h1>
+              <h1 className = "text-2xl md:text-3xl font-bold text-white ml-4"> WEBTOON </h1>
             </Navigate>        
         <nav className = "flex flex-row gap-4 mr-4  text-white">
             <Navigate href= "/search">

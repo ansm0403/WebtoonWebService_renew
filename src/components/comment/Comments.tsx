@@ -8,22 +8,31 @@ import axios from "axios";
 import CommentList from "@component/comment/CommentList";
 import Pagination from "../Pagination";
 import { useQuery } from "@tanstack/react-query";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { Comment } from "@/models/comment";
 import { getTotalComment } from "@/service/comment";
+import { FadeLoader } from "react-spinners";
 
 interface CommentProps {
-  webtoonId: string;
+  webtoonId?: string;
+  type : "webtoon" | "author"
+  limit? : number
+  isForm? : boolean
 }
 
 export default function Comments({ 
-    webtoonId,
+    webtoonId, type, limit = 5, isForm = false
 }: CommentProps
 ) {
-    const { status } = useSession();
+    const { data : session, status } = useSession();
+
+    let id = ""
+
+    if(type === "webtoon") id = webtoonId as string;
+    else if(type === "author") id = session?.user.id as string;
 
     const page = useSearchParams().get("page") ?? "1";
-    const params = { webtoonId, limit : 5, page }
+    const params = { id, limit : 5, page, type }
 
     const fetchComments = async () => {
         const { data : comments } = await axios.get(
@@ -33,15 +42,21 @@ export default function Comments({
     }; 
 
     const { data: comments, refetch : commentRefetch } = useQuery<Comment[]>({
-        queryKey : [`comments-${webtoonId}-${page}`],
+        queryKey : [`comments-${id}-${page}`],
         queryFn : fetchComments
     });
 
     const { data : totalComment, refetch : totalCommentRefetch } = useQuery({
-        queryKey : ['totalComment', webtoonId],
-        queryFn : () => getTotalComment(webtoonId)
+        queryKey : ['totalComment', id],
+        queryFn : () => getTotalComment(id, type)
     })
     
+    if(!comments) return (
+        <div className="flex justify-center items-center h-[300px] ">
+            <FadeLoader />
+        </div>
+    )
+
     return (
         <div className="w-full md:max-w-[920px] py-8 mb-20 mx-auto">
             {/* comment list */}
@@ -49,17 +64,18 @@ export default function Comments({
                 comments={comments} 
                 commentRefetch={commentRefetch} 
                 totalCommentRefetch={totalCommentRefetch}
+                type = {type}
             />
             
             <Pagination
                 totalCount={totalComment ?? 0}
-                limit = {5}
-                pathname={`/webtoon/${webtoonId}`}
+                limit = {limit}
+                pathname={`/webtoon/${id}`}
             />
 
             {/* comment form */}
-            {status === "authenticated" && (
-                <CommentForm webtoonId={webtoonId} 
+            {( status === "authenticated" && isForm ) && (
+                <CommentForm webtoonId={id} 
                     commentRefetch = {commentRefetch} 
                     totalCommentRefetch = {totalCommentRefetch}
                 />

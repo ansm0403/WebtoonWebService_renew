@@ -9,9 +9,8 @@ import Background from '@component/BackgroundPage'
 import { getBackgroundImage } from '@service/webtoonInfo'
 import QueryClientContext from '@context/QueryClientContext'
 import AuthContext from '@/context/AuthContext'
+import NextTopLoader from 'nextjs-toploader';
 
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -28,14 +27,15 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-        <body className={inter.className}>
+        <body className={` pt-[80px]`}>
           {/* <InitTransition/> */}
           {/* <Background backgroundImage={backgroundImage}></Background> */}
           <AuthContext>
             <QueryClientContext>
               <NavigationContextProvider>
+                  <NextTopLoader />
                   <Navbar></Navbar>
-                  <div className = 'relative'>
+                  <div className = 'relative w-[100dvw] h-[100dvh]'>
                         <main>
                             {children}                     
                         </main>

@@ -2,24 +2,28 @@
 
 import axios from "axios";
 import { useSession } from "next-auth/react";
-import Link from "next/link";
 import { toast } from "react-toastify";
 import { Comment } from "@models/comment"
+import { useRouter } from "next/navigation";
 
 interface CommentListProps {
   comments?: Comment[];
   displayStore?: boolean;
   commentRefetch?: () => void;
   totalCommentRefetch? : () => void;
+  type : string
 }
 
 export default function CommentList({
   comments,
   displayStore,
   commentRefetch,
-  totalCommentRefetch
+  totalCommentRefetch,
+  type
 }: CommentListProps) {
     const { data: session } = useSession();
+
+    const navigate = useRouter();
 
     const handleDeleteComment = async ({
         commentId, webtoonId
@@ -45,8 +49,6 @@ export default function CommentList({
         }
         }
     };
-    
-    console.log("코멘트는?? : ", comments)
 
     return (
         <div className="my-10">
@@ -54,7 +56,7 @@ export default function CommentList({
             comments?.map((comment) => (
             <div
                 key={comment.id}
-                className="flex items-center space-x-4 text-sm text-white mb-8 border-b border-gray-100 pb-8"
+                className="flex items-center text-left space-x-4 text-sm  mb-8 border-b border-gray-100 pb-8"
             >
                 <div>
                 <img
@@ -66,21 +68,22 @@ export default function CommentList({
                 />
                 </div>
                 <div className="flex flex-col space-y-1 flex-1">
-                <div className="font-bold">{comment?.author?.name}</div>
-                <div className="text-xs">
-                    {new Date(comment?.createdAt)?.toLocaleDateString()}
-                </div>
-                <div className="text-white mt-1 text-base">{comment?.body}</div>
-                {/* {displayStore && comment.store && (
-                    <div className="mt-2">
-                    <Link
-                        href={`/stores/${comment.store.id}`}
-                        className="text-gray-500 hover:text-gray-400 text-xs underline font-medium"
-                    >
-                        {comment.store.name}
-                    </Link>
+                    <div>
+                        <span className="font-bold">{comment?.author?.name}</span>
+                        { type === "author" 
+                            ? (
+                                <>
+                                    <span className="pl-3 font-bold">{"-  " + comment.webtoon.title + " /"}</span>
+                                    <span className="pl-1 font-bold cursor-pointer text-sky-400" onClick = {()=>navigate.push(`/webtoon/${comment.webtoon.id}`)}>{" 이동"}</span>
+                                </>    
+                            )
+                            : ""
+                        }
                     </div>
-                )} */}
+                    <div className="text-xs">
+                        {new Date(comment?.createdAt)?.toLocaleDateString()}
+                    </div>
+                    <div className=" mt-1 text-base">{comment?.body}</div>
                 </div>
                 <div>
                 {comment?.author.id === session?.user.id as string && (

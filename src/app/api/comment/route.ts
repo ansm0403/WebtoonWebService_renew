@@ -7,14 +7,16 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req : NextRequest){
     const searchParams = req.nextUrl.searchParams;
-    const webtoonId = searchParams.get('webtoonId');
+    const id = searchParams.get('id');
     const page = searchParams.get('page') || "1";
     const limit = searchParams.get('limit') || "5";
+    const type = searchParams.get('type');
 
-    if(!webtoonId) return new Response('Bad Request', {status : 400});
+    if(!id || !type) return new Response('Bad Request', {status : 400});
 
     return getPagedComment(
-        webtoonId,
+        id,
+        type,
         parseInt(page),
         parseInt(limit)
     )

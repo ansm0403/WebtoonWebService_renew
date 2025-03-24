@@ -56,12 +56,14 @@ export async function deleteComment({
 }
 
 export async function getPagedComment(
-    webtoonId : string,
+    id : string,
+    type : string,
     page : number,
     limit : number
 ) : Promise<Comment[] | null> 
 {
-    const totalCount = await getTotalComment(webtoonId);
+
+    const totalCount = await getTotalComment(id, type);
     const totalPage = Math.ceil(totalCount/limit); 
 
     if(page > totalPage){
@@ -76,7 +78,7 @@ export async function getPagedComment(
     );
 
     return sanityClient.fetch(`
-        *[_type == "comment" && webtoon._ref == "${webtoonId}"] 
+        *[_type == "comment" && ${type}._ref == "${id}"] 
         | order(_createdAt desc){ 
             "id" : _id, 
             "createdAt" : _createdAt, 
@@ -88,14 +90,18 @@ export async function getPagedComment(
                 name
             },
             webtoon->{
-                "id" : _id
+                "id" : _id,
+                title
             }
         }[${frontIndex}...${endIndex}]
     `)
 }
 
-export async function getTotalComment(webtoonId : string) : Promise<number>{
-    return sanityClient.fetch(`count(*[_type == "webtoon" && _id == "${webtoonId}"].comments[])`)
+export async function getTotalComment(id : string, type : string) : Promise<number>{
+    let query = ""
+    if(type === "author") query = `count(*[_type == "user" && _id == "${id}"].comments[])`
+    else if(type === "webtoon") query = `count(*[_type == "webtoon" && _id == "${id}"].comments[])`
+    return sanityClient.fetch(query);
 }
 
 

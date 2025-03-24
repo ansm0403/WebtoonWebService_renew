@@ -12,7 +12,20 @@ export interface webtoon {
     firstDate : string,
     dayOfWeek : string,
     platform : string,
-    comments : Comment[]
+    comments : Comment[],
+    likeUsers : string[]
+}
+
+export interface RankPageWebtoon {
+    thumbnailUrl : string,
+    _id : string,
+    likeCount : number,
+    dayOfWeek : string,
+    platform : string,
+    comments : Comment[],
+    genre : string[],
+    url : string,
+    likeUsers : string[],
 }
 
 export interface Comment {

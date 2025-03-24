@@ -4,6 +4,7 @@ import WebtoonList from '@component/WebtoonList';
 import Pagination from '@component/Pagination';
 import { getTotalWebtoonCount } from '@service/webtoon';
 import axios from 'axios';
+import { webtoon } from '@/models/webtoon';
 
 export default async function RankPage({
   searchParams
@@ -14,13 +15,13 @@ export default async function RankPage({
   const page = searchParams.page as string
   const totalWebtoons = await getTotalWebtoonCount();
 
-  const params = { page, size : 10 }
+  // const params = { page, size : 10 }
   
-  const { data : webtoons } = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/rank`, { params })
+  // const { data : webtoons } = await axios.get<webtoon[]>(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/rank`, { params })
 
   return (
     <>
-      <WebtoonList webtoons = { webtoons } page = {page} isRank />
+      <WebtoonList page = {page} isRank />
       <Pagination pathname = {'/rank'} totalCount={totalWebtoons}/>
     </>
   )

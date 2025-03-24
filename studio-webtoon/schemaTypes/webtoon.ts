@@ -71,6 +71,18 @@ export const webtoonType = defineType({
                     to : [{ type : 'comment'} ]
                 }
             ]
-        })
+        }),
+        defineField({
+            title : 'LikeWebtoons',
+            name : 'likeWebtoons',
+            type : 'array',
+            of : [
+                {
+                    type : 'reference',
+                    to : [{type : 'user'}]
+                }
+            ],
+            validation : (Rule) => Rule.unique(),
+        }),
     ]
 })
