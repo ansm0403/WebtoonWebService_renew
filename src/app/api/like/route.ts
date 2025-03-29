@@ -7,11 +7,11 @@ export async function PUT(req : NextRequest){
     const searchParams = req.nextUrl.searchParams;
     const userId = searchParams.get("userId") ?? ""
     const webtoonId = searchParams.get("webtoonId") ?? ""
-    const liked = searchParams.get("like") ?? "false"
+    const { liked } = await req.json()
+    
+    console.log("라이크는??", liked);
 
-    let response = undefined
-    if(liked === "true") response = addLike;
-    else if(liked === "false") response = disLike;
+    const response = liked ? addLike :  disLike;
 
     if(!response) return new Response("Bad Request" , { status : 500 })
 

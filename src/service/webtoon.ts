@@ -2,7 +2,7 @@
 import { RankPageWebtoon, webtoon } from "@models/webtoon";
 import { sanityClient } from "@service/sanity";
 
-interface getWebtoonResponse extends webtoon {
+export interface getWebtoonResponse extends webtoon {
     totalComment : number
 }
 
@@ -30,13 +30,18 @@ export async function deleteWebtoon(webtoon : webtoon){
 
 export async function getWebtoon(id : string) : Promise<getWebtoonResponse>{
     return sanityClient.fetch(
-        `*[_type == "webtoon" && _id == "${id}"]{..., "totalComment" : count(comments[])}`
+        `*[_type == "webtoon" && _id == "${id}"]{
+            ..., 
+            "likeUsers" : likeWebtoons[]._ref, 
+            "totalComment" : count(comments[])
+        }`
     ).then((data) => data[0])
 }
 
 // 전체 웹툰 랭킹 페이지
 
-const rankPageProjection = `
+const pageProjection = `
+    title,
     thumbnailUrl,
     _id, 
     likeCount, 
@@ -71,7 +76,7 @@ export async function getPagedRankWebtoon({
 
     const query = `
         *[_type == "webtoon"] | 
-        order(likeProportion desc)[${frontIndex}...${endIndex}]{${rankPageProjection}}
+        order(likeProportion desc)[${frontIndex}...${endIndex}]{${pageProjection}}
     `
     return sanityClient.fetch(query);
 }
@@ -102,7 +107,7 @@ export async function getNewWebtoons({
         totalCount
     );
 
-    return sanityClient.fetch(`*[_type == "webtoon" && firstDate > "2023-10-21" ] | order(firstDate desc)[${frontIndex}...${endIndex}]`)
+    return sanityClient.fetch(`*[_type == "webtoon" && firstDate > "2023-10-21" ] | order(firstDate desc)[${frontIndex}...${endIndex}]{${pageProjection}}`)
 }
 
 export async function getTotalNewWebtoonCount() : Promise<number>{
@@ -135,7 +140,7 @@ export async function getGenreWebtoon(
         _type == "webtoon" 
         && "${genre}" in genre
         ] | order(likeProportion desc)
-         [${frontIndex}...${endIndex}]`
+         [${frontIndex}...${endIndex}]{${pageProjection}}`
     );
 }
 

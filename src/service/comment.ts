@@ -61,10 +61,15 @@ export async function getPagedComment(
     page : number,
     limit : number
 ) : Promise<Comment[] | null> 
-{
-
+{   
     const totalCount = await getTotalComment(id, type);
     const totalPage = Math.ceil(totalCount/limit); 
+
+    let query = null;
+    if(type === "webtoon") query = `${type}._ref`
+    else if(type === "author") query = `${type}->username`
+
+    console.log(totalCount);
 
     if(page > totalPage){
         return null
@@ -78,7 +83,7 @@ export async function getPagedComment(
     );
 
     return sanityClient.fetch(`
-        *[_type == "comment" && ${type}._ref == "${id}"] 
+        *[_type == "comment" && ${query} == "${id}"] 
         | order(_createdAt desc){ 
             "id" : _id, 
             "createdAt" : _createdAt, 
@@ -92,14 +97,14 @@ export async function getPagedComment(
             webtoon->{
                 "id" : _id,
                 title
-            }
+            },
         }[${frontIndex}...${endIndex}]
     `)
 }
 
 export async function getTotalComment(id : string, type : string) : Promise<number>{
     let query = ""
-    if(type === "author") query = `count(*[_type == "user" && _id == "${id}"].comments[])`
+    if(type === "author") query = `count(*[_type == "user" && username == "${id}"].comments[])`
     else if(type === "webtoon") query = `count(*[_type == "webtoon" && _id == "${id}"].comments[])`
     return sanityClient.fetch(query);
 }
@@ -111,16 +116,17 @@ export function getFrontAndEndIndex(
     limit : number,
     totalCount : number
 ){
+
     const frontIndex = (page-1) * limit; 
     let endIndex = 0;
+
     if( totalCount === limit ) {
         endIndex = 5;
     }
     else {
         endIndex = page !== totalPage 
                         ? frontIndex + limit 
-                        : frontIndex + (totalCount % 10)
+                        : frontIndex + (limit % totalCount)
     }
-
     return { frontIndex, endIndex };
 }

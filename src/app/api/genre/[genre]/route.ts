@@ -10,8 +10,7 @@ interface Context {
 
 export async function GET(
     request : NextRequest, context : Context
-) : Promise<NextResponse<NextGenreResponse | null>> 
-{
+) {
     const params = context.params.genre;
     const searchParams = request.nextUrl.searchParams;
     const page = searchParams.get('page') ?? "1";
@@ -19,20 +18,11 @@ export async function GET(
 
     const genre = convertGenre(params);
 
-    const webtoons = await getGenreWebtoon(
+    return getGenreWebtoon(
         genre,
         parseInt(page),
         parseInt(size)
-    );
-
-    if(!webtoons) return NextResponse.json(null);
-
-    const totalCount = await getTotalGenreWebtoonCount(genre);
-
-    return NextResponse.json({
-        webtoons,
-        totalCount
-    })
+    ).then(NextResponse.json)
 }
 
 function convertGenre(genre : string) : string{

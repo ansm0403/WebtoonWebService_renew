@@ -1,14 +1,12 @@
-
-
-import WebtoonList from '@component/WebtoonList'
 import React from 'react'
-import axios from 'axios'
 import Pagination from '@/components/Pagination'
-import { NextGenreResponse } from '@/models/webtoon'
+import GenreWebtoonList from '@/components/genre/GenreWebtoonPage'
+import { getTotalGenreWebtoonCount } from '@/service/webtoon'
+
 
 type ParamsProps = {
   params : {genre : string},
-  searchParams : {[key : string] : string | string[] | undefined} 
+  searchParams : {[key : string] : string | undefined} 
 }
 
 // 1. genre 원을 누르면 1페이지가 나옴. url : /genre/{genre}/?page=0
@@ -21,15 +19,31 @@ export default async function GenrePage({
 ){
 
   const page = searchParams.page ?? '1';
-  const params = { size : 10, page }
-  const { data : { webtoons, totalCount } } = await axios.get<NextGenreResponse>(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/genre/${genre}`, { params })
 
-  
+  const genreKor = convertGenre(genre);
+
+  const totalCount = await getTotalGenreWebtoonCount(genreKor);
+
+  console.log("토탈 : ,", totalCount);
+  console.log("장르 : ", genreKor);
+
   return (
     <div className = 'w-full'>
-      {genre}  페이지 입니다.
-      <WebtoonList webtoons={webtoons} isRank />
+      <GenreWebtoonList page = {page} genre = { genre } />
       <Pagination pathname={`/genre/${genre}`} totalCount = {totalCount} />
     </div>
   )
+}
+
+function convertGenre(genre : string){
+  switch(genre) {
+    case "action" : return "액션"
+    case "fantasy" : return "판타지"
+    case "romance" : return "로맨스"
+    case "wuxia" : return "무협"
+    case "daily" : return "일상"
+    case "sports" : return "스포츠"
+    case "mystery" : return "스릴러" 
+    default : return "기타"
+  }
 }

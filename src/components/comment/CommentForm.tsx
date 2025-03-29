@@ -1,15 +1,20 @@
+'use client'
+
 import axios from "axios";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
 interface CommentFormProps {
   webtoonId: string;
+  pathname : string
   commentRefetch: () => void;
   totalCommentRefetch : () => void;
 }
 
 export default function CommentForm({ 
   webtoonId,
+  pathname,
   commentRefetch,
   totalCommentRefetch 
 } : CommentFormProps
@@ -20,6 +25,7 @@ export default function CommentForm({
     resetField,
     formState: { errors },
   } = useForm();
+  const navigate = useRouter();
 
   return (
     <form
@@ -34,6 +40,7 @@ export default function CommentForm({
           resetField("body");
           commentRefetch?.();
           totalCommentRefetch?.();
+          navigate.push(`${pathname}/${webtoonId}?page=1}`)
         } else {
           toast.error("다시 시도해주세요");
         }

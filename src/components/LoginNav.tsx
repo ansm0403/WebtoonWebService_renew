@@ -13,9 +13,9 @@ export default function LoginNav({onClick, userName} : LogoutProps) {
     
     return (
         <>
-        <div className = 'flex flex-row gap-4'>
+        <div className = 'flex flex-row gap-4 items-center ml-1 mr-3'>
             {
-                userName && <p className = 'p-4 text-white  hidden md:inline'><span className = 'text-red-700 font-bold pr-1 '>{userName }</span>님 어서오세요.</p>
+                userName && <p className = ' text-white  hidden md:inline'><span className = 'text-purple-500 font-bold pr-1 '>{userName }</span>님 </p>
             }
         </div>
         <div className = 'flex flex-row gap-4'>

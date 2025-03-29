@@ -15,7 +15,8 @@ type Props = {
     children : React.ReactNode
     refetch : () => void
     index : number,
-    page? : string
+    page? : string,
+    queryKey : string[]
 }
 
 export default function Card({
@@ -23,7 +24,8 @@ export default function Card({
     children, 
     refetch, 
     index,
-    page
+    page,
+    queryKey
 } : Props ) {
     const { title, thumbnailUrl, likeUsers } = webtoon;
     const { data : session } = useSession();
@@ -33,7 +35,7 @@ export default function Card({
     // const loadingRef = useRef<HTMLDivElement>(null)  
 
     const setLike = async (webtoonId : string, liked : boolean) => {
-        const { data, status } = await axios.put(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/like?userId=${session?.user.id}&webtoonId=${webtoonId}&like=${liked}`)
+        const { data, status } = await axios.put(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/like?userId=${session?.user.id}&webtoonId=${webtoonId}`, { liked })
 
         refetch();
         return { data, status }
@@ -42,10 +44,11 @@ export default function Card({
     const { mutate } = useMutation({
         mutationFn : () => setLike(webtoon._id, !liked),
         onMutate : async () => {
-            const previousWebtoon = queryClient.getQueryData<webtoon[]>(["rank", page]) as webtoon[];
+            const previousWebtoon = queryClient.getQueryData<webtoon[]>(queryKey) as webtoon[];
             const like = !liked;
 
             const newWebtoons = [...previousWebtoon];
+
             let newData = undefined
 
             if(like) {
@@ -54,13 +57,12 @@ export default function Card({
                     likeUsers : (likeUsers ? [...likeUsers, session?.user.id as string] : new Array(session?.user.id as string))
                 }
             } else {
-                newData ={
+                newData = {
                     ...webtoon,
                     likeUsers : [...likeUsers].filter((id) => id !== session?.user.id)
                 }
             }
-
-            queryClient.setQueryData(["rank", page], ()=>{
+            queryClient.setQueryData(queryKey, ()=>{
                 newWebtoons[index] = newData;
                 return newWebtoons;
             })
@@ -71,10 +73,10 @@ export default function Card({
             console.log("성공");
         },
         onError : (error, variables, context) => {
-            queryClient.setQueryData(["rank", page], context?.previousWebtoon)
+            queryClient.setQueryData(queryKey, context?.previousWebtoon)
         },
         onSettled : () => {
-            queryClient.invalidateQueries({queryKey : ["rank", page]})
+            queryClient.invalidateQueries({queryKey : queryKey})
         }
     })
 
@@ -100,13 +102,3 @@ export default function Card({
     )
 }
 
-function Skeleton(){
-    return(
-        <div className = 'bg-gray-200'>
-            <div></div>
-            <div></div>
-        </div>
-    )
-}
-
-Card.Skeleton = Skeleton;

@@ -1,7 +1,5 @@
 import { authOptions } from "@/auth/authOptions";
 import { addComment, deleteComment, getPagedComment } from "@/service/comment";
-import { sanityClient } from "@/service/sanity";
-
 import { getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -11,8 +9,10 @@ export async function GET(req : NextRequest){
     const page = searchParams.get('page') || "1";
     const limit = searchParams.get('limit') || "5";
     const type = searchParams.get('type');
-
+    
     if(!id || !type) return new Response('Bad Request', {status : 400});
+
+    console.log("리턴 안됨 ㅋㅋ");
 
     return getPagedComment(
         id,

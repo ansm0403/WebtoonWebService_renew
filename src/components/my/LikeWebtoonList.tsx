@@ -6,8 +6,8 @@ import { useSession } from 'next-auth/react';
 import Link from 'next/link';
 import React from 'react'
 import { FadeLoader } from 'react-spinners';
-import Pagination from '../Pagination';
 import { useSearchParams } from 'next/navigation';
+import Image from "next/image"
 
 export default function LikeWebtoonList() {
     const { data : session } = useSession();
@@ -40,15 +40,27 @@ export default function LikeWebtoonList() {
     const likeWebtoons : LikeWebtoon[] = webtoons.likeWebtoons
     const sliceIndex = webtoons.totalCount < limit ? webtoons.totalCount : limit;
 
+    if(!likeWebtoons) return (
+        <div className='m-10 text-center text-'>
+            <Image className=' bg-gradient-to-br rounded-full mb-10' src = "/images/noneLike.png" alt = "None Like Image" width = {400} height={300}/>
+            좋아하는 웹툰에 하트를 눌러보세요!
+        </div>
+    )
+
     return (
         <>
             <div className='flex flex-col md:flex-row items-center justify-center'>
                 {
                     likeWebtoons.slice(0, sliceIndex).map((likeWebtoon)=>(
-                        <Link href={`/webtoon/${likeWebtoon._id}`} className='border-[1.5px] border-gray rounded-xl mb-10 mx-5'>
+                        <>
+                        <Link key = {likeWebtoon._id} href={`/webtoon/${likeWebtoon._id}`} className='border-[1.5px] border-gray rounded-xl mb-10 mx-5'>
                             <img className = "rounded-xl" src = {likeWebtoon.thumbnailUrl} width = {250} />
                             <div className='p-5 font-bold text-center text-[1.05rem]'>{likeWebtoon.title}</div>
                         </Link>
+                            {
+                                isLoading && <FadeLoader />
+                            }
+                        </>
                     ))
                 }  
             </div>

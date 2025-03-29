@@ -13,7 +13,7 @@ export default function MyPage() {
         <hr className='my-20 w-[100%] mx-auto'></hr>
         <div className='text-[1.25rem] font-bold mt-5'>댓글 목록</div>
         
-        <Comments type='author' isForm = {false} isBlack/>
+        <Comments pathname = {"/user"} type='author' isForm = {false} />
       </div>
     </div>
   )
