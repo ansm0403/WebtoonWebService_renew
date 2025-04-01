@@ -52,11 +52,14 @@ export default function MenuCard({
       max-w-[1500px] min-w-[200px] h-[100dvh] 
       overflow-hidden 
       transition-transform
-      ${ 
-        (menuIndex !== index && menuHover[menuTitle] === false) ||
-          (checkAnyMenuIsHover(menuHover) && menuIndex === index && menuHover[menuTitle] === false) 
-            ? `hidden` 
-            : ``
+      
+      ${ menuIndex !== index ? "hidden" : ""}
+
+      ${""
+        // (menuIndex !== index && menuHover[menuTitle] === false) ||
+        //   (checkAnyMenuIsHover(menuHover) && menuIndex === index && menuHover[menuTitle] === false) 
+        //     ? `hidden` 
+        //     : ``
       } 
       
       `
