@@ -5,22 +5,25 @@ import { useSession } from "next-auth/react";
 import { toast } from "react-toastify";
 import { Comment } from "@models/comment"
 import { useRouter } from "next/navigation";
-import { useMutation } from "@tanstack/react-query";
 
 interface CommentListProps {
-  comments?: Comment[];
-  displayStore?: boolean;
-  commentRefetch?: () => void;
-  totalCommentRefetch? : () => void;
-  type : string
+    pathname : string
+    page : string
+    comments?: Comment[];
+    displayStore?: boolean;
+    commentRefetch?: () => void;
+    totalCommentRefetch? : () => void;
+    type : string
 }
 
 export default function CommentList({
-  comments,
-  displayStore,
-  commentRefetch,
-  totalCommentRefetch,
-  type
+    pathname,
+    page,
+    comments,
+    displayStore,
+    commentRefetch,
+    totalCommentRefetch,
+    type
 }: CommentListProps) {
     const { data: session } = useSession();
 
@@ -39,11 +42,14 @@ export default function CommentList({
             const result = await axios.delete(`/api/comment?comment=${commentId}&webtoon=${webtoonId}`);
 
             if (result.status === 200) {
-            toast.success("댓글을 삭제했습니다.");
-            commentRefetch?.();
-            totalCommentRefetch?.();
+                toast.success("댓글을 삭제했습니다.");
+                commentRefetch?.();
+                totalCommentRefetch?.();
+
+                if(!((comments as Comment[]).length - 1)) return navigate.push(`${pathname}/${webtoonId}?page=${parseInt(page)-1}`);
+
             } else {
-            toast.error("다시 시도해주세요.");
+                toast.error("다시 시도해주세요.");
             }
         } catch (e) {
             console.log(e);

@@ -69,9 +69,7 @@ export async function getPagedComment(
     if(type === "webtoon") query = `${type}._ref`
     else if(type === "author") query = `${type}->username`
 
-    console.log(totalCount);
-
-    if(page > totalPage){
+    if(page > totalPage || totalCount === 0){
         return null
     }
 

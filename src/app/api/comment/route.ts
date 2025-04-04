@@ -12,8 +12,6 @@ export async function GET(req : NextRequest){
     
     if(!id || !type) return new Response('Bad Request', {status : 400});
 
-    console.log("리턴 안됨 ㅋㅋ");
-
     return getPagedComment(
         id,
         type,

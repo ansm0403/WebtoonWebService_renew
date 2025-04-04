@@ -63,12 +63,12 @@ export default function Comments({
         </div>
     )
 
-    if(!comments?.length) return navigate.push(`${pathname}/${id}?page=${parseInt(page)-1}`);
-
     return (
         <div className="w-full md:max-w-[920px] py-8 mb-20 mx-auto">
             {/* comment list */}
             <CommentList 
+                pathname = {pathname}
+                page = {page}
                 comments={comments} 
                 commentRefetch={commentRefetch} 
                 totalCommentRefetch={totalCommentRefetch}
