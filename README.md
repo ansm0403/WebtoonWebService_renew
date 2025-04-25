@@ -1,76 +1,123 @@
-# Webtoon WebService 
+# WebtoonWebService
+---
+
+# 프로젝트 개요
+
 <br>
 
+점점 모바일화 되어가고 있는 사회에서 웹툰을 뗄레야 뗼 수 없는 사업입니다. 
+
+바쁘고 피곤한 현대에 표현에 큰 제약이 없고, 빠르게 읽고 소비할 수 있는 웹툰은 영화, 드라마보다 쉽게 접근할 수 있으며 이러한 장점들은 웹툰의 산업이 빠르게 성장하도록 하였습니다.
+
+하지만 플랫폼마다 서로 독립적이고 경쟁을 하기때문에 각 플랫폼의 정보를 얻기 쉽지않으며, 플랫폼들의 존재 조차 모른다면 좋은 웹툰을 읽을 기회를 잃게됩니다.
+
+이러한 고민으로부터 이번 졸업 프로젝트를 진행하게 되었고, 여러 플랫폼들로 부터 많은 웹툰을 추천 받을 수 있도록 만들었습니다.
+
+<br>
 
 ---
 
+# 개발자 소개
 
-## 프로젝트 소개
+<br>
 
+* 안상문 : 팀장, 프로젝트 기획, UI/UX 디자인, 프론트엔드 개발
+ 
+<br>
 
 ---
-## 개발자 소개
 
 <br>
 
-* 안상문 : 프론트엔드 /  tkdans312@gmail.com, kirianir@naver.com
+# 기술 스택
 
-<br>
+### Environment
 
-## 기술 스택
-
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ### Development
 
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Context-API](https://img.shields.io/badge/Context--Api-000000?style=for-the-badge&logo=react)
-![React Query](https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white) <br>
-![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+![React Query](https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white)
+![SANITY](https://img.shields.io/badge/SANITY-%23CB3837.svg?style=for-the-badge&logo=sanity&logoColor=white)
 
-### Enviornment
+### config
 
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
- ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
- ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
-
-### Config
-
-![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 <br>
 
-## 주요 기능
-
-* 카카오 맵 API를 이용하여 각 맛집 위치 정보 제공
-* 만약 데이터에 없는 맛집이라면 직접 위치 정보를 제공하여 추가 가능
-* 각 맛집의 리뷰를 댓글로 남겨 맛집 평가 가능
-* 맛집 전체 리스트 검색 기능
+---
 
 <br>
 
-## 실행 결과
-
-https://my-restaurants.vercel.app
+# 주요 기능
 
 <br>
 
-## 개선점
+* 전체 플랫폼의 웹툰을 (웹툰의 조회수 / 해당 플랫폼의 전체 조회수) 로 계산하여 인기 플랫폼에 치중하지 않고 웹툰의 랭킹을 매깁니다.
 
-* ***Firebase 에서 Prisma + Supabase로*** : 성능의 개선을 바랬다기보다는 신입채용을 하는 회사들 중에 Sanity와 같은 CMS로 구축해본 적이 있는지 라는 사항을 보고 NoSQL을 사용하는 firebase가 아닌 Sanity처럼 직접 스키마를 작성하는 DB를 사용해보기 위해 교체하였다.
+* 전체 플랫폼의 랭킹을 주요 장르(판타지, 액션, 로맨스, 무협 등)별로 구분하여 따로 랭킹을 매깁니다.
+
+* 웹툰 마다 코멘트를 작성하여 웹툰을 보기 전에 미리 정보를 구할 수 있습니다.
+
+* 웹툰을 런칭한지 3개월 이내의 신작 웹툰들을 무작위로 추천합니다.
+
 <br>
 
-* ***무한 스크롤에서 페이지네이션으로*** : 이 역시 성능의 개선보다는 항상 다수의 데이터를 무한 스크롤로 처리해왔는데, 이번 맛집 데이터에는 1000개 이상의 정말 수 많은 맛집이 있는데 원하는 것을 찾을 때 까지 스크롤을 한다거나, 머릿속에 기억해놨던 가게를 찾기 위해 스크롤을 다시 위로 올리는 행위가 굉장히 불편했기때문에 차라리 페이지네이션이 낫다고 생각하여 페이지네이션으로 처리
+---
 
 <br>
 
-## 후기
+# 실행 결과
 
-예전 인스타그램 프로젝트에서 Sanity로 스키마를 작성한 이후 처음 스키마를 작성해봤는데, 어떻게 스키마를 작성해야할지 고민하는 과정이 어려웠지만 재밌었다.<br>
-사실 나는 모바일 앱을 사용할 때도 항상 무한 스크롤보단 페이지네이션을 선호했는데 이번에 구현할 기회가 생겨서 많이 고민하며 구현해보았다. <br>
-그리고 이때까지 Next.js 앱을 만들며 항상 App router 로 작성했는데 혹시나 하는 마음에 경험에 없던 page router 로 직접 작성해보았다. <br>
-확실히 App router 가 작성에는 편하긴 했지만 오히려 getStaticProps, getServerSideProps 등 개발자가 직접 하나하나 지정해서 사용하는 page router 가 더 직관적이라 괜찮았던 것 같다.
+<br>
+
+
+
+<br>
+
+---
+
+<br>
+
+# 개선점
+
+<br>
+
+* 검색 기능에 오류가 발생, 하지만 스프링에 대한 공부가 부족하고 검색 기능을 처음 만들어봤기에 단순히 만들어 놓은 API를 보고 어떤 부분에서 오류가 났는지 발견하지 못함.
+  그래서 다음 프로젝트는 우선 개인프로젝트로 직접 백엔드 서버를 구축하여 검색 기능을 만들어 더 철저히 공부하겠음.
+
+* 당시 처음으로 만들어본 큰 프로젝트였기에 개발하는 데에만 급급하여 최적화 문제를 생각하지 못함.
+  이번 프로젝트로 Next 를 이용한 개발에 익숙해졌으니 최적화 문제를 반드시 해결하도록 하겠음.
+
+<br>
+
+---
+
+<br>
+
+# 후기
+
+
+<br>
+
+이번 프로젝트는 항상 짧고 간단한 프로젝트만 하다가 처음으로 해본 큰 프로젝트였고 처음으로 Next.js를 사용해본 프로젝트였습니다.
+
+Next.js 13 버전이 나온지 고작 3개월 밖에 안되어 생각보다 많이 바뀐 Next.js의 컨퍼런스가 부족하였고, 혼자 프론트엔드를 담당하다보니 극복하기에 굉장히 힘들었습니다.
+하지만 이것이 거름이 되어 Next를 이용한 개발이 더욱 수월해졌다는 것은 매우 큰 수확이었습니다.
+
+하지만 처음으로 해보는 큰 프로젝트이자 졸업 프로젝트라서 욕심이 많이 생겨, 기본기가 부족했음에도 라이브러리를 정말 최소한 사용하고 직접 구현하면서 공부하려고 했다보니 
+애니메이션들이나 아이콘, 페이징 등을 라이브러리 없이 만들어 시간이 매우 부족하였습니다. 
+결국 시간이 부족하여 검색기능을 구현하지 못한채로 종료하게 됐고, 제 이기심만으로 팀원들에게 절대로 폐를 끼쳐서는 안된다는 것을 깨달았습니다.
+
+<br>
+
+---
+
+
