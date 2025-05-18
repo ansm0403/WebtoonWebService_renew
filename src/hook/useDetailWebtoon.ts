@@ -1,5 +1,5 @@
 import { getWebtoonResponse } from '@/service/webtoon';
-import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 import axios from 'axios';
 
 
@@ -9,7 +9,7 @@ export default function useLikeMutate(webtoonId : string, refetch : () => void, 
   const queryClient = useQueryClient();
 
   async function setLike(){
-    const { status } = await axios.put(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/like?userId=${userId}&webtoonId=${webtoonId}`, { 
+    const { status } = await axios.put(`/api/like?userId=${userId}&webtoonId=${webtoonId}`, { 
       liked 
     })
     refetch();

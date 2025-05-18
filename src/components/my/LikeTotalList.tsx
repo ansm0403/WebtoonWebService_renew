@@ -12,7 +12,7 @@ export default function LikeTotalList() {
     const userId = session?.user.id;
     
     const fetchLikeWebtoons = async () => {
-        const { data } = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/like`)
+        const { data } = await axios.get(`/api/like`)
 
         return data;
     }
@@ -32,7 +32,7 @@ export default function LikeTotalList() {
         <div className='w-full'>
             {
                 likeWebtoons.map((likeWebtoon)=>(
-                    <SearchCard webtoon={likeWebtoon}/>
+                    <SearchCard key = {likeWebtoon._id} webtoon={likeWebtoon}/>
                 ))
             }
         </div>

@@ -34,11 +34,11 @@ export default function GenreMainSwiper() {
                 return (
                 <React.Fragment key = {genreThumbnails[index].link}>
                     <Link 
-                        className={`absolute w-[9rem]  md:w-[13rem] hover:text-black text-center transition-all hover:scale-125 ${Math.abs((index + weight) % 7)*51 === 0 ? "" : "pointer-events-none"}`} 
+                        className={`absolute w-[9rem] md:w-[13rem] hover:text-black hover:opacity-100 text-center transition-all hover:scale-125 ${Math.abs((index + weight) % 7)*51 === 0 ? "" : "pointer-events-none"}`} 
                         href = {data.link}
                     >
                         <Image 
-                            className='pt-[500px] w-[50vw] opacity-40 hover:opacity-100 transition-opacity'
+                            className='pt-[500px] w-[50vw] opacity-40 transition-opacity'
                             src = {`/images/${data.thumbnail}`} 
                             alt = "장르 메인 페이지" 
                             width = {300} 

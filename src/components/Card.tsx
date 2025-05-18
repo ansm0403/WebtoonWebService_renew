@@ -35,7 +35,7 @@ export default function Card({
     // const loadingRef = useRef<HTMLDivElement>(null)  
 
     const setLike = async (webtoonId : string, liked : boolean) => {
-        const { data, status } = await axios.put(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/like?userId=${session?.user.id}&webtoonId=${webtoonId}`, { liked })
+        const { data, status } = await axios.put(`/api/like?userId=${session?.user.id}&webtoonId=${webtoonId}`, { liked })
 
         refetch();
         return { data, status }
@@ -70,7 +70,7 @@ export default function Card({
             return { previousWebtoon };
         },
         onSuccess : () => {
-            console.log("성공");
+
         },
         onError : (error, variables, context) => {
             queryClient.setQueryData(queryKey, context?.previousWebtoon)
@@ -82,7 +82,7 @@ export default function Card({
 
     return (
         <div className = 'relative border-2 text-center rounded-md border-none overflow-hidden hover:scale-90 transition-transform'>
-            <Link href = {`${process.env.NEXT_PUBLIC_SERVER_URL}/webtoon/${webtoon._id}`} className = 'relative mx-auto min-w-[200px] max-w-[250px] h-[300px]'>
+            <Link href = {`/webtoon/${webtoon._id}`} className = 'relative mx-auto min-w-[200px] max-w-[250px] h-[300px]'>
                 {/* // eslint-disable-next-line @next/next/no-img-element */}
                 <img 
                     className = "border-none border-2 rounded-xl cursor-pointer" 

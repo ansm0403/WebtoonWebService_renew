@@ -1,8 +1,6 @@
 
 import React from 'react'
-import WebtoonList from '@component/WebtoonList';
-import axios from 'axios';
-import { getTotalNewWebtoonCount, getTotalWebtoonCount } from '@service/webtoon';
+import { getTotalNewWebtoonCount } from '@service/webtoon';
 import Pagination from '@component/Pagination';
 import NewWebtoonList from '@/components/new/NewWebtoonList';
 

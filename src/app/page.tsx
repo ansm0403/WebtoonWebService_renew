@@ -1,11 +1,11 @@
 import MenuCard from '@/components/MenuCard'
-import MenuCard2 from '@/components/MenuCard2'
-import { mainMenus, mainMenus2 } from '@/mock/mainMenu'
+import { mainMenus3 as mainMenus } from '@/mock/mainMenu'
+import dynamic from 'next/dynamic'
+
 
 export default function Home() {
-
   return (
-    <div className={`grid grid-cols-4 w-[100dvw] h-[100dvh] md:grid-rows-4 flex-col`}> 
+    <div className='flex flex-col w-[100dvw] h-[100dvh] md:flex-row'> 
       {
         mainMenus.map((menu, index)=>(
           <MenuCard key = {menu.title} menu = {menu} menuIndex = {index} />

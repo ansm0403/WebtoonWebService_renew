@@ -9,7 +9,7 @@ export default function MenuCard({
     menu,
     menuIndex
 } : {
-    menu : { title : string, img : string[], link : string },
+    menu : { title : string, img : string, link : string },
     menuIndex : number
   }) {
 
@@ -30,13 +30,11 @@ export default function MenuCard({
           newMenus[title] = true;
           return newMenus
       })
-      console.log("엔터", title);
     }
 
     const handleLeaveMenu = (e : MouseEvent<HTMLDivElement>) => {
       e.stopPropagation();
       setMenuHover(initialData)
-      console.log("리브", e.currentTarget.dataset.menu);
     }
 
     // 1. 모든 메뉴가 호버되지 않은 상태에서는 4개의 메뉴를 전부 보여준다.
@@ -44,11 +42,9 @@ export default function MenuCard({
     // 3. 기본적으로 호버되지 않은 상태에서는 나머지 3개의 추가 표지는 화면에 보이지 않는다.
 
     function getMenuStyles(index : number, menuTitle : string){
-      console.log("타이틀 : ", menuTitle);
-      console.log(menuTitle ,"호버 : ", menuHover[menuTitle]);
       return `
       relative
-      flex  justify-center items-center 
+      flex justify-center items-center
       max-w-[1500px] min-w-[200px] h-[100dvh] 
       overflow-hidden 
       transition-transform
@@ -77,8 +73,8 @@ export default function MenuCard({
     }
 
   return (
-    <div>
-    {
+    <div className='relative overflow-hidden max-w-[1500px] min-w-[200px] h-[100dvh]'>
+    {/* {
       menu.img.map((img, index)=>{
         const menuTitle = menu.title.split(" ")[0]
         return (
@@ -108,8 +104,18 @@ export default function MenuCard({
         </div>
         )
       })
-    }
-   
+    } */}
+      <Link href = {menu.link} className='' >
+              <Image
+                className={`relative right-36 ${menu.link === "/search" ? "left-[0px]" : "" } top-[-200px] md:top-[-100px] opacity-30 hover:opacity-100 transition-opacity  min-w-[100dvh] w-[100dvw] z-10
+                `}
+                alt = {menu.title} 
+                src = {menu.img}
+                width = {1500} 
+                height={2000} 
+              />
+            </Link>
+      <div className='absolute top-[50%] text-white font-bold text-[3dvh] left-[10%] md:left-[40%] text-center z-50'>{menu.title}</div>
     </div>
   )
 }

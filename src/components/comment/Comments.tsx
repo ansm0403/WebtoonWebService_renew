@@ -38,7 +38,7 @@ export default function Comments({
 
     const fetchComments = async () => {
         const { data : comments } = await axios.get(
-        `${process.env.NEXT_PUBLIC_SERVER_URL}/api/comment`, { params }
+        `/api/comment`, { params }
         );
         return comments
     }; 
@@ -48,14 +48,10 @@ export default function Comments({
         queryFn : fetchComments
     });
 
-    console.log("comments : ", comments);
-
     const { data : totalComment, refetch : totalCommentRefetch } = useQuery({
         queryKey : ['totalComment', id],
         queryFn : () => getTotalComment(id, type)
     })
-    
-    console.log("total\comments : ", totalComment);
     
     if(isLoading) return (
         <div className="flex justify-center items-center h-[300px] ">

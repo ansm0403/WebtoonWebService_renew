@@ -1,6 +1,5 @@
 import Comments from '@/components/comment/Comments'
 import LikeWebtoonList from '@/components/my/LikeWebtoonList'
-import Pagination from '@/components/Pagination'
 import React from 'react'
 
 export default function MyPage() {

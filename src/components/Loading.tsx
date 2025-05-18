@@ -1,8 +1,8 @@
 'use client';
 
-import { LOADING_STATES, NavigationContext, useNavigationContext } from "@context/NavigationContext"
+import { LOADING_STATES, NavigationContext} from "@context/NavigationContext"
 import gsap from "gsap";
-import { useEffect, useRef, useContext, useState } from "react";
+import { useEffect, useRef, useContext } from "react";
 
 export const Loading = () => {
   const { loading, setLoading } = useContext(NavigationContext)

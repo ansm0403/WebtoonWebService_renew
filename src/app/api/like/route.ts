@@ -8,8 +8,6 @@ export async function PUT(req : NextRequest){
     const userId = searchParams.get("userId") ?? ""
     const webtoonId = searchParams.get("webtoonId") ?? ""
     const { liked } = await req.json()
-    
-    console.log("라이크는??", liked);
 
     const response = liked ? addLike :  disLike;
 

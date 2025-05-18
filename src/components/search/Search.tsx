@@ -4,7 +4,7 @@ import React, { useState, MouseEvent, useRef, useEffect } from 'react'
 import { genre } from '@models/globalVar';
 import axios from 'axios';
 import { webtoon } from '@/models/webtoon';
-import { useInfiniteQuery, useQuery } from '@tanstack/react-query';
+import { useInfiniteQuery} from '@tanstack/react-query';
 import SearchList from '@component/search/SearchResultList';
 import useDebounce from '@/hook/useDebounced';
 import { useIntersectionObserver } from '@/hook/useIntersectionObserver';
@@ -39,7 +39,7 @@ export default function Search() {
         const page = pageParam;
         const searchParams = { ...params, page }
 
-        const { data : webtoons } = await axios.get<webtoon[]>(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/search`, { params : searchParams});
+        const { data : webtoons } = await axios.get<webtoon[]>(`/api/search`, { params : searchParams});
 
         return { webtoons, page : page + 1 } // page가 getNextPageParam의 인수로 1이 더해져서 전달 ex) 3이 fetchSearchData의 인수로 들어와서 4로 리턴된다.
     }
@@ -99,10 +99,10 @@ export default function Search() {
                     <input 
                         type = 'text' 
                         autoFocus 
-                        placeholder='Search for a Webtoon title'
+                        placeholder='Search a Webtoon title'
                         value = {keyword}
                         onChange = {(e)=>{setKeyword(e.target.value)}}
-                        className = 'p-3 mr-4 w-[50%] h-7 rounded-md text-black'
+                        className = 'p-3 mr-4 w-[70%] md:w-[50%] h-7 rounded-md text-black'
                     />
                     <button 
                             className = 'hover:opacity-60 border-sky-200 border-[0.05rem] rounded-md py-1 px-2'
@@ -132,7 +132,7 @@ export default function Search() {
                         dayOfWeek.map((day, index)=>{
                             return(
                                 <button key = {`${day}_${index}`}
-                                    className ={`p-3 w-[10%] border-sky-200 border-[0.05rem] rounded-md ${days === day && 'bg-sky-200 border-white text-black'}`}
+                                    className ={`p-1 md:p-3 w-[10%] border-sky-200 border-[0.05rem] rounded-md ${days === day && 'bg-sky-200 border-white text-black text-center'}`}
                                     value = {day}
                                     onClick = {(e)=>{handleDayButton(e)}}
                                 >{day}</button>

@@ -8,7 +8,6 @@ export async function addLike({
     webtoonId : string, 
     userId : string
 }){
-    console.log("나는 트루 ㅋ");
     return sanityClient
     .transaction()
     .patch(userId, user => 

@@ -1,5 +1,5 @@
 'use client';
-import { LOADING_STATES, NavigationContext, useNavigationContext } from "@context/NavigationContext";
+import { LOADING_STATES, NavigationContext } from "@context/NavigationContext";
 import Link from "next/link";
 import { useLayoutEffect, useContext } from "react";
 import { usePathname, useSearchParams } from "next/navigation";

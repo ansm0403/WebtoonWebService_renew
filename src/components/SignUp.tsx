@@ -1,7 +1,6 @@
 'use client'
 import { useRouter } from 'next/navigation';
 import React, { ButtonHTMLAttributes, ChangeEvent, useState, MouseEvent,FocusEvent, useRef } from 'react'
-import { SERVER_URL } from '@models/globalVar';
 
 const date = new Date()
 const year = date.getFullYear();

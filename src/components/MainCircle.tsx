@@ -2,9 +2,6 @@ import '@/app/globals.css'
 import React from 'react'
 import CircularSector from '@component/CircularSector'
 import { getMainCircleThumnail } from '@service/webtoonInfo'
-import TransitionContext from '@context/TransitionContext'
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
-import { CircleTransition } from '@component/CircleTransition'
 
 const webtoonPageUrl =  [
     '/search',

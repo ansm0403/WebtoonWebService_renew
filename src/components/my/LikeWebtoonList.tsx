@@ -17,7 +17,7 @@ export default function LikeWebtoonList() {
     const page = useSearchParams().get("page") ?? "1"
 
     const fetchLikeWebtoons = async () => {
-        const { data } = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/like`)
+        const { data } = await axios.get(`/api/like`)
 
         return data;
     }

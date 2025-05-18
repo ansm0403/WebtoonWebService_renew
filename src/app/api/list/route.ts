@@ -1,6 +1,5 @@
-import { NextApiRequest } from 'next'
+
 import { NextRequest, NextResponse } from 'next/server'
-import React from 'react'
 
 // 보내줄 데이터는 
 // 1. 한 번에 보여줄 페이지넘버의 수 

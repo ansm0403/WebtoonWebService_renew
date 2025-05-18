@@ -75,3 +75,25 @@ export const mainMenus2 : { title : string, img : string[], link : string }[] = 
         ], 
         link : "/new"},
 ];
+
+export const mainMenus3 : { title : string, img : string, link : string }[] = [
+    { 
+        title : "검색", 
+        img : "/images/mainMenu/SSS급 죽어야 사는 헌터.png",
+        link : "/search"
+    },
+    { 
+        title : "장르 별 순위", 
+        img : "/images/mainMenu/악역의 엔딩은 죽음뿐.png",
+        link : "/genre"},
+    { 
+        title : "전체 순위", 
+        img : "/images/mainMenu/현실 퀘스트.png",
+        link : "/rank"
+    },
+    { 
+        title : "신작 웹툰", 
+        img : "/images/mainMenu/나노마신.png", 
+        link : "/new"
+    },
+];

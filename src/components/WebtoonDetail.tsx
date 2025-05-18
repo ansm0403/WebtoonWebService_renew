@@ -1,17 +1,17 @@
 'use client'
-
-import useDetailWebtoon from "@/hook/useDetailWebtoon";
-
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { FadeLoader } from "react-spinners";
-import HeartIcon from "./ui/HeartIcon";
-import HeartEmptyIcon from "./ui/HeartEmptyIcon";
 import { useQuery } from "@tanstack/react-query";
 import { getWebtoonResponse } from "@/service/webtoon";
-import axios from "axios";
 import useLikeMutate from "@/hook/useDetailWebtoon";
 import { getWebtoon } from '@/service/webtoon';
+import dynamic from "next/dynamic";
+
+
+const HeartIcon = dynamic(()=>import("./ui/HeartIcon"));
+
+const HeartEmptyIcon = dynamic(()=>import("./ui/HeartEmptyIcon"));
 
 export default function WebtoonDetail({webtoonId} : {webtoonId : string}) {
   
@@ -36,14 +36,13 @@ export default function WebtoonDetail({webtoonId} : {webtoonId : string}) {
     mutate();
   }
 
-  console.log("디테일", webtoon);
 
   if(isLoading) return <div className="mx-auto m-28"><FadeLoader /></div>
 
   return (
     <div className="relative w-full  items-center">
         {
-          liked ? <HeartIcon onClick={handleLikeButton} /> : <HeartEmptyIcon onClick={handleLikeButton} />
+          session && (liked ? <HeartIcon onClick={handleLikeButton} /> : <HeartEmptyIcon onClick={handleLikeButton} />)
         }
         <img className = "mx-auto mb-10" src = {webtoon?.thumbnailUrl} width={300} />
       <div className="px-4 sm:px-0">

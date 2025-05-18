@@ -30,7 +30,7 @@ export default function CommentForm({
   return (
     <form
       onSubmit={handleSubmit(async (data) => {
-        const result = await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/comment`, {
+        const result = await axios.post(`/api/comment`, {
           ...data,
           webtoonId,
         });

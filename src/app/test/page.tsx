@@ -1,8 +1,6 @@
 'use client'
 
-import axios from 'axios';
 import React from 'react'
-import { useQuery } from '@tanstack/react-query';
 import { webtoons } from '@mock/webtoon'
 import { addWebtoon, deleteWebtoon } from '@service/webtoon';
 

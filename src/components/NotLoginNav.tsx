@@ -1,5 +1,4 @@
 import React from 'react'
-import Navigate from '@component/Navigate'
 
 type Props = {
     onClick : () => void

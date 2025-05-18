@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { memo } from 'react'
 import WebtoonList from '../WebtoonList'
 import axios from 'axios'
 import { useQuery } from '@tanstack/react-query'
@@ -10,13 +10,13 @@ interface GenreListProps {
     genre : string 
 }
 
-export default function GenreWebtoonList({page, genre}: GenreListProps) {
+function GenreWebtoonList({page, genre}: GenreListProps) {
 
     const params = { size : 10, page }
     const queryKey = [genre, page];
 
     const fetchGenreWebtoon = async () => {
-        const { data } = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/genre/${genre}`, { params })
+        const { data } = await axios.get(`/api/genre/${genre}`, { params })
         // : { webtoons, totalCount }
         return data;
     }   
@@ -35,3 +35,5 @@ export default function GenreWebtoonList({page, genre}: GenreListProps) {
         </>
     )
 }
+
+export default memo(GenreWebtoonList);

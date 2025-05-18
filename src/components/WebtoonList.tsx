@@ -28,8 +28,6 @@ export default function WebtoonList({
     )
   }
 
-  console.log("가져온 데이터들 : ", webtoons);
-
   return (
     <div>
       <div className = "p-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"> 
@@ -60,7 +58,7 @@ export default function WebtoonList({
 function Skeleton(){
   return(
     <div className = "p-10 grid grid-cols-2 w-[100vw] place-items-center h-[100vh] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-hidden ">
-      { [...Array(10)].map((index)=>{
+      { [...new Array(10)].map((index)=>{
           return(
             <div key={index} className='text-2 w-[100%] h-[80%] min-w-[160px] mix-h-[200px] items-center bg-gray-200  px-auto rounded-lg relative border-2 text-center border-none animate-pulse'>
             </div>

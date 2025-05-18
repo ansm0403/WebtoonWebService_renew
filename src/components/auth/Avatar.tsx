@@ -1,5 +1,4 @@
-import { useQuery } from '@tanstack/react-query';
-import { getProviders } from 'next-auth/react';
+
 import React from 'react'
 
 export default function Avatar({ image } : { image? : string | null }) {

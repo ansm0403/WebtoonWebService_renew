@@ -24,9 +24,6 @@ export default async function GenrePage({
 
   const totalCount = await getTotalGenreWebtoonCount(genreKor);
 
-  console.log("토탈 : ,", totalCount);
-  console.log("장르 : ", genreKor);
-
   return (
     <div className = 'w-full'>
       <GenreWebtoonList page = {page} genre = { genre } />
