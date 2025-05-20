@@ -1,12 +1,13 @@
 
-import { RankPageWebtoon, webtoon } from "@models/webtoon";
+import { Webtoon } from "@/models/webtoonType";
+import {  webtoon } from "@models/webtoon";
 import { sanityClient } from "@service/sanity";
 
 export interface getWebtoonResponse extends webtoon {
     totalComment : number
 }
 
-export async function addWebtoon(webtoon : webtoon){
+export async function addWebtoon(webtoon : Webtoon){
     return sanityClient.createIfNotExists({
         _id : `${webtoon.id}`,
         _type : 'webtoon',
@@ -23,7 +24,7 @@ export async function addWebtoon(webtoon : webtoon){
     })
 }
 
-export async function deleteWebtoon(webtoon : webtoon){
+export async function deleteWebtoon(webtoon : Webtoon){
     return sanityClient
     .delete({query : `*[title=="${webtoon.title}"]`})
 }

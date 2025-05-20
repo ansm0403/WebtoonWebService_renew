@@ -81,11 +81,11 @@ export default function Card({
     })
 
     return (
-        <div className = 'relative border-2 text-center rounded-md border-none overflow-hidden hover:scale-90 transition-transform'>
+        <div className = 'relative border-2 text-center rounded-md border-none overflow-hidden  '>
             <Link href = {`/webtoon/${webtoon._id}`} className = 'relative mx-auto min-w-[200px] max-w-[250px] h-[300px]'>
                 {/* // eslint-disable-next-line @next/next/no-img-element */}
                 <img 
-                    className = "border-none border-2 rounded-xl cursor-pointer" 
+                    className = "border-none border-2 rounded-xl cursor-pointer hover:scale-90 transition-transform" 
                     src = {`${thumbnailUrl}`} 
                     alt = 'card image' 
                     // fill = {true}

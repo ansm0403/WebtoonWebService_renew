@@ -20,18 +20,20 @@ export default function RootLayout({
   return (
     <html lang="en">
         <body className={`pt-[80px]`}>
-          <AuthContext>
-            <QueryClientContext>
-                  <Navbar></Navbar>
-                  <main>
-                    <div className = 'relative w-full h-full'>
-                      {children}             
-                    </div>
-                    <Footer />
-                  </main>
-                  <div id = "modal"></div>
-            </QueryClientContext>
-          </AuthContext>
+           
+            <AuthContext>
+              <QueryClientContext>  
+                    <Navbar></Navbar>
+                    <main>
+                      <div className = 'relative w-full h-full'>
+                         
+                        {children}             
+                      </div>
+                      <Footer />
+                    </main>
+                    <div id = "modal"></div>
+              </QueryClientContext>
+            </AuthContext>
         </body>
     </html>
   )

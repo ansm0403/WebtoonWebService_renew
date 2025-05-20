@@ -66,7 +66,7 @@ export default function TestPage() {
         if(files && files[0]){
             setFormValue((prev)=>({
                 ...prev,
-                [e.target?.name] : files[0]
+                // [e.target?.name] : files[0]
             }))
         } 
     }

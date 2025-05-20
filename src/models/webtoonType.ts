@@ -8,17 +8,15 @@ export type comment = {
 export type Webtoon = {
     id : number;
     title : string;
-    author : string;
     url : string;
     thumbnailUrl : string;
-    genre : string;
+    genre : string[];
     likeCount : number;
-    overallLikeCount : number;
     likeProportion : number;
     firstDate : string;
     dayOfWeek : string;
     platform : string;
-    comments : comment[]
+    comments : comment[] | never[]
 }
 
 export type sort = {

@@ -73,7 +73,7 @@ export default function MenuCard({
     }
 
   return (
-    <div className='relative overflow-hidden max-w-[1500px] min-w-[200px] h-[100dvh]'>
+    <div className='relative overflow-hidden max-w-[1500px] min-w-[200px] h-[100dvh] text-white hover:text-black '>
     {/* {
       menu.img.map((img, index)=>{
         const menuTitle = menu.title.split(" ")[0]
@@ -105,17 +105,21 @@ export default function MenuCard({
         )
       })
     } */}
-      <Link href = {menu.link} className='' >
-              <Image
-                className={`relative right-36 ${menu.link === "/search" ? "left-[0px]" : "" } top-[-200px] md:top-[-100px] opacity-30 hover:opacity-100 transition-opacity  min-w-[100dvh] w-[100dvw] z-10
+      <Link href = {menu.link} >
+        <Image
+          className={`relative right-36 ${menu.link === "/search" ? "left-[0px]" : "" } top-[-200px] md:top-[-100px] opacity-30 hover:opacity-100 transition-opacity  min-w-[100dvh] w-[100dvw] z-10
                 `}
-                alt = {menu.title} 
-                src = {menu.img}
-                width = {1500} 
-                height={2000} 
-              />
-            </Link>
-      <div className='absolute top-[50%] text-white font-bold text-[3dvh] left-[10%] md:left-[40%] text-center z-50'>{menu.title}</div>
+          alt = {menu.title} 
+          src = {menu.img}
+          width = {1500} 
+          height={2000} 
+        />
+      </Link>
+      <div 
+        className='absolute top-[50%] font-bold text-[3dvh] left-[10%] md:left-[40%] text-center z-50'
+      >
+          {menu.title}
+      </div>
     </div>
   )
 }

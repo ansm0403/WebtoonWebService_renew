@@ -31,7 +31,7 @@ function GenreWebtoonList({page, genre}: GenreListProps) {
 
     return (
         <>
-            <WebtoonList webtoons={data} refetch={refetch} isRank queryKey={queryKey}/>
+            <WebtoonList webtoons={data} refetch={refetch} page={page} isRank queryKey={queryKey}/>
         </>
     )
 }

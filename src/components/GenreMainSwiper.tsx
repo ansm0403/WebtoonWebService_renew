@@ -34,11 +34,11 @@ export default function GenreMainSwiper() {
                 return (
                 <React.Fragment key = {genreThumbnails[index].link}>
                     <Link 
-                        className={`absolute w-[9rem] md:w-[13rem] hover:text-black hover:opacity-100 text-center transition-all hover:scale-125 ${Math.abs((index + weight) % 7)*51 === 0 ? "" : "pointer-events-none"}`} 
+                        className={`absolute w-[9rem] md:w-[13rem]   text-white hover:text-black  text-center transition-all hover:scale-125 ${Math.abs((index + weight) % 7)*51 === 0 ? "" : "pointer-events-none"}`} 
                         href = {data.link}
                     >
                         <Image 
-                            className='pt-[500px] w-[50vw] opacity-40 transition-opacity'
+                            className='pt-[500px] w-[50vw] transition-opacity opacity-40 hover:opacity-100'
                             src = {`/images/${data.thumbnail}`} 
                             alt = "장르 메인 페이지" 
                             width = {300} 
@@ -51,8 +51,8 @@ export default function GenreMainSwiper() {
                                 `
                             }}
                         />
-                        <div 
-                            className=' text-center text-xl font-bold opacity-100 text-white' 
+                        <span
+                            className='text-center text-[2rem] font-bold !opacity-100' 
                             style={{
                                     transform : `
                                         perspective(1200px)
@@ -60,7 +60,7 @@ export default function GenreMainSwiper() {
                                         translateZ(500px) 
                                     `
                             }}
-                         >{Math.abs((index + weight) % 7)*51 === 0 ? data.genre : ""}</div>
+                         >{Math.abs((index + weight) % 7)*51 === 0 ? data.genre : ""}</span>
                     </Link>  
                 </React.Fragment>
             )})
@@ -93,7 +93,7 @@ const slideButtonStyle = `
     text-[7rem]
     md:text-[8rem] 
     md:opacity-40
-    hover:text-[10rem]
+    hover:scale-[1.3] 
     hover:opacity-100
     z-50
 `
